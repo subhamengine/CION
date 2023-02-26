@@ -34,32 +34,16 @@ msgid "<0>Install Coinbase Wallet</0> to start using CION."
 msgstr ""
 
 #: src/App/App.js
-#~ msgid "<0>Install Coinbase Wallet</0> to start using GMX."
-#~ msgstr ""
-
-#: src/App/App.js
 msgid "<0>Install Coinbase Wallet</0>, and use CION with its built-in browser."
 msgstr ""
-
-#: src/App/App.js
-#~ msgid "<0>Install Coinbase Wallet</0>, and use GMX with its built-in browser."
-#~ msgstr ""
 
 #: src/App/App.js
 msgid "<0>Install MetaMask</0> to start using CION."
 msgstr ""
 
 #: src/App/App.js
-#~ msgid "<0>Install MetaMask</0> to start using GMX."
-#~ msgstr ""
-
-#: src/App/App.js
 msgid "<0>Install MetaMask</0>, and use CION with its built-in browser."
 msgstr ""
-
-#: src/App/App.js
-#~ msgid "<0>Install MetaMask</0>, and use GMX with its built-in browser."
-#~ msgstr ""
 
 #: src/components/Exchange/OrdersToa.js
 msgid "<0>Insufficient liquidity to execute the order</0><1>The mark price which is an aggregate of exchange prices did not reach the specified price</1><2>The specified price was reached but not long enough for it to be executed</2><3>No keeper picked up the order for execution</3>"
@@ -307,11 +291,6 @@ msgstr "{stakingTokenSymbol} 승인중..."
 msgid "Approving..."
 msgstr "승인중..."
 
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "Arbitrum APR:"
-#~ msgstr "Arbitrum APR:"
-
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
 msgid "As there is not enough liquidity in GLP to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
 msgstr "{0}에서 {swapTokenSymbol}로 교환할 수 있는 유동성이 GLP에 충분하지 않기 때문에, 이하의 옵션을 사용해주세요:"
@@ -346,18 +325,9 @@ msgstr "GLP에 예치할 수 있는 양"
 msgid "Available amount to withdraw from GLP. Funds not utilized by current open positions."
 msgstr "GLP로부터 인출가능한 수량. 현재 포지션에 의해 활용되고 있지 않은 유휴 수량"
 
-#: src/pages/Home/Home.js
-#~ msgid "Available on your preferred network"
-#~ msgstr "선택한 네트워크에서 이용가능"
-
 #: src/components/Glp/GlpSwap.js
 msgid "Available:"
 msgstr "사용가능"
-
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "Avalanche APR:"
-#~ msgstr "Avalanche APR:"
 
 #: src/components/Exchange/SwapBox.js
 msgid "Balance"
@@ -478,16 +448,6 @@ msgstr ""
 #: src/components/Glp/GlpSwap.js
 msgid "Buy failed."
 msgstr "구매 실패"
-
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "Buy on Arbitrum"
-#~ msgstr "Arbitrum에서 구매"
-
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "Buy on Avalanche"
-#~ msgstr "Avalanche에서 구매"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy or Transfer AVAX to Avalanche"
@@ -1412,10 +1372,6 @@ msgstr "{0} 업그레이드를 위해 GLP 구매가 비활성화되었습니다"
 msgid "GLP doesn't accept this amount of {0}."
 msgstr ""
 
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "GLP is the liquidity provider token. Accrues 70% of the platform's generated fees."
-#~ msgstr "GLP는 유동성 공급 토큰입니다. 플랫폼에서 생성되는 수수료의 70%를 축적하세요."
-
 #: src/components/Glp/GlpSwap.js
 msgid "GLP sell disabled, pending {0} upgrade"
 msgstr "{0} 업그레이드를 위해 GLP 판매가 비활성화되었습니다"
@@ -1481,17 +1437,9 @@ msgstr "통계와 트레이드 정보를 위한 GMX 익스플로러"
 msgid "GMX fundamentals"
 msgstr "GMX 펀더멘탈"
 
-#: src/pages/Home/Home.js
-#~ msgid "GMX is currently live on Arbitrum and Avalanche."
-#~ msgstr "GMX는 현재 Arbitrum과 Avalanche에서 이용할 수 있습니다."
-
 #: src/pages/Jobs/Jobs.js
 msgid "GMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
 msgstr "GMX는 현재 구인하고 있지 않습니다. 하지만 해당 프로젝트에 기여할 수 있다고 생각하시면 email <0>jobs@gmx.io</0>으로 연락해주세요."
-
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "GMX is the utility and governance token. Accrues 30% of the platform's generated fees."
-#~ msgstr "GMX는 유틸리티 및 거버넌스 토큰입니다. 플랫폼에서 생성되는 수수료의 30%를 축적하세요."
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "GMX staking calculator"
@@ -3457,10 +3405,6 @@ msgstr "우측 상단의 세팅을 이용해 \"허용 가능한 슬리피지\"�
 msgid "Tweet"
 msgstr "Tweet"
 
-#: src/pages/Home/Home.js
-#~ msgid "Two tokens create our ecosystem"
-#~ msgstr "두개의 토큰이 생태계를 형성하고 있습니다"
-
 #: src/App/App.js
 msgid "Txn failed. <0>View</0>"
 msgstr "트랜잭션 실패됨. <0>보기</0>"
@@ -3641,10 +3585,6 @@ msgstr "유효한 추천인 코드를 사용하여 이 계정으로 트레이드
 #: src/components/Referrals/AffiliatesStats.js
 msgid "Volume traded by your referred traders."
 msgstr "귀하가 추천한 트레이더들의 거래량"
-
-#: src/components/Header/HomeHeaderLinks.tsx
-#~ msgid "Voting"
-#~ msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 msgid "WALLET"

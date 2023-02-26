@@ -34,32 +34,16 @@ msgid "<0>Install Coinbase Wallet</0> to start using CION."
 msgstr ""
 
 #: src/App/App.js
-#~ msgid "<0>Install Coinbase Wallet</0> to start using GMX."
-#~ msgstr ""
-
-#: src/App/App.js
 msgid "<0>Install Coinbase Wallet</0>, and use CION with its built-in browser."
 msgstr ""
-
-#: src/App/App.js
-#~ msgid "<0>Install Coinbase Wallet</0>, and use GMX with its built-in browser."
-#~ msgstr ""
 
 #: src/App/App.js
 msgid "<0>Install MetaMask</0> to start using CION."
 msgstr ""
 
 #: src/App/App.js
-#~ msgid "<0>Install MetaMask</0> to start using GMX."
-#~ msgstr ""
-
-#: src/App/App.js
 msgid "<0>Install MetaMask</0>, and use CION with its built-in browser."
 msgstr ""
-
-#: src/App/App.js
-#~ msgid "<0>Install MetaMask</0>, and use GMX with its built-in browser."
-#~ msgstr ""
 
 #: src/components/Exchange/OrdersToa.js
 msgid "<0>Insufficient liquidity to execute the order</0><1>The mark price which is an aggregate of exchange prices did not reach the specified price</1><2>The specified price was reached but not long enough for it to be executed</2><3>No keeper picked up the order for execution</3>"
@@ -307,11 +291,6 @@ msgstr ""
 msgid "Approving..."
 msgstr ""
 
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "Arbitrum APR:"
-#~ msgstr ""
-
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
 msgid "As there is not enough liquidity in GLP to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
 msgstr ""
@@ -346,18 +325,9 @@ msgstr ""
 msgid "Available amount to withdraw from GLP. Funds not utilized by current open positions."
 msgstr ""
 
-#: src/pages/Home/Home.js
-#~ msgid "Available on your preferred network"
-#~ msgstr ""
-
 #: src/components/Glp/GlpSwap.js
 msgid "Available:"
 msgstr ""
-
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "Avalanche APR:"
-#~ msgstr ""
 
 #: src/components/Exchange/SwapBox.js
 msgid "Balance"
@@ -478,16 +448,6 @@ msgstr ""
 #: src/components/Glp/GlpSwap.js
 msgid "Buy failed."
 msgstr ""
-
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "Buy on Arbitrum"
-#~ msgstr ""
-
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "Buy on Avalanche"
-#~ msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy or Transfer AVAX to Avalanche"
@@ -1412,10 +1372,6 @@ msgstr ""
 msgid "GLP doesn't accept this amount of {0}."
 msgstr ""
 
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "GLP is the liquidity provider token. Accrues 70% of the platform's generated fees."
-#~ msgstr ""
-
 #: src/components/Glp/GlpSwap.js
 msgid "GLP sell disabled, pending {0} upgrade"
 msgstr ""
@@ -1481,17 +1437,9 @@ msgstr ""
 msgid "GMX fundamentals"
 msgstr ""
 
-#: src/pages/Home/Home.js
-#~ msgid "GMX is currently live on Arbitrum and Avalanche."
-#~ msgstr ""
-
 #: src/pages/Jobs/Jobs.js
 msgid "GMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
 msgstr ""
-
-#: src/components/TokenCard/TokenCard.js
-#~ msgid "GMX is the utility and governance token. Accrues 30% of the platform's generated fees."
-#~ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "GMX staking calculator"
@@ -3454,10 +3402,6 @@ msgstr ""
 msgid "Tweet"
 msgstr ""
 
-#: src/pages/Home/Home.js
-#~ msgid "Two tokens create our ecosystem"
-#~ msgstr ""
-
 #: src/App/App.js
 msgid "Txn failed. <0>View</0>"
 msgstr ""
@@ -3638,10 +3582,6 @@ msgstr ""
 #: src/components/Referrals/AffiliatesStats.js
 msgid "Volume traded by your referred traders."
 msgstr ""
-
-#: src/components/Header/HomeHeaderLinks.tsx
-#~ msgid "Voting"
-#~ msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 msgid "WALLET"
