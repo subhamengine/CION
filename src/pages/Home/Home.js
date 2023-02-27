@@ -16,8 +16,8 @@ import { USD_DECIMALS, getTotalVolumeSum } from "lib/legacy";
 
 import { useUserStat } from "domain/legacy";
 
-import arbitrumIcon from "img/ic_arbitrum_96.svg";
-import avaxIcon from "img/ic_avalanche_96.svg";
+// import arbitrumIcon from "img/ic_arbitrum_96.svg";
+// import avaxIcon from "img/ic_avalanche_96.svg";
 
 import TokenCard from "components/TokenCard/TokenCard";
 import { Trans } from "@lingui/macro";

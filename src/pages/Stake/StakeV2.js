@@ -30,7 +30,7 @@ import {
   getPageTitle,
 } from "lib/legacy";
 import { useGmxPrice, useTotalGmxStaked, useTotalGmxSupply } from "domain/legacy";
-import { ARBITRUM, getChainName, getConstant } from "config/chains";
+import { ARBITRUM, getConstant } from "config/chains";
 
 import useSWR from "swr";
 
@@ -913,7 +913,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
   const { active, library, account } = useWeb3React();
   const { chainId } = useChainId();
 
-  const chainName = getChainName(chainId);
+  // const chainName = getChainName(chainId);
 
   const hasInsurance = true;
 

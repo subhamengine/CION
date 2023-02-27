@@ -58,7 +58,7 @@ import VaultV2b from "abis/VaultV2b.json";
 import PositionRouter from "abis/PositionRouter.json";
 import PageNotFound from "pages/PageNotFound/PageNotFound";
 import ReferralTerms from "pages/ReferralTerms/ReferralTerms";
-import TermsAndConditions from "pages/TermsAndConditions/TermsAndConditions";
+// import TermsAndConditions from "pages/TermsAndConditions/TermsAndConditions";
 import { useLocalStorage } from "react-use";
 import { RedirectPopupModal } from "components/ModalViews/RedirectModal";
 import { REDIRECT_POPUP_TIMESTAMP_KEY } from "config/localStorage";

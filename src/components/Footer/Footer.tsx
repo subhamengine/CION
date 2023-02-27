@@ -1,12 +1,12 @@
-import React from "react";
+// import React from "react";
 import cx from "classnames";
 import "./Footer.css";
-import logoImg from "img/logo_cion.svg";
-import { NavLink } from "react-router-dom";
-import { isHomeSite, getAppBaseUrl, shouldShowRedirectModal } from "lib/legacy";
-import { getFooterLinks, SOCIAL_LINKS } from "./constants";
+// import logoImg from "img/logo_cion.svg";
+// import { NavLink } from "react-router-dom";
+import { isHomeSite } from "lib/legacy";
+import { SOCIAL_LINKS } from "./constants";
 import ExternalLink from "components/ExternalLink/ExternalLink";
-import { i18n } from "@lingui/core";
+// import { i18n } from "@lingui/core";
 
 type Props = { showRedirectModal?: (to: string) => void; redirectPopupTimestamp?: () => void };
 
