@@ -29,11 +29,11 @@
   border-bottom: 1px solid #ffffff29;
 }
 .network-dropdown:hover {
-  background: var(--dark-blue-hover);
+  background: #272727;
   cursor: pointer;
 }
 .network-dropdown:active {
-  background: var(--dark-blue-active);
+  background: #171717;
 }
 
 .network-dropdown > button.transparent {
@@ -45,7 +45,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 0.8rem;
-  background: transparent;
+  background:#272727;
 }
 
 .network-dropdown-icon {
@@ -60,7 +60,7 @@
 
 .network-dropdown-seperator {
   width: 1px;
-  background: var(--dark-blue-border);
+  background: #272727;
   margin: 0.8rem 0;
 }
 

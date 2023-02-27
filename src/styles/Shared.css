@@ -7,7 +7,7 @@ body,
   padding: 0;
   color: white;
   font-size: 10px;
-  background-color: #101124;
+  background-color: #0a1600;
 }
 
 body {
@@ -52,7 +52,7 @@ input {
 
 :root {
   --dark-blue: #17182c;
-  --dark-blue-bg: #16182e;
+  --dark-green-bg: #18250C;
   --dark-blue-accent: #a0a3c4;
   --primary-btn-hover: #4f60fc;
   --primary-btn-active: #5f6ffd;
@@ -203,7 +203,7 @@ a.plain {
 }
 
 .default-btn {
-  background: #2d42fc;
+  background: #55AD4D;
   border-radius: 4px;
   font-size: var(--font-sm);
   line-height: 2rem;

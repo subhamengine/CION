@@ -157,7 +157,7 @@
   position: relative;
   border: 1px solid #1e2136;
   border-radius: 0.4rem;
-  background: #16182e;
+  background: #18250C;
   font-size: var(--font-base);
 }
 
@@ -180,7 +180,7 @@
 }
 
 .App-card-long {
-  background: #16182e;
+  background: #18250C;
   margin-bottom: 2.4rem;
 }
 
@@ -791,7 +791,7 @@ a.App-cta,
 button.App-cta {
   color: white;
   text-decoration: none;
-  background: linear-gradient(90deg, rgba(45, 66, 252, 1) 0%, rgba(46, 61, 205, 1) 100%);
+  background: #18250C;
   &:hover:enabled {
     background: var(--primary-btn-hover);
   }
@@ -1108,11 +1108,11 @@ button.App-button {
 }
 
 .App-slider .rc-slider-rail {
-  background: linear-gradient(90deg, rgba(30, 34, 61, 1) 0%, rgba(40, 45, 74, 1) 100%);
+  background: #0A1600;
 }
 
 .App-slider .rc-slider-track {
-  background: linear-gradient(90deg, rgba(46, 61, 205, 1) 0%, rgba(45, 66, 252, 1) 100%);
+  background: #0A1600;
 }
 
 .App-slider .rc-slider-dot {
@@ -1120,7 +1120,7 @@ button.App-button {
   border-radius: 1px;
   width: 2px;
   margin-left: -1px;
-  background: rgba(40, 45, 74, 1);
+  background: #0A1600;
 }
 
 .App-slider .rc-slider-dot-active {
@@ -1128,8 +1128,8 @@ button.App-button {
 }
 
 .App-slider .rc-slider-handle {
-  background: #303652;
-  border: solid 2px rgba(45, 66, 252, 1);
+  background: #0A1600;
+  border: solid 2px #60CE84;
 }
 
 .App-slider .rc-slider-handle:active {
