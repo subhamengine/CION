@@ -226,7 +226,7 @@ a.plain {
 }
 
 .default-btn:hover {
-  background: var(--primary-btn-hover);
+  background: #30632c;
 }
 
 /* .default-btn:focus {

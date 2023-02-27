@@ -793,10 +793,10 @@ button.App-cta {
   text-decoration: none;
   background: #18250C;
   &:hover:enabled {
-    background: var(--primary-btn-hover);
+    background: rgba(10, 22, 0);
   }
   &:active:enabled {
-    background: var(--primary-btn-active);
+    background: rgba(2, 11, 0);
   }
 }
 
@@ -843,12 +843,12 @@ button.App-button-option {
   display: inline-flex !important;
   align-items: center;
   border: none;
-  background: rgba(43, 55, 94, 1);
+  background: #55AD4D;
 }
 
 a.App-button-option:hover,
 button.App-button-option:hover:enabled {
-  background: rgb(54, 69, 117);
+  background: #30632c;
 }
 
 a.App-button-option:active,
@@ -1124,7 +1124,7 @@ button.App-button {
 }
 
 .App-slider .rc-slider-dot-active {
-  background: #3d51ff;
+  background: #18250C;
 }
 
 .App-slider .rc-slider-handle {
