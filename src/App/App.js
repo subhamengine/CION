@@ -32,6 +32,8 @@ import NftWallet from "pages/NftWallet/NftWallet";
 import ClaimEsGmx from "pages/ClaimEsGmx/ClaimEsGmx";
 import BeginAccountTransfer from "pages/BeginAccountTransfer/BeginAccountTransfer";
 import CompleteAccountTransfer from "pages/CompleteAccountTransfer/CompleteAccountTransfer";
+import Vault from "pages/Vault/Vault";
+import StakeNft from "pages/StakeNft/StakeNft";
 
 import { cssTransition, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -502,6 +504,12 @@ function FullApp() {
               </Route>
               <Route exact path="/buy_gmx">
                 <BuyGMX />
+              </Route>
+              <Route exact path="/stake-nft">
+                <StakeNft />
+              </Route>
+              <Route exact path="/vault">
+                <Vault />
               </Route>
               <Route exact path="/ecosystem">
                 <Ecosystem />
