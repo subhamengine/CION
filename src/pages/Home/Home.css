@@ -12,11 +12,11 @@
   position: relative;
   /* height: 52.581rem; */
   padding-bottom: 6.4rem;
-  background: url("img/Artwork_gmx.svg");
+  background: url("img/hero.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   background-position: right;
-  margin-top: -6.2rem;
+  
 }
 
 .Home-title {
@@ -25,6 +25,7 @@
   font-weight: bold;
   margin-bottom: 1.5rem;
   letter-spacing: 0;
+  margin-top: 14.2rem;
 }
 
 .Home-title-section-container {
@@ -51,7 +52,8 @@
 }
 
 .Home-benefits-section {
-  background: #17182c;
+  background: #041A16;
+  margin-top: 50px !important;
 }
 
 .Home-benefits {
@@ -202,7 +204,7 @@
 .Home-token-card-section {
   padding-top: 7.75rem;
   padding-bottom: 7.75rem;
-  background: #17182c;
+  background: #041412;
   margin-bottom: -4.65rem;
 }
 
@@ -229,7 +231,7 @@
   padding: 2.325rem;
   border-radius: 1.3rem;
   max-width: 59.2rem;
-  background: #18250C;
+  background: #0C180A;
   box-shadow: 0px 0.5rem 1.3rem #00000085;
   border: 1px solid #2a2b3d;
   border-radius: 4px;
