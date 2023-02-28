@@ -12,7 +12,7 @@ export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
             <img src="https://i.ibb.co/JC3K0dG/Front-Image.png" alt="hero" height={320} />
           </div>
           <div className="content">
-            <div className="hero__content__title">Cion club</div>
+            <h1 className="hero__content__title">Cion club</h1>
             <div className="hero__content__description">
               A collection of 5,000 Cion NFT on Fantom, creating a community centered around strong identity, values,
               and rewards.
@@ -22,7 +22,7 @@ export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
         </div>
       </div>
       <div className="treasury">
-        <div className="treasury__header">Treasury</div>
+        <h1 className="treasury__header">Treasury</h1>
         <div className="treasury__subtitle">Profits from Treasury yield will be distributed to all NFT holders</div>
         <div className="container">
           <div className="total_stake">
@@ -65,11 +65,11 @@ export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
         </div>
       </div>
       <div className="reward">
-        <div className="reward__header">How to get reward with Cion Club</div>
+        <h1 className="reward__header">How to get reward with Cion Club</h1>
         <div className="reward__subtitle">Very simple, you just need to hold Mummy NFT</div>
         <div className="reward__conatiner">
           <div className="reward__options__item">
-            <div className="reward__options__item__title">1</div>
+            <h1 className="reward__options__item__title">1</h1>
             <div className="reward__options__item__container">
               <div className="reward__options__item__header">Mint NFT</div>
               <div className="reward__options__item__description">
@@ -80,7 +80,7 @@ export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
 
           </div>
           <div className="reward__options__item">
-            <div className="reward__options__item__title">2</div>
+            <h1 className="reward__options__item__title">2</h1>
             <div className="reward__options__item__container">
               <div className="reward__options__item__header">Stake</div>
               <div className="reward__options__item__description">
@@ -90,7 +90,7 @@ export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
             </div>
           </div>
           <div className="reward__options__item">
-            <div className="reward__options__item__title">3</div>
+            <h1 className="reward__options__item__title">3</h1>
             <div className="reward__options__item__container">
               <div className="reward__options__item__header">Earn</div>
               <div className="reward__options__item__description">
@@ -104,7 +104,7 @@ export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
         <div className="reward__description">
           <div className="left__illustration"></div>
           <div className="right__illustration"></div>
-          <div className="reward__description__header">Start in seconds</div>
+          <h1 className="reward__description__header">Start in seconds</h1>
           <div className="reward__description__subtitle">
             Connect your crypto wallet to start using the app in seconds.
           </div>
