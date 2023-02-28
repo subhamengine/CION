@@ -390,6 +390,10 @@ msgstr ""
 msgid "Buy AVAX directly to Avalanche or transfer it there."
 msgstr ""
 
+#: src/pages/Stake/StakeV2.js
+msgid "Buy CN"
+msgstr ""
+
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy ETH directly to Arbitrum or transfer it there."
 msgstr ""
@@ -399,10 +403,6 @@ msgstr ""
 #: src/components/Glp/GlpSwap.js
 #: src/pages/Stake/StakeV2.js
 msgid "Buy GLP"
-msgstr ""
-
-#: src/pages/Stake/StakeV2.js
-msgid "Buy GMX"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
@@ -480,6 +480,10 @@ msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
 msgid "CLP is the liquidity provider token. Accrues 60% of the platform's generated fees."
+msgstr ""
+
+#: src/pages/Stake/StakeV2.js
+msgid "CN Vault"
 msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
@@ -783,7 +787,7 @@ msgid "Continue"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "Convert esGMX tokens to GMX tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
+msgid "Convert esCN tokens to CN tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
@@ -1231,7 +1235,7 @@ msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Escrowed GMX"
+msgid "Escrowed CN"
 msgstr ""
 
 #: src/components/Stake/GMXAprTooltip.tsx
@@ -1404,7 +1408,6 @@ msgstr ""
 msgid "GMX Stats Page"
 msgstr ""
 
-#: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 msgid "GMX Vault"
 msgstr ""
@@ -2826,7 +2829,7 @@ msgid "Stake"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake <0>GMX</0> and <1>GLP</1> to earn rewards."
+msgid "Stake <0>CN</0> and <1>CLP</1> to earn rewards."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
@@ -3886,6 +3889,11 @@ msgstr ""
 msgid "{0} Approved!"
 msgstr ""
 
+#: src/pages/Stake/StakeV2.js
+#: src/pages/Stake/StakeV2.js
+msgid "{0} CN tokens can be claimed, use the options under the Total Rewards section to claim them."
+msgstr ""
+
 #: src/components/Glp/SwapErrorModal.tsx
 msgid "{0} Capacity Reached"
 msgstr ""
@@ -3904,11 +3912,6 @@ msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 msgid "{0} GLP sold for {1} {2}!"
-msgstr ""
-
-#: src/pages/Stake/StakeV2.js
-#: src/pages/Stake/StakeV2.js
-msgid "{0} GMX tokens can be claimed, use the options under the Total Rewards section to claim them."
 msgstr ""
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
@@ -3962,8 +3965,11 @@ msgid "{0} selected in order form"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
+msgid "{0} tokens have been converted to CN from the {1} esGMX deposited for vesting."
+msgstr ""
+
 #: src/pages/Stake/StakeV2.js
-msgid "{0} tokens have been converted to GMX from the {1} esGMX deposited for vesting."
+msgid "{0} tokens have been converted to GMX from the {1} esCN deposited for vesting."
 msgstr ""
 
 #: src/components/Exchange/SwapBox.js

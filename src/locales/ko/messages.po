@@ -390,6 +390,10 @@ msgstr "GLP 구매 / 판매"
 msgid "Buy AVAX directly to Avalanche or transfer it there."
 msgstr ""
 
+#: src/pages/Stake/StakeV2.js
+msgid "Buy CN"
+msgstr ""
+
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy ETH directly to Arbitrum or transfer it there."
 msgstr ""
@@ -400,10 +404,6 @@ msgstr ""
 #: src/pages/Stake/StakeV2.js
 msgid "Buy GLP"
 msgstr "GLP 구매"
-
-#: src/pages/Stake/StakeV2.js
-msgid "Buy GMX"
-msgstr "GMX 구매"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy GMX from Traderjoe:"
@@ -480,6 +480,10 @@ msgstr "구매중..."
 
 #: src/components/TokenCard/TokenCard.js
 msgid "CLP is the liquidity provider token. Accrues 60% of the platform's generated fees."
+msgstr ""
+
+#: src/pages/Stake/StakeV2.js
+msgid "CN Vault"
 msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
@@ -783,8 +787,8 @@ msgid "Continue"
 msgstr "계속하기"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Convert esGMX tokens to GMX tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
-msgstr "esGMX 토큰을 GMX 토큰으로 변환합니다.<0/>볼트를 사용하기 전 <1>베스팅 세부정보</1>를 참조해주세요."
+msgid "Convert esCN tokens to CN tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
+msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -1231,8 +1235,8 @@ msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Escrowed GMX"
-msgstr "에스크로 GMX"
+msgid "Escrowed CN"
+msgstr ""
 
 #: src/components/Stake/GMXAprTooltip.tsx
 msgid "Escrowed GMX APR"
@@ -1404,7 +1408,6 @@ msgstr "GMX 프로포절 투표 페이지"
 msgid "GMX Stats Page"
 msgstr "GMX 통계 페이지"
 
-#: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 msgid "GMX Vault"
 msgstr "GMX 볼트"
@@ -2829,8 +2832,8 @@ msgid "Stake"
 msgstr "스테이킹"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake <0>GMX</0> and <1>GLP</1> to earn rewards."
-msgstr "<0>GMX</0>과 <1>GLP</1>를 스테이킹하여 보상을 획득하세요."
+msgid "Stake <0>CN</0> and <1>CLP</1> to earn rewards."
+msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 msgid "Stake GMX"
@@ -3889,6 +3892,11 @@ msgstr ""
 msgid "{0} Approved!"
 msgstr "{0} 승인 완료!"
 
+#: src/pages/Stake/StakeV2.js
+#: src/pages/Stake/StakeV2.js
+msgid "{0} CN tokens can be claimed, use the options under the Total Rewards section to claim them."
+msgstr ""
+
 #: src/components/Glp/SwapErrorModal.tsx
 msgid "{0} Capacity Reached"
 msgstr "{0} 수용량 도달됨"
@@ -3908,11 +3916,6 @@ msgstr "{0} GLP가 베스팅을 위해 리저브되었습니다."
 #: src/components/Glp/GlpSwap.js
 msgid "{0} GLP sold for {1} {2}!"
 msgstr "{0} GLP를 {1} {2}로 판매하였습니다!"
-
-#: src/pages/Stake/StakeV2.js
-#: src/pages/Stake/StakeV2.js
-msgid "{0} GMX tokens can be claimed, use the options under the Total Rewards section to claim them."
-msgstr "{0} GMX 토큰을 클레임할 수 있습니다. 총 보상 섹션 아래의 옵션을 사용해서 클레임하세요."
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
 msgid "{0} Pool Capacity Reached"
@@ -3965,9 +3968,12 @@ msgid "{0} selected in order form"
 msgstr "{0}이(가) 주문 폼에서 선택되었습니다."
 
 #: src/pages/Stake/StakeV2.js
+msgid "{0} tokens have been converted to CN from the {1} esGMX deposited for vesting."
+msgstr ""
+
 #: src/pages/Stake/StakeV2.js
-msgid "{0} tokens have been converted to GMX from the {1} esGMX deposited for vesting."
-msgstr "베스팅을 위해 예치된 {1} esGMX에서 {0} 토큰이 GMX로 변환되었습니다."
+msgid "{0} tokens have been converted to GMX from the {1} esCN deposited for vesting."
+msgstr ""
 
 #: src/components/Exchange/SwapBox.js
 msgid "{0} {1} not supported"

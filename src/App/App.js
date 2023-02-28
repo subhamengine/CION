@@ -22,6 +22,7 @@ import Ecosystem from "pages/Ecosystem/Ecosystem";
 import Stake from "pages/Stake/Stake";
 import { Exchange } from "pages/Exchange/Exchange";
 import Actions from "pages/Actions/Actions";
+import NFT from "pages/NFT/NFT";
 import OrdersOverview from "pages/OrdersOverview/OrdersOverview";
 import PositionsOverview from "pages/PositionsOverview/PositionsOverview";
 import Referrals from "pages/Referrals/Referrals";
@@ -543,6 +544,9 @@ function FullApp() {
               </Route>
               <Route exact path="/complete_account_transfer/:sender/:receiver">
                 <CompleteAccountTransfer setPendingTxns={setPendingTxns} />
+              </Route>
+              <Route exact path="/nft">
+                <NFT/>
               </Route>
               <Route path="*">
                 <PageNotFound />

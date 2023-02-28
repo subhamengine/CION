@@ -1,0 +1,335 @@
+.NFT {
+  margin: 0;
+  padding-top: 3.1rem;
+}
+
+.hero {
+  display: flex;
+  /* place-items: center; */
+  align-items: center;
+  justify-content: center;
+
+  height: 400px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://i.ibb.co/kqXKfC3/Background-Slideshow-1-1-1.png");
+  background-position: initial;
+  background-repeat: repeat;
+  animation: marquee_hero 30s infinite linear;
+  background-size: 1000px;
+
+  width: 100vw;
+  z-index: 1;
+
+  margin: 3rem 0;
+}
+
+.hero__content {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #808080;
+  background-color: #152c027a;
+}
+
+.hero__content > .image {
+  height: 320px;
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hero__content > .content {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+}
+
+.hero__content__title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+
+.hero__content__description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+
+.hero__content__button {
+  background-color: #1ac43e;
+  width: fit-content;
+  margin-top: 1rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero__content__button:hover {
+  background-color: #1ac43e;
+  opacity: 0.8;
+}
+
+@keyframes marquee_hero {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -1190px;
+  }
+}
+
+
+
+/* treasury --------------------- */
+
+.treasury {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.treasury__header {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+
+.treasury__subtitle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5rem;
+}
+
+.treasury > .container{
+  background-color: #8080803a;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+
+/* marquee ----------------------- */
+
+.marquee-wrapper {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.marquee {
+  display: flex;
+  -webkit-animation: marquee_carousal 30s linear infinite running;
+  -moz-animation: marquee_carousal 30s linear infinite running;
+  -o-animation: marquee_carousal 30s linear infinite running;
+  -ms-animation: marquee_carousal 30s linear infinite running;
+  animation: marquee_carousal 30s linear infinite running;
+  transform: translateX(0);
+}
+.marquee img {
+  padding: 1em;
+  height: 200px;
+}
+
+@-moz-keyframes marquee_carousal {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translate(-1190px);
+    -moz-transform: translate(-1190px);
+    -o-transform: translate(-1190px);
+    -ms-transform: translate(-1190px);
+    transform: translate(-1190px);
+  }
+}
+@-webkit-keyframes marquee_carousal {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translate(-1190px);
+    -moz-transform: translate(-1190px);
+    -o-transform: translate(-1190px);
+    -ms-transform: translate(-1190px);
+    transform: translate(-1190px);
+  }
+}
+@-o-keyframes marquee_carousal {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translate(-1190px);
+    -moz-transform: translate(-1190px);
+    -o-transform: translate(-1190px);
+    -ms-transform: translate(-1190px);
+    transform: translate(-1190px);
+  }
+}
+@keyframes marquee_carousal {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translate(-1190px);
+    -moz-transform: translate(-1190px);
+    -o-transform: translate(-1190px);
+    -ms-transform: translate(-1190px);
+    transform: translate(-1190px);
+  }
+}
+
+
+/* reward  -------------------------*/
+
+.reward {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.reward__header {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+
+.reward__subtitle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5rem;
+}
+
+.reward > .reward__conatiner{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.reward__options__item{
+  background-color: #8080802c;
+  display: flex;
+  flex-direction: row;
+  align-items: initial;
+  gap: 1rem;
+  padding: 2.5rem;
+  width: 33%;
+  min-height: 230px;
+}
+.reward__options__item__title{
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #18B036;
+}
+
+.reward__options__item__container{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: initial;
+  gap: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.reward__options__item__header{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #18B036;
+  text-shadow: 0 0 15px #000;
+}
+
+.reward__options__item__button{
+  margin-top: 20px;
+  color: #18AAB0;
+}
+
+.reward__options__item__header{
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+.reward__description{
+  background-color: #8080802c;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 2.5rem 0;
+}
+
+.reward__description__header{
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+
+.reward__description__subtitle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5rem;
+}
+
+.reward__description__button{
+  margin-top: 20px;
+  color: #18AAB0;
+}
