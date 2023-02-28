@@ -143,11 +143,13 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
         <div className="Home-title-section-container default-container">
           <div className="Home-title-section">
             <div className="Home-title">
-              <Trans>
-                Decentralized
+              <h1 style={{ color: "#00B265" }}>
+                DECENTRALISED
                 <br />
-                Perpetual Exchange
-              </Trans>
+                <span>
+                  <h1 style={{ color: "#FFFFFF", textShadow: "4px 0px #00B265" }}>Perpetual Exchange</h1>{" "}
+                </span>
+              </h1>
             </div>
             <div className="Home-description">
               <Trans>

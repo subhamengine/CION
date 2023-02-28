@@ -20,12 +20,21 @@
 }
 
 .Home-title {
-  font-size: 5.7rem;
+  font-size: 2.5rem;
   line-height: 6.8rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
   letter-spacing: 0;
   margin-top: 14.2rem;
+  color: #00B265 !important;
+  
+}
+h1{
+  font-size: 5rem;
+}
+.Home-title {
+  font-family: american-typewriter;
+  text-shadow:4px 0px red;
 }
 
 .Home-title-section-container {
@@ -49,13 +58,16 @@
   max-width: 44.4rem;
   color: #a0a3c4;
   margin-bottom: 2.8rem;
+  font-family: american-typewriter;
 }
 
 .Home-benefits-section {
   background: #041A16;
   margin-top: 50px !important;
 }
-
+.Home-benefit-title{
+  font-family: american-typewriter;
+}
 .Home-benefits {
   display: flex;
   justify-content: space-between;
@@ -82,6 +94,7 @@
   max-width: 29rem;
   color: #a0a3c4;
   letter-spacing: 0;
+  font-family: american-typewriter;
 }
 
 .Home-benefit-icon {
@@ -218,6 +231,7 @@
   font-weight: bold;
   margin-bottom: 3.1rem;
   letter-spacing: 0;
+  font-family: american-typewriter;
 }
 
 .Home-token-card-options {
@@ -290,6 +304,7 @@
   padding-top: 6.2rem;
   padding-bottom: 1.5rem;
   width: 100%;
+  font-family: american-typewriter;
 }
 
 .Home-latest-info-block {
@@ -308,6 +323,7 @@
   padding-bottom: 2.8rem;
   margin: 1.6rem 0;
   backdrop-filter: blur(4px);
+  font-family: american-typewriter;
 }
 
 .Home-latest-info__icon {
@@ -321,6 +337,7 @@
   font-size: var(--font-md);
   line-height: 2.5rem;
   letter-spacing: 0px;
+  font-family: american-typewriter;
 }
 
 .Home-latest-info__value {
@@ -329,6 +346,7 @@
   font-size: 2.9rem;
   line-height: 3.9rem;
   letter-spacing: 0px;
+  font-family: american-typewriter;
 }
 
 .Home-latest-info__description {

@@ -16,8 +16,8 @@ const StakeNft = () => {
     <>
       <div className="default-container page-layout main">
         <div className="stakeNftUpper">
-          <span className="header"> <h1>Earn real profit with Mummy Club</h1> </span>
-          <span className="subhead"> <h1 style={{ color: "#FFFFFF" }}>Earn $WFTM from platform's collected fees with your NFT</h1> </span>
+          <span className="header"> Earn real profit with Mummy Club </span>
+          <span className="subhead" style={{ color: "#FFFFFF" }}> Earn $WFTM from platform's collected fees with your NFT </span>
           <img className="timeline" src={timeline} alt="" />
           <div className="boxes">
             <div className="box1">
