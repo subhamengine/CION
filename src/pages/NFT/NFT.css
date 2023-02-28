@@ -24,7 +24,7 @@ p {
   background-position: initial;
   background-repeat: repeat;
   animation: marquee_hero 30s infinite linear;
-  background-size: 1000px;
+  background-size: 1200px;
 
   width: 100vw;
   z-index: 1;
@@ -41,7 +41,6 @@ p {
   backdrop-filter: blur(10px);
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid #808080;
   background-color: #152c027a;
 }
 
@@ -363,6 +362,8 @@ p {
   margin-top: 20px;
   color: #18AAB0;
   cursor: pointer;
+  width: fit-content;
+  border-bottom: #18abb0b8 0.5px solid;
 }
 
 .reward__options__item__header{
