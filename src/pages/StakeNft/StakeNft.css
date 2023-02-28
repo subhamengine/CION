@@ -5,6 +5,15 @@
         padding-bottom: calc(4.65rem + 20rem);
         padding-top: 4.65rem;
 }
+.header,.subhead{
+    
+  font-family: american-typewriter;
+  font-size: 18px !important;
+}
+
+.subhead{
+    color: #FFFFFF !important;
+}
 .default-container{
     max-width: 126.4rem;
         padding-left: 3.2rem;
@@ -37,7 +46,7 @@
     margin-top: 20px;
 }
 .box1{
-    width: 40%;
+    width: 45%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -54,7 +63,10 @@
     flex-direction: column;
     justify-content: space-around;
     background-image: linear-gradient(to top right, #162109, #324215);
-    
+    font-family: american-typewriter;
+}
+.box2 > div{
+    font-family: american-typewriter;
 }
 .box3{
     width: 25%;
@@ -64,12 +76,17 @@
         align-items: center;
         flex-direction: column;
         justify-content: space-around;
+        font-family: american-typewriter;
 }
 .box3 > div{
     display: flex;
     width: 90%;
     align-items: center;
     justify-content: space-around;
+    font-family: american-typewriter;
+}
+.box3 > div > div{
+    font-family: american-typewriter;
 }
 .currentEpoch{
     width: 100%;
@@ -83,11 +100,15 @@
     align-items: center;
     justify-content: space-around;
 }
-
 .subepoch{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
+    font-family: american-typewriter;
+}
+.subepoch > div{
+    font-family: american-typewriter;
 }
 .wftm {
     display: flex;

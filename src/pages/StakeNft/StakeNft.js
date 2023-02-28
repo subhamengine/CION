@@ -16,18 +16,18 @@ const StakeNft = () => {
     <>
       <div className="default-container page-layout main">
         <div className="stakeNftUpper">
-          <span className="header">Earn real profit with Mummy Club</span>
-          <span className="subhead">Earn $WFTM from platform's collected fees with your NFT</span>
+          <span className="header"> <h1>Earn real profit with Mummy Club</h1> </span>
+          <span className="subhead"> <h1 style={{ color: "#FFFFFF" }}>Earn $WFTM from platform's collected fees with your NFT</h1> </span>
           <img className="timeline" src={timeline} alt="" />
           <div className="boxes">
             <div className="box1">
               <div className="currentEpoch">
                 <div className="subepoch">
-                  <div>Current Epoh</div>
+                  Current epoh
                   <div>#9</div>
                 </div>
                 <div className="subepoch">
-                  <div>Stacked NFT</div>
+                  Stacked NFT
                   <div> 4753/5000</div>
                 </div>
                 <div className="subepoch">
@@ -40,7 +40,7 @@ const StakeNft = () => {
               </div>
               <div className="nextEpoch">
                 <div className="subepoch">
-                  <div>Next Epoh</div>
+                  <div>Next epoh</div>
                   <div>03d : 20h : 59m : 15s</div>
                 </div>
                 <div className="subepoch">
@@ -57,13 +57,13 @@ const StakeNft = () => {
               </div>
             </div>
             <div className="box2">
-              <div>Your staked power</div>
+              Your staked power
               <div className="dashDiv">
                 <div className="dash"></div>
                 <div className="dash"></div>
               </div>
               <div>
-                Est. your APR : <span style={{ color: "#55AD4D" }}>- - -%</span>{" "}
+                Est. your APR : <span style={{ color: "#55AD4D" }}> - - -%</span>{" "}
               </div>
             </div>
             <div className="box3">
