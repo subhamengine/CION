@@ -50,12 +50,34 @@ p {
   border-radius: 20px;
   overflow: hidden;
 }
-
+.imageBelow{
+  background: #1A2A0B;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -40px;
+  padding: 10px;
+  
+}
+.imageBelow > div{
+ width: 100%;
+align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.hero_img{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 30px;
+}
 .hero__content > .content {
   width: 52%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-left: 2rem;
   margin-bottom: 5rem;
   margin-right: 2rem;
@@ -284,7 +306,9 @@ p {
 
 
 /* reward  -------------------------*/
-
+.content{
+  gap: 10px;
+}
 .reward {
   display: flex;
   flex-direction: column;
@@ -459,4 +483,58 @@ p {
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
+}
+.NoOfNfts{
+  display: flex;
+  justify-content: space-between;
+}
+.ftm{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  background: #1A2A0B;
+  padding: 20px;
+  width: 35%;
+}
+.ftm2{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #87FF7C;
+    padding: 20px;
+    width: 60%;
+    color: black;
+    cursor: pointer;
+    font-family: american-typewriter !important;
+}
+.images{
+  width: 160% !important;
+  display: flex;
+  gap: 10px;
+}
+.bt{
+  display: flex;
+  justify-content: space-between;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.subBoxes{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: american-typewriter !important;
+  
+}
+.subBoxes > div > span{
+  display: flex;
+  gap: 5px;
+  font-family: american-typewriter !important;
+}
+.subBoxes > div{
+  font-family: american-typewriter !important;
 }

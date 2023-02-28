@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./NFT.css";
-
+import MintNft from "./MintNft";
 export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
   return (
     <div className="NFT">
       <div className="hero">
         <div className="bg_image"></div>
-        <div className="hero__content">
+        {/* <div className="hero__content">
           <div className="image">
             <img src="https://i.ibb.co/JC3K0dG/Front-Image.png" alt="hero" height={320} />
           </div>
@@ -19,7 +19,8 @@ export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
             </div>
             <div className="hero__content__button">Trade on Opensea</div>
           </div>
-        </div>
+        </div> */}
+        <MintNft />
       </div>
       <div className="treasury">
         <h1 className="treasury__header">Treasury</h1>
