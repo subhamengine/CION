@@ -25,9 +25,23 @@ export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
         <div className="treasury__header">Treasury</div>
         <div className="treasury__subtitle">Profits from Treasury yield will be distributed to all NFT holders</div>
         <div className="container">
-          <div className="total_stake">Total Staked</div>
-          <div className="compounding_rewards">Compounding Rewards</div>
-          <div className="pending_rewards">Pending Rewards</div>
+          <div className="total_stake">
+            <p>Total Staked</p>
+            <p className="total_stake__value">$1,081,229.89</p>
+          </div>
+          <div className="compounding_reward">
+            <p>Compounding Reward</p>
+            <p><span className="highlight">56.88</span> esCN</p>
+          </div>
+          <div className="pending_reward">
+            <p>Pending Reward</p>
+            <p><span className="highlight">241.30</span> esCN &nbsp;&nbsp;&nbsp;&nbsp; + <span className="highlight">3,216.51</span> FTM</p>
+          </div>
+
+          <div className="scale">
+            <div className="mark">0</div>
+            <div className="mark">auto</div>
+          </div>
         </div>
       </div>
       <div class="marquee-wrapper">
@@ -86,8 +100,10 @@ export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
             </div>
           </div>
         </div>
-        
+
         <div className="reward__description">
+          <div className="left__illustration"></div>
+          <div className="right__illustration"></div>
           <div className="reward__description__header">Start in seconds</div>
           <div className="reward__description__subtitle">
             Connect your crypto wallet to start using the app in seconds.
@@ -100,22 +116,22 @@ export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
         <div className="social">
           <Link>
             <a href="https://twitter.com/mummyfinance" target="_blank" rel="noreferrer">
-              <img src="https://i.ibb.co/GVvkHsT/Fill-29.png" alt="twitter" />
+              <img src="https://i.ibb.co/kQ0xF4j/Twitter.png" width={50} alt="twitter" />
             </a>
           </Link>
           <Link>
             <a href="https://twitter.com/mummyfinance" target="_blank" rel="noreferrer">
-              <img src="https://i.ibb.co/NCxCZw8/Telegram.png" alt="telegram" />
+              <img src="https://i.ibb.co/NCxCZw8/Telegram.png" width={50} alt="telegram" />
             </a>
           </Link>
           <Link>
             <a href="https://twitter.com/mummyfinance" target="_blank" rel="noreferrer">
-              <img src="https://i.ibb.co/GMr3g2P/Discord.png" alt="discord" />
+              <img src="https://i.ibb.co/GMr3g2P/Discord.png" width={50} alt="discord" />
             </a>
           </Link>
           <Link>
             <a href="https://twitter.com/mummyfinance" target="_blank" rel="noreferrer">
-              <img src="https://i.ibb.co/MSYT46C/Medium.png" alt="medium" />
+              <img src="https://i.ibb.co/MSYT46C/Medium.png" width={50} alt="medium" />
             </a>
           </Link>
         </div>

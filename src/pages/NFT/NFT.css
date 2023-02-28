@@ -23,7 +23,7 @@
 }
 
 .hero__content {
-  width: 800px;
+  width: 58%;
   display: flex;
   flex-direction: row;
   z-index: 2;
@@ -43,13 +43,14 @@
 }
 
 .hero__content > .content {
-  width: 450px;
+  width: 52%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 2rem;
   margin-bottom: 5rem;
   margin-right: 2rem;
+  padding-left: 5rem;
 }
 
 .hero__content__title {
@@ -116,23 +117,72 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: .5rem;
+  margin-top: 2rem;
 }
 
 .treasury > .container{
-  background-color: #8080803a;
+  background-color: #80808024;
   width: 80%;
+  height: 250px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  padding: 2rem 5rem;
+  align-items: space-between;
+  justify-content: space-between;
   margin-top: 3rem;
+  position: relative;
+}
+
+
+.total_stake{
+  width: 60%;
+}
+
+.total_stake__value{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.highlight{
+  color: #1AC43E;
+  font-weight: 600;
+}
+
+
+.compounding_reward{
+  text-align: center;
+}
+
+
+.scale{
+  /* background-color: #1AC43E; */
+  /* border-top: #1AC43E 1px solid; */
+  width: 92%;
+  height: .5px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #1ac43f97;
+}
+
+.scale:before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 1px;
+  width   : 98%;  /* or 100px */
+  margin-left: 5px;
+  border-bottom:1px solid #1ac43f97;
 }
 
 
 /* marquee ----------------------- */
 
 .marquee-wrapper {
+  margin-top: 8rem;
   overflow: hidden;
   display: inline-block;
 }
@@ -239,7 +289,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: .5rem;
+  margin-top: 2rem;
 }
 
 .reward > .reward__conatiner{
@@ -298,20 +348,17 @@
 
 
 
-
-
-
-
-
 .reward__description{
   background-color: #8080802c;
   width: 80%;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
   padding: 2.5rem 0;
+  position: relative;
 }
 
 .reward__description__header{
@@ -330,6 +377,57 @@
 }
 
 .reward__description__button{
-  margin-top: 20px;
-  color: #18AAB0;
+  margin-top: 40px;
+  background-color: #18B036;
+  padding: 8px;
+  font-weight: 600;
+}
+
+.reward__description > .left__illustration{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 250px;
+  width: 250px;
+  height: 100%;
+  z-index: -1;
+  background-image: url("https://i.ibb.co/xfWNy4g/Whats-App-Image-2023-02-25-at-9-43-45-AM.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.reward__description >.right__illustration{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-size: 250px;
+  width: 250px;
+  height: 100%;
+  z-index: -1;
+  background-image: url("https://i.ibb.co/9cN5hG7/Whats-App-Image-2023-02-25-at-9-43-44-AM.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+/* footer -------------------------- */
+
+.footer {
+  margin-top: 2rem;
+  color: #fff;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > .social{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
 }
