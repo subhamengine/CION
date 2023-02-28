@@ -8,12 +8,13 @@ import timeline from "../../img/timeline2.svg";
 import epohReward from "../../img/epohReward.svg";
 import { isHomeSite, getAccountUrl } from "lib/legacy";
 import startInSeconds from "../../img/startInSeconds.svg";
+import noNft from "../../img/noNft.svg";
 const StakeNft = () => {
   const [walletModalVisible, setWalletModalVisible] = useState(false);
   const showConnectionOptions = !isHomeSite();
   return (
     <>
-      <div className="default-container page-layout">
+      <div className="default-container page-layout main">
         <div className="stakeNftUpper">
           <span className="header">Earn real profit with Mummy Club</span>
           <span className="subhead">Earn $WFTM from platform's collected fees with your NFT</span>
@@ -82,16 +83,18 @@ const StakeNft = () => {
             </div>
           </div>
         </div>
-        <div className="stakeNftMid">Mid</div>
+        <div className="stakeNftMid">
+          <img src={noNft} alt="" />
+        </div>
         <div className="stakeNftDown">
           <img src={startInSeconds} alt="" />
-          <ConnectWalletButton
+          {/* <ConnectWalletButton
             className="connectWalletButton"
             onClick={() => setWalletModalVisible(true)}
             imgSrc={connectWalletImg}
           >
             <Trans>Connect Wallet</Trans>
-          </ConnectWalletButton>
+          </ConnectWalletButton> */}
         </div>
         <Footer />
       </div>

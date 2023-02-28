@@ -234,6 +234,10 @@ msgstr "Сумма к оплате"
 msgid "An aggregate of high-quality price feeds determine when liquidations occur. This keeps positions safe from temporary wicks."
 msgstr "Совокупность высококачественных ценовых сигналов определяет, когда происходит ликвидация. Это позволяет обезопасить позиции от временных колебаний."
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Analytics"
+msgstr ""
+
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Announcement"
 msgstr "Объявление"
@@ -394,6 +398,10 @@ msgstr ""
 msgid "Buy CN"
 msgstr ""
 
+#: src/pages/Buy/Buy.js
+msgid "Buy CN or CLP"
+msgstr ""
+
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy ETH directly to Arbitrum or transfer it there."
 msgstr ""
@@ -428,10 +436,6 @@ msgstr ""
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy GMX on {0}"
 msgstr ""
-
-#: src/pages/Buy/Buy.js
-msgid "Buy GMX or GLP"
-msgstr "Купить GMX или GLP"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy GMX using Decentralized Exchange Aggregators:"
@@ -774,6 +778,7 @@ msgstr "Подключение"
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
+#: src/pages/StakeNft/StakeNft.js
 msgid "Connect Wallet"
 msgstr "Подключить Кошелек"
 
@@ -1042,7 +1047,6 @@ msgstr "Отображение PnL после комиссии"
 msgid "Distribution"
 msgstr "Распределение"
 
-#: src/components/Header/AppHeaderLinks.tsx
 #: src/components/Header/HomeHeaderLinks.tsx
 msgid "Docs"
 msgstr "Документация"
@@ -1059,10 +1063,6 @@ msgstr "Загрузить"
 #: src/pages/Stake/StakeV2.js
 msgid "Earn"
 msgstr "Зарабатывать"
-
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Ecosystem"
-msgstr "Экосистема"
 
 #: src/pages/Home/Home.js
 msgid "Ecosystem tokens"
@@ -2020,6 +2020,10 @@ msgstr "Мин. Приём"
 msgid "Minimum received"
 msgstr "Минимум получен"
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "More"
+msgstr ""
+
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "More Info"
@@ -2036,6 +2040,10 @@ msgstr "Множители баллов"
 #: src/pages/Stake/StakeV2.js
 msgid "Multiplier Points APR"
 msgstr "Множитель баллов APR"
+
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "NFT"
+msgstr ""
 
 #: src/pages/NftWallet/NftWallet.js
 msgid "NFT Address"
@@ -2529,6 +2537,10 @@ msgstr "Снизить Риски Ликвидации"
 msgid "Reducing the position at the current price will forfeit a <0>pending profit</0> of {deltaStr}. <1/>"
 msgstr "Сокращение позиции по текущей цене приведет к потере <0>отложенной прибыли</0> в размере {deltaStr}. <1/>"
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Referals"
+msgstr ""
+
 #: src/components/Referrals/AffiliatesStats.js
 msgid "Referral Code"
 msgstr "Реферальный Код"
@@ -2568,10 +2580,6 @@ msgstr "Обновление реферального кода не прошло
 #: src/components/Referrals/JoinReferralCode.js
 msgid "Referral code updated!"
 msgstr "Реферальный код обновлен!"
-
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Referrals"
-msgstr "Рефералы"
 
 #: src/pages/Referrals/Referrals.js
 msgid "Referrals <0/>"
@@ -3516,6 +3524,10 @@ msgstr "Полезные Ссылки"
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Utilization"
 msgstr "Утилизация"
+
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Vault"
+msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 msgid "Vault Capacity"

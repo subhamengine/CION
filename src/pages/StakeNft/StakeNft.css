@@ -16,6 +16,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 .header{
     font-size: 40px;
@@ -28,7 +29,6 @@
     width: 600px;
 }
 .boxes{
-    background-color: red;
     width: 100%;
     height: 170px;
     display: flex;
@@ -39,11 +39,11 @@
 .box1{
     width: 40%;
     height: 100%;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-image: linear-gradient(to bottom right, #2c4315,#132b3a, #1f0e0c);
 }
 .box2{
     width: 25%;
@@ -53,11 +53,13 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    background-image: linear-gradient(to top right, #162109, #324215);
+    
 }
 .box3{
     width: 25%;
     height: 100%;
-    background-color: blue;
+    background-image: linear-gradient(to top right, #162109, #324215);
     display: flex;
         align-items: center;
         flex-direction: column;
@@ -106,15 +108,20 @@
     height: 100%;
     background-color: aliceblue;
 }
-.stakeNftDown{
+.stakeNftDown,.stakeNftMid{
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
+.stakeNftMid{
+    width: 120%;
+    margin-top: 30px;
+}
 .stakeNftDown > img{
     width: 100%;
 }
-.stakeNftDown{
-   
+.main{
+   align-items: center;
+   gap: 50px;
 }

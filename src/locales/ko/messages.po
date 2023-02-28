@@ -234,6 +234,10 @@ msgstr "수령할 양"
 msgid "An aggregate of high-quality price feeds determine when liquidations occur. This keeps positions safe from temporary wicks."
 msgstr "고품질의 여러 가격 피드를 통해 청산 발생 시기를 결정합니다. 이것은 일시적인 가격 변화로부터 포지션을 안전하게 유지합니다."
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Analytics"
+msgstr ""
+
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Announcement"
 msgstr "공지"
@@ -394,6 +398,10 @@ msgstr ""
 msgid "Buy CN"
 msgstr ""
 
+#: src/pages/Buy/Buy.js
+msgid "Buy CN or CLP"
+msgstr ""
+
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy ETH directly to Arbitrum or transfer it there."
 msgstr ""
@@ -428,10 +436,6 @@ msgstr ""
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy GMX on {0}"
 msgstr ""
-
-#: src/pages/Buy/Buy.js
-msgid "Buy GMX or GLP"
-msgstr "GMX 혹은 GLP 구매"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy GMX using Decentralized Exchange Aggregators:"
@@ -774,6 +778,7 @@ msgstr "연동"
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
+#: src/pages/StakeNft/StakeNft.js
 msgid "Connect Wallet"
 msgstr "지갑 연동"
 
@@ -1042,7 +1047,6 @@ msgstr "수수료포함 손익 표시"
 msgid "Distribution"
 msgstr "배분"
 
-#: src/components/Header/AppHeaderLinks.tsx
 #: src/components/Header/HomeHeaderLinks.tsx
 msgid "Docs"
 msgstr ""
@@ -1059,10 +1063,6 @@ msgstr "다운로드"
 #: src/pages/Stake/StakeV2.js
 msgid "Earn"
 msgstr "보상"
-
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Ecosystem"
-msgstr "이코시스템"
 
 #: src/pages/Home/Home.js
 msgid "Ecosystem tokens"
@@ -2020,6 +2020,10 @@ msgstr "최소 수취량"
 msgid "Minimum received"
 msgstr "최소량 수치 완료"
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "More"
+msgstr ""
+
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "More Info"
@@ -2036,6 +2040,10 @@ msgstr "멀티플라이어 포인트"
 #: src/pages/Stake/StakeV2.js
 msgid "Multiplier Points APR"
 msgstr "멀티플라이어 포인트 APR"
+
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "NFT"
+msgstr ""
 
 #: src/pages/NftWallet/NftWallet.js
 msgid "NFT Address"
@@ -2529,6 +2537,10 @@ msgstr "청산 위험 감소하기"
 msgid "Reducing the position at the current price will forfeit a <0>pending profit</0> of {deltaStr}. <1/>"
 msgstr "현재 가격에서 포지션을 줄이게되면 {deltaStr}의 <0>미확정손익</0>을 상실합니다."
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Referals"
+msgstr ""
+
 #: src/components/Referrals/AffiliatesStats.js
 msgid "Referral Code"
 msgstr "추천인 코드"
@@ -2568,10 +2580,6 @@ msgstr "추천인 코드 업데이트 실패."
 #: src/components/Referrals/JoinReferralCode.js
 msgid "Referral code updated!"
 msgstr "추천인 코드 업데이트 완료!"
-
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Referrals"
-msgstr "추천"
 
 #: src/pages/Referrals/Referrals.js
 msgid "Referrals <0/>"
@@ -3516,6 +3524,10 @@ msgstr "유용한 링크"
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Utilization"
 msgstr "이용률"
+
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Vault"
+msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 msgid "Vault Capacity"

@@ -234,6 +234,10 @@ msgstr ""
 msgid "An aggregate of high-quality price feeds determine when liquidations occur. This keeps positions safe from temporary wicks."
 msgstr ""
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Analytics"
+msgstr ""
+
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Announcement"
 msgstr ""
@@ -394,6 +398,10 @@ msgstr ""
 msgid "Buy CN"
 msgstr ""
 
+#: src/pages/Buy/Buy.js
+msgid "Buy CN or CLP"
+msgstr ""
+
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy ETH directly to Arbitrum or transfer it there."
 msgstr ""
@@ -427,10 +435,6 @@ msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy GMX on {0}"
-msgstr ""
-
-#: src/pages/Buy/Buy.js
-msgid "Buy GMX or GLP"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
@@ -774,6 +778,7 @@ msgstr ""
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
+#: src/pages/StakeNft/StakeNft.js
 msgid "Connect Wallet"
 msgstr ""
 
@@ -1042,7 +1047,6 @@ msgstr ""
 msgid "Distribution"
 msgstr ""
 
-#: src/components/Header/AppHeaderLinks.tsx
 #: src/components/Header/HomeHeaderLinks.tsx
 msgid "Docs"
 msgstr ""
@@ -1058,10 +1062,6 @@ msgstr ""
 #: src/components/Header/AppHeaderLinks.tsx
 #: src/pages/Stake/StakeV2.js
 msgid "Earn"
-msgstr ""
-
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Ecosystem"
 msgstr ""
 
 #: src/pages/Home/Home.js
@@ -2017,6 +2017,10 @@ msgstr ""
 msgid "Minimum received"
 msgstr ""
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "More"
+msgstr ""
+
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "More Info"
@@ -2032,6 +2036,10 @@ msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 msgid "Multiplier Points APR"
+msgstr ""
+
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "NFT"
 msgstr ""
 
 #: src/pages/NftWallet/NftWallet.js
@@ -2526,6 +2534,10 @@ msgstr ""
 msgid "Reducing the position at the current price will forfeit a <0>pending profit</0> of {deltaStr}. <1/>"
 msgstr ""
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Referals"
+msgstr ""
+
 #: src/components/Referrals/AffiliatesStats.js
 msgid "Referral Code"
 msgstr ""
@@ -2564,10 +2576,6 @@ msgstr ""
 
 #: src/components/Referrals/JoinReferralCode.js
 msgid "Referral code updated!"
-msgstr ""
-
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Referrals"
 msgstr ""
 
 #: src/pages/Referrals/Referrals.js
@@ -3512,6 +3520,10 @@ msgstr ""
 #: src/pages/Dashboard/DashboardV1.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Utilization"
+msgstr ""
+
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Vault"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
