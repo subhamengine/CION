@@ -352,6 +352,7 @@ h1 {
 .reward__options__item__button{
   margin-top: 20px;
   color: #18AAB0;
+  cursor: pointer;
 }
 
 .reward__options__item__header{
@@ -393,6 +394,8 @@ h1 {
   background-color: #18B036;
   padding: 8px;
   font-weight: 600;
+  font-family: minecraft;
+  cursor: pointer;
 }
 
 .reward__description > .left__illustration{
