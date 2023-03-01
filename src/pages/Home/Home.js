@@ -25,6 +25,7 @@ import { HeaderLink } from "components/Header/HeaderLink";
 import { ARBITRUM, AVALANCHE } from "config/chains";
 import { getServerUrl } from "config/backend";
 import { bigNumberify, formatAmount, numberWithCommas } from "lib/numbers";
+import MatrixBackground from "./Matrix";
 
 export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
   // const [openedFAQIndex, setOpenedFAQIndex] = useState(null)
@@ -140,6 +141,7 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
     <div className="Home">
       <div className="Home-top">
         {/* <div className="Home-top-image"></div> */}
+        <MatrixBackground timeout={50} />
         <div className="Home-title-section-container default-container">
           <div className="Home-title-section">
             <div className="Home-title">
