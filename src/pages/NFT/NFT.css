@@ -1,11 +1,12 @@
-
 h1 {
-  color: #2FE0C3;
+  color: #2fe0c3;
   font-family: minecraft;
   margin: 0;
 }
 p {
   font-family: american-typewriter;
+  font-size: medium;
+  font-weight: bold;
 }
 
 .NFT {
@@ -20,7 +21,8 @@ p {
   justify-content: center;
 
   height: 400px;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://i.ibb.co/kqXKfC3/Background-Slideshow-1-1-1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://i.ibb.co/kqXKfC3/Background-Slideshow-1-1-1.png");
   background-position: initial;
   background-repeat: repeat;
   animation: marquee_hero 30s infinite linear;
@@ -50,24 +52,22 @@ p {
   border-radius: 20px;
   overflow: hidden;
 }
-.imageBelow{
-  background: #1A2A0B;
-  display:flex;
+.imageBelow {
+  background: #1a2a0b;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin-top: -40px;
   padding: 10px;
-  
 }
-.imageBelow > div{
- width: 100%;
-align-items: flex-start;
+.imageBelow > div {
+  width: 100%;
+  align-items: flex-start;
   display: flex;
   justify-content: space-between;
-  
 }
-.hero_img{
+.hero_img {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -109,7 +109,7 @@ align-items: flex-start;
   justify-content: center;
   font-weight: 600;
   cursor: pointer;
-  font-family: american-typewriter
+  font-family: american-typewriter;
 }
 
 .hero__content__button:hover {
@@ -126,8 +126,6 @@ align-items: flex-start;
   }
 }
 
-
-
 /* treasury --------------------- */
 
 .treasury {
@@ -136,7 +134,7 @@ align-items: flex-start;
   align-items: center;
   justify-content: center;
   margin-top: 8rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .treasury__header {
@@ -145,7 +143,7 @@ align-items: flex-start;
   text-shadow: 0 0 10px #000;
 }
 
-.treasury__subtitle{
+.treasury__subtitle {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -154,7 +152,7 @@ align-items: flex-start;
   font-family: american-typewriter;
 }
 
-.treasury > .container{
+.treasury > .container {
   background-color: #80808024;
   width: 80%;
   height: 250px;
@@ -167,33 +165,30 @@ align-items: flex-start;
   position: relative;
 }
 
-
-.total_stake{
+.total_stake {
   width: 60%;
 }
 
-.total_stake__value{
+.total_stake__value {
   font-family: american-typewriter;
   font-size: 2.5rem;
   font-weight: 500;
 }
 
-.highlight{
-  color: #1AC43E;
+.highlight {
+  color: #1ac43e;
   font-weight: 600;
 }
 
-
-.compounding_reward{
+.compounding_reward {
   text-align: center;
 }
 
-
-.scale{
+.scale {
   /* background-color: #1AC43E; */
   /* border-top: #1AC43E 1px solid; */
   width: 92%;
-  height: .5px;
+  height: 0.5px;
   position: absolute;
   bottom: 25px;
   display: flex;
@@ -203,17 +198,17 @@ align-items: flex-start;
 }
 
 .scale:before {
-  content : "";
+  content: "";
   position: absolute;
-  left    : 0;
-  bottom  : 0;
-  height  : 1px;
-  width   : 98%;  /* or 100px */
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 98%; /* or 100px */
   margin-left: 5px;
-  border-bottom:1px solid #1ac43f97;
+  border-bottom: 1px solid #1ac43f97;
 }
 
-.scale > .mark{
+.scale > .mark {
   font-size: 12px;
 }
 
@@ -304,9 +299,8 @@ align-items: flex-start;
   }
 }
 
-
 /* reward  -------------------------*/
-.content{
+.content {
   gap: 10px;
 }
 .reward {
@@ -323,7 +317,7 @@ align-items: flex-start;
   text-shadow: 0 0 10px #000;
 }
 
-.reward__subtitle{
+.reward__subtitle {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -332,7 +326,7 @@ align-items: flex-start;
   font-family: american-typewriter;
 }
 
-.reward > .reward__conatiner{
+.reward > .reward__conatiner {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -342,7 +336,7 @@ align-items: flex-start;
   gap: 2rem;
 }
 
-.reward__options__item{
+.reward__options__item {
   background-color: #8080802c;
   display: flex;
   flex-direction: row;
@@ -352,14 +346,14 @@ align-items: flex-start;
   width: 33%;
   min-height: 230px;
 }
-.reward__options__item__title{
+.reward__options__item__title {
   font-size: 3.5rem;
   margin-top: 5px;
   font-weight: 400;
-  color: #18B036;
+  color: #18b036;
 }
 
-.reward__options__item__container{
+.reward__options__item__container {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -369,35 +363,32 @@ align-items: flex-start;
   position: relative;
 }
 
-.reward__options__item__header{
+.reward__options__item__header {
   font-size: 2rem;
   font-weight: 400;
-  color: #18B036;
+  color: #18b036;
   text-shadow: 0 0 15px #000;
   font-family: american-typewriter;
   font-weight: 500;
 }
-.reward__options__item__description{
+.reward__options__item__description {
   font-family: american-typewriter;
 }
 
-.reward__options__item__button{
+.reward__options__item__button {
   font-family: american-typewriter;
   margin-top: 20px;
-  color: #18AAB0;
+  color: #18aab0;
   cursor: pointer;
   width: fit-content;
   border-bottom: #18abb0b8 0.5px solid;
 }
 
-.reward__options__item__header{
+.reward__options__item__header {
   margin-bottom: 8px;
 }
 
-
-
-
-.reward__description{
+.reward__description {
   background-color: #8080802c;
   width: 80%;
   height: 250px;
@@ -410,31 +401,31 @@ align-items: flex-start;
   position: relative;
 }
 
-.reward__description__header{
+.reward__description__header {
   font-size: 4rem;
   font-weight: 400;
   text-shadow: 0 0 10px #000;
 }
 
-.reward__description__subtitle{
+.reward__description__subtitle {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   font-family: american-typewriter;
 }
 
-.reward__description__button{
+.reward__description__button {
   margin-top: 40px;
-  background-color: #18B036;
+  background-color: #18b036;
   padding: 8px;
   font-weight: 600;
   font-family: minecraft;
   cursor: pointer;
 }
 
-.reward__description > .left__illustration{
+.reward__description > .left__illustration {
   position: absolute;
   top: 0;
   left: 0;
@@ -448,7 +439,7 @@ align-items: flex-start;
   overflow: hidden;
 }
 
-.reward__description >.right__illustration{
+.reward__description > .right__illustration {
   position: absolute;
   top: 0;
   right: 0;
@@ -462,7 +453,6 @@ align-items: flex-start;
   overflow: hidden;
 }
 
-
 /* footer -------------------------- */
 
 .footer {
@@ -472,69 +462,69 @@ align-items: flex-start;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;}
-  .footer h3  {
+  justify-content: center;
+}
+.footer h3 {
   font-family: american-typewriter;
 }
 
-.footer > .social{
+.footer > .social {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
 }
-.NoOfNfts{
+.NoOfNfts {
   display: flex;
   justify-content: space-between;
 }
-.ftm{
+.ftm {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 5px;
-  background: #1A2A0B;
+  background: #1a2a0b;
   padding: 20px;
   width: 35%;
 }
-.ftm2{
+.ftm2 {
   display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: #87FF7C;
-    padding: 20px;
-    width: 60%;
-    color: black;
-    cursor: pointer;
-    font-family: american-typewriter !important;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #87ff7c;
+  padding: 20px;
+  width: 60%;
+  color: black;
+  cursor: pointer;
+  font-family: american-typewriter !important;
 }
-.images{
+.images {
   width: 160% !important;
   display: flex;
   gap: 10px;
 }
-.bt{
+.bt {
   display: flex;
   justify-content: space-between;
 }
-.box{
+.box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.subBoxes{
+.subBoxes {
   display: flex;
   flex-direction: column;
   gap: 30px;
   font-family: american-typewriter !important;
-  
 }
-.subBoxes > div > span{
+.subBoxes > div > span {
   display: flex;
   gap: 5px;
   font-family: american-typewriter !important;
 }
-.subBoxes > div{
+.subBoxes > div {
   font-family: american-typewriter !important;
 }

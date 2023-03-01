@@ -80,7 +80,7 @@
   line-height: 1.8rem;
   font-weight: normal;
   letter-spacing: 0.1px;
-  color: #a0a3c4;
+  color: #ffffff;
   padding: 1.5rem 1.6rem;
   text-decoration: none;
   display: block;
@@ -157,7 +157,7 @@
   position: relative;
   border: 1px solid #1e2136;
   border-radius: 0.4rem;
-  background: #18250C;
+  background: #18250c;
   font-size: var(--font-base);
 }
 
@@ -180,7 +180,7 @@
 }
 
 .App-card-long {
-  background: #18250C;
+  background: #18250c;
   margin-bottom: 2.4rem;
 }
 
@@ -214,7 +214,7 @@
   line-height: 1.5rem;
   font-weight: normal;
   letter-spacing: 0px;
-  color: #a0a3c4;
+  color: #ffffff;
 }
 
 .App-card-long-sub-left {
@@ -246,7 +246,7 @@
 .App-card-divider-vertical {
   width: 1px;
   height: 8.8rem;
-  background: #a0a3c4;
+  background: #ffffff;
 }
 
 .App-card-long_sub:first-child {
@@ -255,7 +255,7 @@
 }
 
 .App-card-long_sub__title {
-  color: #a0a3c4;
+  color: #ffffff;
   font-size: var(--font-sm);
   line-height: 1.8rem;
   font-weight: normal;
@@ -462,7 +462,7 @@ button.App-connect-wallet:hover {
   font-size: 1.8rem;
   line-height: 2.3rem;
   letter-spacing: 0px;
-  color: #a0a3c4;
+  color: #ffffff;
   margin-top: 0.4rem;
   max-width: 62rem;
 }
@@ -604,7 +604,7 @@ button.App-connect-wallet:hover {
 
 .App-header-link-main img {
   display: inline-block;
-  height: 2.15rem;
+  height: 3rem;
   vertical-align: middle;
 }
 
@@ -635,9 +635,10 @@ button.App-connect-wallet:hover {
 
 .App-header-container-left .a,
 .App-header-container-left a {
+  font-family: "american typewriter";
   padding: 1.8rem 1.7rem;
   display: block;
-  color: #a0a3c4;
+  color: #ffffff;
   font-size: var(--font-base);
   line-height: 1.8rem;
   font-weight: normal;
@@ -791,7 +792,7 @@ a.App-cta,
 button.App-cta {
   color: white;
   text-decoration: none;
-  background: #18250C;
+  background: #18250c;
   &:hover:enabled {
     background: rgba(10, 22, 0);
   }
@@ -843,7 +844,7 @@ button.App-button-option {
   display: inline-flex !important;
   align-items: center;
   border: none;
-  background: #55AD4D;
+  background: #55ad4d;
 }
 
 a.App-button-option:hover,
@@ -1108,11 +1109,11 @@ button.App-button {
 }
 
 .App-slider .rc-slider-rail {
-  background: #0A1600;
+  background: #0a1600;
 }
 
 .App-slider .rc-slider-track {
-  background: #0A1600;
+  background: #0a1600;
 }
 
 .App-slider .rc-slider-dot {
@@ -1120,16 +1121,16 @@ button.App-button {
   border-radius: 1px;
   width: 2px;
   margin-left: -1px;
-  background: #0A1600;
+  background: #0a1600;
 }
 
 .App-slider .rc-slider-dot-active {
-  background: #18250C;
+  background: #18250c;
 }
 
 .App-slider .rc-slider-handle {
-  background: #0A1600;
-  border: solid 2px #60CE84;
+  background: #0a1600;
+  border: solid 2px #60ce84;
 }
 
 .App-slider .rc-slider-handle:active {
