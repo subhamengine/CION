@@ -1,6 +1,170 @@
+h3{
+    margin:0 ;
+    font-family: minecraft;
+}
+
+.cn-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left-nav{
+margin-bottom: 2rem;
+}
+
+.left-nav > div{
+    padding: 1rem 2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.left-nav > .active{
+    background-color: #18B036;
+    color: #06210b;
+}
+
 .Page-title{
     display: flex;
     gap: 20px;
     justify-content: space-between;
     font-size: 18px;
 }
+
+.container-layout{
+  
+  margin: auto 0 0 5%;
+}
+.container-layout > .container{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.container-layout > .container > .left{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-nav{
+    display: flex;
+    flex-direction: row;
+    width:fit-content ;
+}
+
+.left > .top{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin-bottom: 4%;
+}
+
+.left > .top > div{
+   background-color: #8080802c;
+   padding: 2rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding-right: 5%;
+}
+
+.left > .top > .first{
+    width: 60%;
+}
+
+.left > .top > .second{
+    width: 38%;
+}
+
+.left > .mid{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #8080802c;
+    padding: 2rem;
+}
+
+.left > .bottom{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #8080802c;
+    padding: 2rem;
+}
+
+.top > div{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.right__top > .navigation{
+    background-color: #06210b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right__top > .navigation > div{
+    text-align: center;
+    width: 50%;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.right__top > .navigation > .active{
+    background-color: #18B036;
+}
+
+.enter_amt{
+    background-color: #18B036;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.enter_amt > div{
+  background-color: #0c6b1f;
+  padding: .5rem 1rem;
+}
+
+.connect_wallet_button{
+    padding: 1rem;
+    text-align: center;
+    background-color: #18B036;
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 26%;
+}
+
+.right > div{
+    background-color: #8080802c;
+    padding: 2rem;
+}
+
+
+.right__bottom__first{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.right__bottom__second{
+}
+
+/* 
+
+
+
+ */
