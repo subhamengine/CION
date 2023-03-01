@@ -124,7 +124,7 @@ const Vault = () => {
                   <p>Performance fee</p>
                   <p>4%</p>
                 </div>
-                <div>
+                <div className="right__bottom__third">
                   Performance fee is already subtracted from the displayed APY.
                 </div>
               </div>

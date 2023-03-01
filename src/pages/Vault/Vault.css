@@ -163,8 +163,28 @@ margin-bottom: 2rem;
 .right__bottom__second{
 }
 
-/* 
+.right__bottom__first{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 5rem;
+}
 
 
+.right__bottom__first > div > p{
+    margin: .5rem 0;
+ }
 
- */
+ .right__bottom__second {
+    margin-top: 2rem;
+ }
+
+ .right__bottom__second > p{
+    margin: .5rem 0;
+
+ }
+
+ .right__bottom__third{
+    margin-top: 2rem;
+ }
