@@ -10,6 +10,7 @@ h1 {
 } */
 
 .NFT {
+  width: 100%;
   margin: 0;
   padding-top: 3.1rem;
 }
@@ -25,10 +26,7 @@ h1 {
   background-repeat: repeat;
   animation: marquee_hero 30s infinite linear;
   background-size: 1200px;
-
-  width: 100vw;
   z-index: 1;
-
   margin: 3rem 0;
 }
 
@@ -286,7 +284,6 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-top: 8rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .treasury__header {
@@ -309,7 +306,6 @@ h1 {
   width: 80%;
   height: 250px;
   display: flex;
-  flex-direction: row;
   padding: 12px 24px 0px;
   align-items: space-between;
   justify-content: space-between;
@@ -392,7 +388,7 @@ h1 {
 .marquee-wrapper {
   margin-top: 8rem;
   overflow: hidden;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .marquee {
@@ -475,9 +471,9 @@ h1 {
 }
 
 /* reward  -------------------------*/
-.content {
+/* .content {
   gap: 10px;
-}
+} */
 .reward {
   display: flex;
   flex-direction: column;
@@ -503,9 +499,8 @@ h1 {
 }
 
 .reward > .reward__conatiner {
-  width: 80%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 3rem;

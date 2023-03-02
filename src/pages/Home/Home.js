@@ -139,54 +139,59 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
 
   return (
     <div className="Home">
-      <div className="Home-top">
-        {/* <div className="Home-top-image"></div> */}
-        <MatrixBackground timeout={50} />
-        <div className="Home-title-section-container default-container">
-          <div className="Home-title-section">
-            <div className="Home-title">
-              <h1 style={{ color: "#00B265" }}>
-                DECENTRALISED
-                <br />
-                <span>
-                  <h1 style={{ color: "#FFFFFF", textShadow: "4px 0px #00B265" }}>Perpetual Exchange</h1>{" "}
-                </span>
-              </h1>
-            </div>
-            <div className="Home-description">
-              <Trans>
-                Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x leverage directly from your wallet
-              </Trans>
-            </div>
-            <LaunchExchangeButton />
-          </div>
-        </div>
-        <div className="Home-latest-info-container default-container">
-          <div className="Home-latest-info-block">
-            <img src={tradingIcon} alt="Total Trading Volume Icon" className="Home-latest-info__icon" />
-            <div className="Home-latest-info-content">
-              <div className="Home-latest-info__title">
-                <Trans>Total Trading Volume</Trans>
+      <div className="Home-top-top">
+        <div className="Home-top">
+          {/* <div className="Home-top-image"></div> */}
+          <MatrixBackground timeout={50} />
+          <div className="Home-title-section-container default-container">
+            <div className="Home-title-section">
+              <div className="Home-title">
+                <h1 style={{ color: "#00B265" }}>
+                  DECENTRALISED
+                  <br />
+                  <span>
+                    <h1 style={{ color: "#FFFFFF", textShadow: "4px 0px #00B265" }}>Perpetual Exchange</h1>{" "}
+                  </span>
+                </h1>
               </div>
-              <div className="Home-latest-info__value">${formatAmount(totalVolumeSum, USD_DECIMALS, 0, true)}</div>
+              <div className="Home-description">
+                <Trans>
+                  Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x leverage directly from your wallet
+                </Trans>
+              </div>
+              <LaunchExchangeButton />
             </div>
           </div>
-          <div className="Home-latest-info-block">
-            <img src={statsIcon} alt="Open Interest Icon" className="Home-latest-info__icon" />
-            <div className="Home-latest-info-content">
-              <div className="Home-latest-info__title">
-                <Trans>Open Interest</Trans>
+          <div className="Home-latest-info-container default-container">
+            <div className="Home-latest-info-block">
+              <img src={tradingIcon} alt="Total Trading Volume Icon" className="Home-latest-info__icon" />
+              <div className="Home-latest-info-content">
+                <div className="Home-latest-info__title">
+                  <Trans>Total Trading Volume</Trans>
+                </div>
+                {/* <div className="Home-latest-info__value">${formatAmount(totalVolumeSum, USD_DECIMALS, 0, true)}</div> */}
+                <div className="Home-latest-info__value">--</div>
               </div>
-              <div className="Home-latest-info__value">${formatAmount(openInterest, USD_DECIMALS, 0, true)}</div>
             </div>
-          </div>
-          <div className="Home-latest-info-block">
-            <img src={totaluserIcon} alt="Total Users Icon" className="Home-latest-info__icon" />
-            <div className="Home-latest-info-content">
-              <div className="Home-latest-info__title">
-                <Trans>Total Users</Trans>
+            <div className="Home-latest-info-block">
+              <img src={statsIcon} alt="Open Interest Icon" className="Home-latest-info__icon" />
+              <div className="Home-latest-info-content">
+                <div className="Home-latest-info__title">
+                  <Trans>Open Interest</Trans>
+                </div>
+                {/* <div className="Home-latest-info__value">${formatAmount(openInterest, USD_DECIMALS, 0, true)}</div> */}
+                <div className="Home-latest-info__value">--</div>
               </div>
-              <div className="Home-latest-info__value">{numberWithCommas(totalUsers.toFixed(0))}</div>
+            </div>
+            <div className="Home-latest-info-block">
+              <img src={totaluserIcon} alt="Total Users Icon" className="Home-latest-info__icon" />
+              <div className="Home-latest-info-content">
+                <div className="Home-latest-info__title">
+                  <Trans>Total Users</Trans>
+                </div>
+                {/* <div className="Home-latest-info__value">{numberWithCommas(totalUsers.toFixed(0))}</div> */}
+                <div className="Home-latest-info__value">--</div>
+              </div>
             </div>
           </div>
         </div>

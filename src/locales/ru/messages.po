@@ -778,7 +778,6 @@ msgstr "Подключение"
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-#: src/pages/StakeNft/StakeNft.js
 msgid "Connect Wallet"
 msgstr "Подключить Кошелек"
 
@@ -2016,10 +2015,6 @@ msgstr "Мин. Приём"
 msgid "Minimum received"
 msgstr "Минимум получен"
 
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "More"
-msgstr ""
-
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "More Info"
@@ -2730,7 +2725,6 @@ msgid "Sender has withdrawn all tokens from GMX Vesting Vault"
 msgstr "Отправитель вывел все токены из Хранилища GMX Vault"
 
 #: src/App/App.js
-#: src/components/Header/AppHeaderLinks.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 msgid "Settings"
@@ -2850,6 +2844,10 @@ msgstr "Вознаграждения Стакинг GMX"
 #: src/pages/Stake/StakeV2.js
 msgid "Stake Multiplier Points"
 msgstr "Стакинг Множителя Баллов"
+
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Stake NFT"
+msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 msgid "Stake esGMX"

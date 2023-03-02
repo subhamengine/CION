@@ -778,7 +778,6 @@ msgstr "连接"
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-#: src/pages/StakeNft/StakeNft.js
 msgid "Connect Wallet"
 msgstr "连接钱包"
 
@@ -2016,10 +2015,6 @@ msgstr "最低接收"
 msgid "Minimum received"
 msgstr "最低已接收"
 
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "More"
-msgstr ""
-
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "More Info"
@@ -2730,7 +2725,6 @@ msgid "Sender has withdrawn all tokens from GMX Vesting Vault"
 msgstr "发送者已从GMX授权金库中撤回所有代币"
 
 #: src/App/App.js
-#: src/components/Header/AppHeaderLinks.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 msgid "Settings"
@@ -2850,6 +2844,10 @@ msgstr "质押GMX奖励"
 #: src/pages/Stake/StakeV2.js
 msgid "Stake Multiplier Points"
 msgstr "质押倍数点"
+
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Stake NFT"
+msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 msgid "Stake esGMX"

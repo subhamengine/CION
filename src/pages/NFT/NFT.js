@@ -7,7 +7,7 @@ import Footer from "components/Footer/Footer";
 
 export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
   return (
-    <>
+    <div className="main page-layout">
       <div className="NFT">
         <div className="hero">
           {/* <div className="hero__content">
@@ -122,19 +122,19 @@ export default function NFT({ savedIsPnlInLeverage, savedShowPnlAfterFees }) {
             </div>
           </div>
         </div>
-        <div>
-          <div className="reward__description">
-            <div className="left__illustration"></div>
-            <div className="right__illustration"></div>
-            <h1 className="reward__description__header">Start in seconds</h1>
-            <div className="reward__description__subtitle">
-              Connect your crypto wallet to start using the app in seconds.
-            </div>
-            <div className="reward__description__button">Learn how to start</div>
+      </div>
+      <div className="reward">
+        <div className="reward__description">
+          <div className="left__illustration"></div>
+          <div className="right__illustration"></div>
+          <h1 className="reward__description__header">Start in seconds</h1>
+          <div className="reward__description__subtitle">
+            Connect your crypto wallet to start using the app in seconds.
           </div>
+          <div className="reward__description__button">Learn how to start</div>
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

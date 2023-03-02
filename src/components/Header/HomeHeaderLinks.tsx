@@ -20,15 +20,15 @@ const HOME_MENUS: HomeLink[] = [
   {
     label: t`App`,
     isHomeLink: true,
-    link: "/trade",
+    link: "",
   },
   {
     label: t`Protocol`,
-    link: "https://github.com/gmx-io",
+    link: "",
   },
   {
     label: t`Governance`,
-    link: "https://gov.gmx.io/",
+    link: "",
   },
   // {
   //   label: t`Voting`,
@@ -36,7 +36,7 @@ const HOME_MENUS: HomeLink[] = [
   // },
   {
     label: t`Docs`,
-    link: "https://gmxio.gitbook.io/gmx/",
+    link: "",
   },
 ];
 

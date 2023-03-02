@@ -27,11 +27,15 @@
   padding-top: 6.2rem;
   position: relative;
   /* height: 52.581rem; */
-  padding-bottom: 6.4rem;
-  background: url("img/hero.svg");
+  /* padding-bottom: 6.4rem; */
+  background-image: url("img/hero.svg");
+  background-color: linear-gradient(to top left, #00251d, #050f10);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+}
+.Home-top > div > .canvas {
+  width: 100vw !important;
 }
 
 .Home-title {
@@ -86,7 +90,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: start;
   padding-top: 5.6rem;
   padding-bottom: 5.6rem;
 }

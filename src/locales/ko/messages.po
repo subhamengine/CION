@@ -778,7 +778,6 @@ msgstr "연동"
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
-#: src/pages/StakeNft/StakeNft.js
 msgid "Connect Wallet"
 msgstr "지갑 연동"
 
@@ -2016,10 +2015,6 @@ msgstr "최소 수취량"
 msgid "Minimum received"
 msgstr "최소량 수치 완료"
 
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "More"
-msgstr ""
-
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "More Info"
@@ -2730,7 +2725,6 @@ msgid "Sender has withdrawn all tokens from GMX Vesting Vault"
 msgstr "GMX의 베스팅 볼트에서 모든 토큰을 인출했습니다."
 
 #: src/App/App.js
-#: src/components/Header/AppHeaderLinks.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 msgid "Settings"
@@ -2850,6 +2844,10 @@ msgstr "GMX 보상 스테이킹"
 #: src/pages/Stake/StakeV2.js
 msgid "Stake Multiplier Points"
 msgstr "멀티플라이어 포인트 스테이킹"
+
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Stake NFT"
+msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 msgid "Stake esGMX"

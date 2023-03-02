@@ -1,148 +1,269 @@
-.page-layout{
-    min-height: calc(100vh - 62px);
-        display: flex;
-        flex-direction: column;
-        padding-bottom: calc(4.65rem + 20rem);
-        padding-top: 4.65rem;
+.page-layout {
+  min-height: calc(100vh - 62px);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: calc(4.65rem + 20rem);
+  padding-top: 4.65rem;
 }
-.header,.subhead{
-    
-  font-family: american-typewriter;
-color: #2FE0C3
+.header,
+.subhead {
+  font-family: minecraft;
+  color: #2fe0c3;
 }
 
-.subhead{
-    color: #FFFFFF !important;
+.subhead {
+  color: #ffffff !important;
 }
-.default-container{
-    max-width: 126.4rem;
-        padding-left: 3.2rem;
-        padding-right: 3.2rem;
-        margin: 0 auto;
+.default-container {
+  max-width: 126.4rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  margin: 0 auto;
 }
-.stakeNftUpper{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+.stakeNftUpper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
-.header{
-    font-size: 40px;
+.header {
+  font-size: 40px;
 }
-.subhead{
-    font-size: 30px;
+.subhead {
+  font-size: 30px;
 }
-.timeline{
-    margin-top: 50px;
-    width: 600px;
+.timeline {
+  margin-top: 50px;
+  width: 600px;
 }
-.boxes{
-    width: 100%;
-    height: 170px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+.boxes {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
-.box1{
-    width: 45%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-image: linear-gradient(to bottom right, #2c4315,#132b3a, #1f0e0c);
+.box1 {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(to top right, #162109, #324215);
 }
-.box2{
-    width: 25%;
-    height: 100%;
-    background-color: purple;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    background-image: linear-gradient(to top right, #162109, #324215);
-    font-family: american-typewriter;
+.cards {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.box2 > div{
-    font-family: american-typewriter;
+.box2 {
+  width: 25%;
+  height: 100%;
+  background-color: purple;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: linear-gradient(to top right, #162109, #324215);
+  font-family: american-typewriter;
 }
-.box3{
-    width: 25%;
-    height: 100%;
-    background-image: linear-gradient(to top right, #162109, #324215);
-    display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-around;
-        font-family: american-typewriter;
+.box2 > div {
+  font-family: american-typewriter;
 }
-.box3 > div{
-    display: flex;
-    width: 90%;
-    align-items: center;
-    justify-content: space-around;
-    font-family: american-typewriter;
+.box3 {
+  width: 25%;
+  height: 100%;
+  background-image: linear-gradient(to top right, #162109, #324215);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: american-typewriter;
 }
-.box3 > div > div{
-    font-family: american-typewriter;
+.box3 > div {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-around;
+  font-family: american-typewriter;
 }
-.currentEpoch{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.box3 > div > div {
+  font-family: american-typewriter;
 }
-.nextEpoch{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.currentEpoch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.subepoch{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    font-family: american-typewriter;
+.nextEpoch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.subepoch > div{
-    font-family: american-typewriter;
+.subepoch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: american-typewriter;
+}
+.subepoch > div {
+  font-family: american-typewriter;
 }
 .wftm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
-.dashDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 7px;
-    height: 8px;
+.dashDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 7px;
+  height: 8px;
 }
-.dash{
-    width: 25px;
-    height: 100%;
-    background-color: aliceblue;
+.dash {
+  width: 25px;
+  height: 100%;
+  background-color: aliceblue;
 }
-.stakeNftDown,.stakeNftMid{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
+.stakeNftMid {
+  justify-content: start;
+  width: 100%;
+  /* height: 600px; */
+  /* max-height: 500px; */
+  margin-top: 10rem;
+  background-color: #142009;
+  padding: 50px;
 }
-.stakeNftMid{
-    width: 120%;
-    margin-top: 30px;
+
+.stakeNftCards {
+  overflow-y: scroll;
+  margin-top: 3rem;
+  max-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.stakeNftDown > img{
-    width: 100%;
+.stakeNftCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  align-items: start;
+  width: 200px;
+  height: 280px;
+  gap: 10px;
+  background-color: #1d2e0d;
 }
-.main{
-   align-items: center;
-   gap: 50px;
+.stakeNftCardButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  border-width: 0;
+  background-color: #263e10;
+  font-family: american-typewriter;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+.stakeNftCard > span {
+  font-size: 1.5rem;
+  font-family: american-typewriter;
+  /* display: flex; */
+}
+.stakeNftMidHeader {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+}
+.stakeNftMidHeader > div {
+  font-family: american-typewriter;
+}
+.stakeNftDown > img {
+  width: 100%;
+}
+.main {
+  align-items: center;
+  gap: 50px;
+}
+.reward {
+  width: 100%;
+}
+.reward__description {
+  background-color: #8080802c;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: -20rem;
+  padding: 2.5rem 0;
+  position: relative;
+}
+
+.reward__description__header {
+  font-size: 4rem;
+  font-weight: 400;
+  text-shadow: 0 0 10px #000;
+}
+
+.reward__description__subtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  font-family: american-typewriter;
+}
+
+.reward__description__button {
+  margin-top: 40px;
+  background-color: #18b036;
+  padding: 8px;
+  font-weight: 600;
+  font-family: minecraft;
+  cursor: pointer;
+}
+
+.reward__description > .left__illustration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 250px;
+  width: 250px;
+  height: 100%;
+  z-index: -1;
+  background-image: url("https://i.ibb.co/xfWNy4g/Whats-App-Image-2023-02-25-at-9-43-45-AM.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.reward__description > .right__illustration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-size: 250px;
+  width: 250px;
+  height: 100%;
+  z-index: -1;
+  background-image: url("https://i.ibb.co/9cN5hG7/Whats-App-Image-2023-02-25-at-9-43-44-AM.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
 }
