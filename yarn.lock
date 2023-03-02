@@ -6462,6 +6462,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"classnames@npm:^2.2.3":
+  version: 2.3.2
+  resolution: "classnames@npm:2.3.2"
+  checksum: 2c62199789618d95545c872787137262e741f9db13328e216b093eea91c85ef2bfb152c1f9e63027204e2559a006a92eb74147d46c800a9f96297ae1d9f96f4e
+  languageName: node
+  linkType: hard
+
 "clean-css@npm:^4.2.3":
   version: 4.2.4
   resolution: "clean-css@npm:4.2.4"
@@ -9641,6 +9648,7 @@ __metadata:
     rc-slider: 9.7.5
     react: 17.0.2
     react-dom: 17.0.2
+    react-dropdown: ^1.11.0
     react-helmet: 6.1.0
     react-hot-toast: 2.2.0
     react-icons: 4.3.1
@@ -15532,6 +15540,18 @@ __metadata:
   peerDependencies:
     react: 17.0.2
   checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
+  languageName: node
+  linkType: hard
+
+"react-dropdown@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "react-dropdown@npm:1.11.0"
+  dependencies:
+    classnames: ^2.2.3
+  peerDependencies:
+    react: ^0.14.7 || ^15.0.0-0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^0.14.7 || ^15.0.0-0 || ^16.0.0 || ^17.0.0|| ^18.0.0
+  checksum: acd49cfaf12bf30e1c70bde68dc63f3372fc6f32a498808766616958d60aaf7852c3724705fcbd40408e5ed7e703b70260b14795acf293c28cb5cbf58a3761e6
   languageName: node
   linkType: hard
 

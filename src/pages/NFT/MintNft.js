@@ -4,17 +4,22 @@ import Triangle from "../../img/Triangle.svg";
 import magic_wand_icon from "../../img/magic-wand_icon.svg";
 import fantom_ftm_logo from "../../img/fantom-ftm-logo.svg";
 import nftlist1 from "../../img/nftlist1.svg";
+import Botv22 from "../../img/Botv22.png";
 import nftlist2 from "../../img/nftlist2.svg";
 import nftlist3 from "../../img/nftlist3.svg";
 import nftlist4 from "../../img/nftlist4.svg";
 import nftlist5 from "../../img/nftlist5.svg";
+import Dropdown from "react-dropdown";
 const MintNft = () => {
+  const options = ["1", "2", "3", "4", "5"];
+  const defaultOption = options[0];
+
   return (
     <>
       <div className="hero__content">
         <div className="hero_img">
           <div className="image">
-            <img src="https://i.ibb.co/JC3K0dG/Front-Image.png" alt="hero" height={320} />
+            <img src={Botv22} alt="hero" height={250} width={250} />
           </div>
           <div className="imageBelow">
             <div>
@@ -31,71 +36,61 @@ const MintNft = () => {
             </div>
           </div>
         </div>
-        <div className="content">
-          <h1 className="hero__content__title" style={{ fontSize: "26px" }}>
-            Join Mumy Club, Earn Reward Together
+        <div className="mint_content">
+          <h1 className="mint_hero__content__title" style={{ fontSize: "22px" }}>
+            Join CION Club, Earn Reward Together
           </h1>
-          <div className="hero__content__description">
-            A collection of 5,000 Cion NFT on Fantom, creating a community centered around strong identity, values, and
-            rewards.
+          <div className="mint_hero__content__description">
+            The earlier you mint , the cheaper the NFT and the higher the power to earn rewards.
+            <span style={{ marginLeft: "10px" }}>
+              <a href="https://www.google.com">
+                <span>Learn More</span>
+              </a>
+            </span>
           </div>
           <div className="NoOfNfts">
             <p>Number of NFT's</p> <p>Avail: 0.06 FTM</p>
           </div>
-          <div className="bt">
-            <div className="ftm">
-              1(0.00 FTM)
-              <img src={Triangle} style={{ width: "18px" }} alt="" />
+          <div className="mint">
+            <div className="mint_dropdown">
+              <img src={Triangle} style={{ width: "16px" }} alt="" />
+              <div>1</div>
+              <img src={Triangle} style={{ width: "15px", transform: "rotate(180deg)" }} alt="" />
             </div>
-            <div className="ftm2">
-              <img src={magic_wand_icon} style={{ width: "18px" }} alt="" />
-              Mint NFT
+            <div className="default-btn">
+              <img src={magic_wand_icon} style={{ width: "28px" }} alt="" />
+              <span style={{ fontFamily: "american-typewriter", marginLeft: "10px" }}>Mint NFT</span>
             </div>
           </div>
-          <div className="box">
-            <div className="subBoxes">
+          <div className="liveStats">
+            <div>
               <div>
                 Current Bonus <br />
-                <span style={{ fontSize: "18px" }}>40.08 esCN</span>
+                <span>40.08 esCN</span>
               </div>
-              <div>
-                Next Bonus <br />
-                <span style={{ fontSize: "18px" }}> 39.68 esCN</span>
-              </div>
-            </div>
-            <div className="subBoxes">
               <div>
                 Current Price <br />
-                <span>
-                  <img src={fantom_ftm_logo} style={{ width: "22px" }} alt="" /> 40.08 FTM
-                </span>
+                <span>40.08 FTM</span>
+              </div>
+              <div>
+                Current Power <br />
+                <span>8,000</span>
+              </div>
+            </div>
+            <div>
+              <div>
+                Next Bonus <br />
+                <span> 7,825</span>
               </div>
               <div>
                 Next Price <br />
-                <span>
-                  {" "}
-                  <img src={fantom_ftm_logo} style={{ width: "22px" }} alt="" /> 39.68 FTM
-                </span>
-              </div>
-            </div>
-            <div className="subBoxes">
-              <div>
-                Current Power <br />
-                <span style={{ fontSize: "18px" }}>8,000</span>
+                <span>39.68 FTM</span>
               </div>
               <div>
                 Next Power <br />
-                <span style={{ fontSize: "18px" }}> 7,825</span>
+                <span> 7,825</span>
               </div>
             </div>
-          </div>
-          <span style={{ color: "#2FE0C3" }}>Latest NFT Minted</span>
-          <div className="images">
-            <img style={{ width: "100px" }} src={nftlist1} alt="" />
-            <img style={{ width: "100px" }} src={nftlist2} alt="" />
-            <img style={{ width: "100px" }} src={nftlist3} alt="" />
-            <img style={{ width: "100px" }} src={nftlist4} alt="" />
-            <img style={{ width: "100px" }} src={nftlist5} alt="" />
           </div>
         </div>
       </div>

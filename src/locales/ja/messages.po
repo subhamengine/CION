@@ -779,10 +779,6 @@ msgstr "接続"
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/StakeNft/StakeNft.js
-<<<<<<< Updated upstream
-=======
-#: src/pages/StakeNft/StakeNft.js
->>>>>>> Stashed changes
 msgid "Connect Wallet"
 msgstr "ウォレット接続"
 
@@ -953,10 +949,6 @@ msgstr "分散型オプションストラテジー"
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Decentralized Trading Protocol"
 msgstr "分散型取引プロトコル"
-
-#: src/pages/Home/Home.js
-msgid "Decentralized<0/>Perpetual Exchange"
-msgstr "分散型<0/>パーペチュアル取引所"
 
 #: src/components/Exchange/ConfirmationBox.js
 #: src/components/Exchange/ConfirmationBox.js

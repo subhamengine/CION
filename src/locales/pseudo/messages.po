@@ -779,10 +779,6 @@ msgstr ""
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/StakeNft/StakeNft.js
-<<<<<<< Updated upstream
-=======
-#: src/pages/StakeNft/StakeNft.js
->>>>>>> Stashed changes
 msgid "Connect Wallet"
 msgstr ""
 
@@ -952,10 +948,6 @@ msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Decentralized Trading Protocol"
-msgstr ""
-
-#: src/pages/Home/Home.js
-msgid "Decentralized<0/>Perpetual Exchange"
 msgstr ""
 
 #: src/components/Exchange/ConfirmationBox.js

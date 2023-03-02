@@ -779,10 +779,6 @@ msgstr "Verbinden"
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/StakeNft/StakeNft.js
-<<<<<<< Updated upstream
-=======
-#: src/pages/StakeNft/StakeNft.js
->>>>>>> Stashed changes
 msgid "Connect Wallet"
 msgstr "Wallet verbinden"
 
@@ -953,10 +949,6 @@ msgstr "Strategien für dezentralisierte Optionen"
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Decentralized Trading Protocol"
 msgstr "Dezentrales Tradingprotokoll"
-
-#: src/pages/Home/Home.js
-msgid "Decentralized<0/>Perpetual Exchange"
-msgstr "Dezentralisierte<0/>Perpetual Börse"
 
 #: src/components/Exchange/ConfirmationBox.js
 #: src/components/Exchange/ConfirmationBox.js

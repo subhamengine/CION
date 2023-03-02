@@ -779,10 +779,6 @@ msgstr "连接"
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/StakeNft/StakeNft.js
-<<<<<<< Updated upstream
-=======
-#: src/pages/StakeNft/StakeNft.js
->>>>>>> Stashed changes
 msgid "Connect Wallet"
 msgstr "连接钱包"
 
@@ -953,10 +949,6 @@ msgstr "去中心化选策略"
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Decentralized Trading Protocol"
 msgstr "去中心化交易协议"
-
-#: src/pages/Home/Home.js
-msgid "Decentralized<0/>Perpetual Exchange"
-msgstr "去中心化<0/>永续交易所"
 
 #: src/components/Exchange/ConfirmationBox.js
 #: src/components/Exchange/ConfirmationBox.js
