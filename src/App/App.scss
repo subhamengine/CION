@@ -491,12 +491,15 @@ button.App-connect-wallet:hover {
   font-weight: 500;
   margin-bottom: 0.8rem;
   font-weight: bold;
+  font-family: minecraft;
+  color: #2fe0c3;
 }
 
 .Page-description {
   color: #b7b7bd;
   line-height: 2.15rem;
   font-size: var(--font-base);
+  font-family: american-typewriter;
 }
 
 .Page-description span,
@@ -795,10 +798,10 @@ a.App-cta,
 button.App-cta {
   color: white;
   text-decoration: none;
-  background: #18250c;
-  &:hover:enabled {
-    background: rgba(10, 22, 0);
-  }
+  background: rgba(10, 22, 0);
+  // &:hover:enabled {
+  //   background: rgba(10, 22, 0);
+  // }
   &:active:enabled {
     background: rgba(2, 11, 0);
   }

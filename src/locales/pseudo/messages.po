@@ -482,6 +482,10 @@ msgstr ""
 msgid "Buying..."
 msgstr ""
 
+#: src/pages/Dashboard/DashboardV2.js
+msgid "CANTO Total Stats start from 01 Jul 2023.<0/> For detailed stats:"
+msgstr ""
+
 #: src/components/TokenCard/TokenCard.js
 msgid "CLP is the liquidity provider token. Accrues 60% of the platform's generated fees."
 msgstr ""
@@ -2012,6 +2016,10 @@ msgstr ""
 msgid "Minimum received"
 msgstr ""
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "More"
+msgstr ""
+
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "More Info"
@@ -2570,7 +2578,7 @@ msgid "Referral code updated!"
 msgstr ""
 
 #: src/pages/Referrals/Referrals.js
-msgid "Referrals <0/>"
+msgid "Referrals"
 msgstr ""
 
 #: src/components/Exchange/TradeHistory.js
@@ -2722,6 +2730,7 @@ msgid "Sender has withdrawn all tokens from GMX Vesting Vault"
 msgstr ""
 
 #: src/App/App.js
+#: src/components/Header/AppHeaderLinks.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 msgid "Settings"
@@ -3516,10 +3525,6 @@ msgstr ""
 msgid "Utilization"
 msgstr ""
 
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Vault"
-msgstr ""
-
 #: src/pages/Stake/StakeV2.js
 msgid "Vault Capacity"
 msgstr ""
@@ -4009,10 +4014,6 @@ msgid ""
 "{actionDisplay} {0} {longOrShortText},\n"
 "-{1} USD,\n"
 "{2} Price: {3} USD"
-msgstr ""
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "{chainName} Total Stats start from {totalStatsStartDate}.<0/> For detailed stats:"
 msgstr ""
 
 #: src/components/Exchange/ConfirmationBox.js

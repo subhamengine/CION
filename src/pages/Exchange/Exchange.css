@@ -506,8 +506,7 @@ table.Exchange-list tr:last-child {
 }
 
 table.Exchange-list tr:hover {
-  background: #0A1600;
-  
+  background: #0a1600;
 }
 
 table.Exchange-list tr.Exchange-list-header {
@@ -768,7 +767,7 @@ input.Exchange-swap-input.small {
   border-radius: 3.1rem;
   cursor: pointer;
   user-select: none;
-  background: #6CE7A6;
+  background: #6ce7a6;
   display: flex;
   justify-content: center;
   align-items: center;

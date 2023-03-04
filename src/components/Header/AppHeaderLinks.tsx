@@ -40,7 +40,11 @@ export function AppHeaderLinks({
         </div>
       )}
       <div className="App-header-link-container">
-        <HeaderLink to="" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
+        <HeaderLink
+          to="/dashboard"
+          redirectPopupTimestamp={redirectPopupTimestamp}
+          showRedirectModal={showRedirectModal}
+        >
           <Trans>Dashboard</Trans>
         </HeaderLink>
       </div>
@@ -51,42 +55,51 @@ export function AppHeaderLinks({
         <Trans>Stake NFT</Trans>
       </HeaderLink>
       <div className="App-header-link-container">
-        <HeaderLink to="" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
+        <HeaderLink to="/earn" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
           <Trans>Earn</Trans>
         </HeaderLink>
       </div>
-      <div className="App-header-link-container">
-        <HeaderLink to="" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
+      {/* <div className="App-header-link-container">
+        <HeaderLink to="/vault" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
           <Trans>Vault</Trans>
         </HeaderLink>
-      </div>
+      </div> */}
       <div className="App-header-link-container">
-        <HeaderLink to="" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
+        <HeaderLink to="/buy" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
           <Trans>Buy</Trans>
         </HeaderLink>
       </div>
-      <div className="App-header-link-container">
-        <HeaderLink to="" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
+      {/* <div className="App-header-link-container">
+        <HeaderLink
+          to="/referrals"
+          redirectPopupTimestamp={redirectPopupTimestamp}
+          showRedirectModal={showRedirectModal}
+        >
           <Trans>Referals</Trans>
         </HeaderLink>
-      </div>
-      <div className="App-header-link-container">
-        <HeaderLink to="" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
+      </div> */}
+      {/* <div className="App-header-link-container">
+        <HeaderLink
+          to="/analytics"
+          redirectPopupTimestamp={redirectPopupTimestamp}
+          showRedirectModal={showRedirectModal}
+        >
           <Trans>Analytics</Trans>
         </HeaderLink>
-      </div>
+      </div> */}
       {/* <div className="App-header-link-container">
-        <ExternalLink href="">
+        <ExternalLink href="https://gmxio.gitbook.io/gmx/">
           <Trans>More</Trans>
         </ExternalLink>
       </div> */}
-      {/* {small && !isHomeSite() && (
+      {small && !isHomeSite() && (
         <div className="App-header-link-container">
+          {/* eslint-disable-next-line */}
           <a href="#" onClick={openSettings}>
             <Trans>Settings</Trans>
           </a>
         </div>
-      )} */}
+      )}
     </div>
   );
 }

@@ -5,7 +5,7 @@
   border-radius: 3px;
   overflow: hidden;
   color: rgba(255, 255, 255, 0.7);
-  background: #0A1600;
+  background: #0a1600;
   box-shadow: inset 0px 0px 30px 5px rgba(255, 255, 255, 0.01);
 }
 
@@ -30,7 +30,7 @@
 .Tab.block .Tab-option.active {
   opacity: 1;
   pointer-events: none;
-  background: #2FE0C3;
+  background: #55ad4d;
   color: rgba(255, 255, 255, 1);
 }
 

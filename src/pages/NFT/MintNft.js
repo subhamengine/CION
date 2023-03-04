@@ -43,7 +43,7 @@ const MintNft = () => {
           <div className="mint_hero__content__description">
             The earlier you mint , the cheaper the NFT and the higher the power to earn rewards.
             <span style={{ marginLeft: "10px" }}>
-              <a href="https://www.google.com">
+              <a href="#">
                 <span>Learn More</span>
               </a>
             </span>

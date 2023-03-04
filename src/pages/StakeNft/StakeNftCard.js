@@ -15,7 +15,7 @@ const StakeNftCard = (props) => {
           <div>Your Staked NFTs: --</div>
         </div>
         <div className="stakeNftCards">
-          {props.tokens.map((tokenId) => {
+          {/* {props.tokens.map((tokenId) => {
             return (
               <div className="stakeNftCard">
                 <img src={nftlist1} alt={tokenId} width="160px"></img>
@@ -26,7 +26,7 @@ const StakeNftCard = (props) => {
                 <button className="stakeNftCardButton">Approve</button>
               </div>
             );
-          })}
+          })} */}
         </div>
       </div>
     </>

@@ -23,39 +23,45 @@ const StakeNft = () => {
           <span className="header"> Earn real profit with CION Club </span>
           <span className="subhead" style={{ color: "#FFFFFF", marginTop: "15px" }}>
             {" "}
-            Earn $WFTM from platform's collected fees with your NFT{" "}
+            Earn $WCANTO from platform's collected fees with your NFT{" "}
           </span>
           <img className="timeline" src={timeline} alt="" />
           <div className="boxes">
             <div className="box1">
               <div className="currentEpoch">
                 <div className="subepoch">
-                  Current epoh
-                  <div>#9</div>
+                  Current epoch
+                  {/* <div>#9</div> */}
+                  <div>--</div>
                 </div>
                 <div className="subepoch">
-                  Stacked NFT
-                  <div> 4753/5000</div>
+                  Staked NFT
+                  {/* <div> 4753/5000</div> */}
+                  <div>--</div>
                 </div>
                 <div className="subepoch">
                   Total Distributed <br />
-                  <div className="wftm subepoch">68,680.00 WFTM</div>
+                  {/* <div className="wftm subepoch">68,680.00 WFTM</div> */}
+                  <div className="wftm subepoch">--</div>
                 </div>
               </div>
               <div className="nextEpoch">
                 <div className="subepoch">
-                  <div>Next epoh</div>
-                  <div>03d : 20h : 59m : 15s</div>
+                  <div>Next epoch</div>
+                  {/* <div>03d : 20h : 59m : 15s</div> */}
+                  <div>--</div>
                 </div>
                 <div className="subepoch">
                   <div>Max APR</div>
                   <div style={{ color: "#55AD4D" }}>
-                    <span>~</span>20.04%
+                    {/* <span>~</span>20.04% */}
+                    <span>--</span>
                   </div>
                 </div>
                 <div className="subepoch">
-                  Next epoh reward <br />
-                  <div className="wftm subepoch">6,000 WFTM</div>
+                  Next epoch reward <br />
+                  {/* <div className="wftm subepoch">6,000 WFTM</div> */}
+                  <div className="wftm subepoch">--</div>
                 </div>
               </div>
             </div>

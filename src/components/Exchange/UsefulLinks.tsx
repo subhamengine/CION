@@ -16,23 +16,32 @@ export default function UsefulLinks({ className }) {
       <div className="App-card-divider"></div>
       <div className="Exchange-info-row">
         <div className="Exchange-info-label-button">
-          <ExternalLink href="https://gmxio.gitbook.io/gmx/trading">
+          {/* <ExternalLink href="https://gmxio.gitbook.io/gmx/trading">
             <Trans>Trading guide</Trans>
-          </ExternalLink>
+          </ExternalLink> */}
+          <a href="#">
+            <Trans>Trading guide</Trans>
+          </a>
         </div>
       </div>
       <div className="Exchange-info-row">
         <div className="Exchange-info-label-button">
-          <ExternalLink href={leaderBoardLink}>
-            <Trans>Leaderboard</Trans>
-          </ExternalLink>
+          {/* <ExternalLink href={leaderBoardLink}>
+          <Trans>Leaderboard</Trans>
+        </ExternalLink> */}
+          <a href="#">
+            <Trans>Leader Board</Trans>
+          </a>
         </div>
       </div>
       <div className="Exchange-info-row">
         <div className="Exchange-info-label-button">
-          <ExternalLink href="https://gmxio.gitbook.io/gmx/trading#backup-rpc-urls">
+          {/* <ExternalLink href="https://gmxio.gitbook.io/gmx/trading#backup-rpc-urls">
             <Trans>Speed up page loading</Trans>
-          </ExternalLink>
+          </ExternalLink> */}
+          <a href="#">
+            <Trans>Speed up page loading</Trans>
+          </a>
         </div>
       </div>
     </div>

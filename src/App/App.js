@@ -499,54 +499,54 @@ function FullApp() {
                   connectWallet={connectWallet}
                   savedShouldDisableValidationForTesting={savedShouldDisableValidationForTesting}
                 />
-              </Route>
-              <Route exact path="/jobs">
+              </Route>{" "}
+              {/* <Route exact path="/jobs">
                 <Jobs />
-              </Route>
-              <Route exact path="/buy_gmx">
+              </Route> */}
+              {/* <Route exact path="/buy_gmx">
                 <BuyGMX />
-              </Route>
+              </Route> */}
               <Route exact path="/stake-nft">
                 <StakeNft />
               </Route>
-              <Route exact path="/vault">
+              {/* <Route exact path="/vault">
                 <Vault />
-              </Route>
-              <Route exact path="/ecosystem">
+              </Route> */}
+              {/* <Route exact path="/ecosystem">
                 <Ecosystem />
-              </Route>
-              <Route exact path="/referrals">
+              </Route> */}
+              {/* <Route exact path="/referrals">
                 <Referrals pendingTxns={pendingTxns} connectWallet={connectWallet} setPendingTxns={setPendingTxns} />
               </Route>
               <Route exact path="/referrals/:account">
                 <Referrals pendingTxns={pendingTxns} connectWallet={connectWallet} setPendingTxns={setPendingTxns} />
-              </Route>
-              <Route exact path="/nft_wallet">
+              </Route> */}
+              {/* <Route exact path="/nft_wallet">
                 <NftWallet />
-              </Route>
-              <Route exact path="/claim_es_gmx">
+              </Route> */}
+              {/* <Route exact path="/claim_es_gmx">
                 <ClaimEsGmx setPendingTxns={setPendingTxns} />
-              </Route>
-              <Route exact path="/actions">
+              </Route> */}
+              {/* <Route exact path="/actions">
                 <Actions />
               </Route>
               <Route exact path="/actions/:account">
                 <Actions savedIsPnlInLeverage={savedIsPnlInLeverage} savedShowPnlAfterFees={savedShowPnlAfterFees} />
-              </Route>
-              <Route exact path="/orders_overview">
+              </Route> */}
+              {/* <Route exact path="/orders_overview">
                 <OrdersOverview />
               </Route>
               <Route exact path="/positions_overview">
                 <PositionsOverview />
-              </Route>
-              <Route exact path="/begin_account_transfer">
+              </Route> */}
+              {/* <Route exact path="/begin_account_transfer">
                 <BeginAccountTransfer setPendingTxns={setPendingTxns} />
               </Route>
               <Route exact path="/complete_account_transfer/:sender/:receiver">
                 <CompleteAccountTransfer setPendingTxns={setPendingTxns} />
-              </Route>
+              </Route> */}
               <Route exact path="/nft">
-                <NFT/>
+                <NFT />
               </Route>
               <Route path="*">
                 <PageNotFound />

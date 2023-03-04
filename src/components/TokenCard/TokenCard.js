@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 import { Link } from "react-router-dom";
 import { Trans } from "@lingui/macro";
 
-import "./TokenCard.css"
+import "./TokenCard.css";
 import { isHomeSite } from "lib/legacy";
 
 import { useWeb3React } from "@web3-react/core";
@@ -73,21 +73,26 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
             <Trans>CN is the utility and governance token. Accrues 30% of the platform's generated fees.</Trans>
           </div>
           <div className="Home-token-card-option-apr">
-            <Trans>APR:</Trans> <APRLabel chainId={ARBITRUM} label="gmxAprTotal" />{" "}
+            <Trans>APR:</Trans>
+            {/* <APRLabel chainId={ARBITRUM} label="gmxAprTotal" /> */}
+            {" ..."}
             {/* <Trans>Avalanche APR:</Trans> <APRLabel chainId={AVALANCHE} label="gmxAprTotal" key="AVALANCHE" /> */}
           </div>
           <div className="Home-token-card-option-action">
             <div className="buy">
-              <BuyLink to="/buy_gmx" className="default-btn" network={ARBITRUM}>
+              <BuyLink to="#" className="default-btn" network={ARBITRUM}>
                 <Trans>Buy</Trans>
               </BuyLink>
               {/* <BuyLink to="/buy_gmx" className="default-btn" network={AVALANCHE}>
                 <Trans>Buy on Avalanche</Trans>
               </BuyLink> */}
             </div>
-            <ExternalLink href="https://gmxio.gitbook.io/gmx/tokenomics" className="default-btn read-more">
+            <ExternalLink href="#" className="default-btn read-more">
               <Trans>Read more</Trans>
             </ExternalLink>
+            {/* <ExternalLink href="https://gmxio.gitbook.io/gmx/tokenomics" className="default-btn read-more">
+              <Trans>Read more</Trans>
+            </ExternalLink> */}
           </div>
         </div>
       </div>
@@ -100,12 +105,15 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
             <Trans>CLP is the liquidity provider token. Accrues 60% of the platform's generated fees.</Trans>
           </div>
           <div className="Home-token-card-option-apr">
-            <Trans>APR:</Trans> <APRLabel chainId={ARBITRUM} label="glpAprTotal" key="ARBITRUM" />{" "}
+            <Trans>APR:</Trans>
+            {/* <APRLabel chainId={ARBITRUM} label="glpAprTotal" key="ARBITRUM" /> */}
+            {" ..."}
             {/* <Trans>Avalanche APR:</Trans> <APRLabel chainId={AVALANCHE} label="glpAprTotal" key="AVALANCHE" /> */}
           </div>
           <div className="Home-token-card-option-action">
             <div className="buy">
-              <BuyLink to="/buy_glp" className="default-btn" network={ARBITRUM}>
+              {/* <BuyLink to="/buy_glp" className="default-btn" network={ARBITRUM}> */}
+              <BuyLink to="#" className="default-btn" network={ARBITRUM}>
                 <Trans>Buy</Trans>
               </BuyLink>
               {/* <BuyLink to="/buy_glp" className="default-btn" network={AVALANCHE}>
@@ -113,9 +121,10 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
               </BuyLink> */}
             </div>
             <a
-              href="https://gmxio.gitbook.io/gmx/glp"
-              target="_blank"
-              rel="noreferrer"
+              // href="https://gmxio.gitbook.io/gmx/glp"
+              href="#"
+              // target="_blank"
+              // rel="noreferrer"
               className="default-btn read-more"
             >
               <Trans>Read more</Trans>

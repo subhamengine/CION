@@ -482,6 +482,10 @@ msgstr "{swapTokenSymbol}を1inchで購入"
 msgid "Buying..."
 msgstr "購入中"
 
+#: src/pages/Dashboard/DashboardV2.js
+msgid "CANTO Total Stats start from 01 Jul 2023.<0/> For detailed stats:"
+msgstr ""
+
 #: src/components/TokenCard/TokenCard.js
 msgid "CLP is the liquidity provider token. Accrues 60% of the platform's generated fees."
 msgstr ""
@@ -2015,6 +2019,10 @@ msgstr "最低受け取り額"
 msgid "Minimum received"
 msgstr "最低受け取り済"
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "More"
+msgstr ""
+
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "More Info"
@@ -2573,7 +2581,7 @@ msgid "Referral code updated!"
 msgstr "紹介コードの更新完了!"
 
 #: src/pages/Referrals/Referrals.js
-msgid "Referrals <0/>"
+msgid "Referrals"
 msgstr ""
 
 #: src/components/Exchange/TradeHistory.js
@@ -2725,6 +2733,7 @@ msgid "Sender has withdrawn all tokens from GMX Vesting Vault"
 msgstr "送信側はGMXのべスティングボールトからすべてのトークンを引き出しました。"
 
 #: src/App/App.js
+#: src/components/Header/AppHeaderLinks.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 msgid "Settings"
@@ -3519,10 +3528,6 @@ msgstr "有用なリンク"
 msgid "Utilization"
 msgstr "利用率"
 
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Vault"
-msgstr ""
-
 #: src/pages/Stake/StakeV2.js
 msgid "Vault Capacity"
 msgstr "ボールトキャパシティ"
@@ -4016,10 +4021,6 @@ msgid ""
 "-{1} USD,\n"
 "{2} Price: {3} USD"
 msgstr ""
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "{chainName} Total Stats start from {totalStatsStartDate}.<0/> For detailed stats:"
-msgstr "{chainName}の全統計の開始日は{totalStatsStartDate}です。<0/> より詳しい統計:"
 
 #: src/components/Exchange/ConfirmationBox.js
 msgid "{existingTriggerOrderLength, plural, one {You have an active trigger order that could impact this position.} other {You have # active trigger orders that could impact this position.}}"

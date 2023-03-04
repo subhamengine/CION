@@ -482,6 +482,10 @@ msgstr "{swapTokenSymbol}을 1inch에서 구매하기"
 msgid "Buying..."
 msgstr "구매중..."
 
+#: src/pages/Dashboard/DashboardV2.js
+msgid "CANTO Total Stats start from 01 Jul 2023.<0/> For detailed stats:"
+msgstr ""
+
 #: src/components/TokenCard/TokenCard.js
 msgid "CLP is the liquidity provider token. Accrues 60% of the platform's generated fees."
 msgstr ""
@@ -2015,6 +2019,10 @@ msgstr "최소 수취량"
 msgid "Minimum received"
 msgstr "최소량 수치 완료"
 
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "More"
+msgstr ""
+
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "More Info"
@@ -2573,7 +2581,7 @@ msgid "Referral code updated!"
 msgstr "추천인 코드 업데이트 완료!"
 
 #: src/pages/Referrals/Referrals.js
-msgid "Referrals <0/>"
+msgid "Referrals"
 msgstr ""
 
 #: src/components/Exchange/TradeHistory.js
@@ -2725,6 +2733,7 @@ msgid "Sender has withdrawn all tokens from GMX Vesting Vault"
 msgstr "GMX의 베스팅 볼트에서 모든 토큰을 인출했습니다."
 
 #: src/App/App.js
+#: src/components/Header/AppHeaderLinks.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
 msgid "Settings"
@@ -3519,10 +3528,6 @@ msgstr "유용한 링크"
 msgid "Utilization"
 msgstr "이용률"
 
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Vault"
-msgstr ""
-
 #: src/pages/Stake/StakeV2.js
 msgid "Vault Capacity"
 msgstr "볼트 수용량"
@@ -4016,10 +4021,6 @@ msgid ""
 "-{1} USD,\n"
 "{2} Price: {3} USD"
 msgstr ""
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "{chainName} Total Stats start from {totalStatsStartDate}.<0/> For detailed stats:"
-msgstr "{chainName}의 전체 통계는 {totalStatsStartDate}부터 시작됩니다.<0/> 더 자세한 통계:"
 
 #: src/components/Exchange/ConfirmationBox.js
 msgid "{existingTriggerOrderLength, plural, one {You have an active trigger order that could impact this position.} other {You have # active trigger orders that could impact this position.}}"
