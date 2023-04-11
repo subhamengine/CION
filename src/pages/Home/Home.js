@@ -126,6 +126,9 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
 
   const LaunchExchangeButton = () => {
     return (
+      // <div className="default-btn">
+      //   <Trans>Launch App</Trans>
+      // </div>
       <HeaderLink
         className="default-btn"
         to="/trade"
@@ -155,9 +158,10 @@ export default function Home({ showRedirectModal, redirectPopupTimestamp }) {
                 </h1>
               </div>
               <div className="Home-description">
-                <Trans>
+                <Trans>Trade cryptocurrencies with up to 50x leverage directly from your wallet</Trans>
+                {/* <Trans>
                   Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x leverage directly from your wallet
-                </Trans>
+                </Trans> */}
               </div>
               <LaunchExchangeButton />
             </div>

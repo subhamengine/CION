@@ -69,10 +69,6 @@ msgstr ""
 msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to GMX will remain as GMX tokens.<3/><4/>To claim GMX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
 msgstr "<0>これによりすべてのトークンは引き出され、リザーブから解除され、べスティングは停止されます。<1/><2/>GMXへ転換されたesGMXトークンはGMXトークンとなります。<3/><4/>引き出しをせずにGMXトークンを請求するには全報酬セクションの下部にある\"請求\"ボタンを使用してください。<5/><6/></0>"
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "<0>Total value of tokens in GLP pool ({chainName}).</0><1>Other websites may show a higher value as they add positions' collaterals to the GLP pool.</1>"
-msgstr ""
-
 #: src/lib/contracts/callContract.tsx
 #: src/lib/wallets/index.tsx
 msgid "<0>Your wallet is not connected to {0}.</0><1/><2>Switch to {1}</2>"
@@ -99,7 +95,6 @@ msgid "APR:"
 msgstr ""
 
 #: src/components/Stake/GMXAprTooltip.tsx
-#: src/pages/Stake/StakeV2.js
 msgid "APRs are updated weekly on Wednesday and will depend on the fees collected for the week."
 msgstr "APR(実質年利)は毎週水曜日に更新され、その前一週間に得られた手数料によって決まります。"
 
@@ -234,10 +229,6 @@ msgstr "請求額"
 msgid "An aggregate of high-quality price feeds determine when liquidations occur. This keeps positions safe from temporary wicks."
 msgstr "清算が発生した時点で高品質の価格フィードの集成価格が確定します。これによりポジションは一時的変動から守られます。"
 
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Analytics"
-msgstr ""
-
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Announcement"
 msgstr "告知"
@@ -302,10 +293,6 @@ msgstr "{0}から{swapTokenSymbol}に交換するための流動性がGLPに十�
 #: src/pages/Dashboard/DashboardV1.js
 msgid "Assets Under Management"
 msgstr "管理下の資産総額"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Assets Under Management: GMX staked (All chains) + GLP pool ({chainName})."
-msgstr "管理資産: 全チェーンでステークされているGMX + GLPプール ({chainName})."
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
@@ -487,15 +474,19 @@ msgid "CANTO Total Stats start from 01 Jul 2023.<0/> For detailed stats:"
 msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
+msgid "CION is the utility and governance token. Accrues 30% of the platform's generated fees."
+msgstr ""
+
+#: src/pages/Dashboard/DashboardV2.js
+msgid "CLP Index Composition"
+msgstr ""
+
+#: src/components/TokenCard/TokenCard.js
 msgid "CLP is the liquidity provider token. Accrues 60% of the platform's generated fees."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
 msgid "CN Vault"
-msgstr ""
-
-#: src/components/TokenCard/TokenCard.js
-msgid "CN is the utility and governance token. Accrues 30% of the platform's generated fees."
 msgstr ""
 
 #: src/pages/OrdersOverview/OrdersOverview.js
@@ -528,6 +519,10 @@ msgstr "キャンセルが提出されました"
 #: src/pages/Exchange/Exchange.js
 msgid "Cancel submitted."
 msgstr "キャンセル申し込み完了"
+
+#: src/components/Header/HomeHeaderLinks.tsx
+msgid "CantoBots"
+msgstr ""
 
 #: src/App/App.js
 #: src/pages/Exchange/Exchange.js
@@ -795,7 +790,7 @@ msgid "Continue"
 msgstr "続ける"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Convert esCN tokens to CN tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
+msgid "Convert esCN tokens to CN tokens.<0/>"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
@@ -1278,7 +1273,6 @@ msgstr "手数料"
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/pages/Dashboard/DashboardV1.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Fees"
 msgstr "手数料"
 
@@ -1345,10 +1339,6 @@ msgstr "利益喪失がチェックされていません"
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "GBC NFTs APR tracker and rewards"
 msgstr "GBC NFTのAPRトラッカーおよび報酬"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "GLP Index Composition"
-msgstr "GLPインデックス構成"
 
 #: src/pages/Dashboard/DashboardV2.js
 msgid "GLP Pool"
@@ -1644,8 +1634,8 @@ msgid "Launch App"
 msgstr "アプリ起動"
 
 #: src/components/Exchange/UsefulLinks.tsx
-msgid "Leaderboard"
-msgstr "順位表"
+msgid "Leader Board"
+msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Leaderboard for GMX traders"
@@ -1789,7 +1779,6 @@ msgid "Long"
 msgstr "ロング"
 
 #: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Long Positions"
 msgstr "ロングポジション"
 
@@ -1908,7 +1897,6 @@ msgid "Max slippage precision is 0.01%"
 msgstr "スリッページの最大精度は0.01%です"
 
 #: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Max {0} Capacity"
 msgstr "{0}の最大キャパシティ"
 
@@ -2018,10 +2006,6 @@ msgstr "最低受け取り額"
 #: src/components/Exchange/OrderEditor.js
 msgid "Minimum received"
 msgstr "最低受け取り済"
-
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "More"
-msgstr ""
 
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
@@ -2304,8 +2288,8 @@ msgid "Pay: {0} USD"
 msgstr "支払う: {0} USD"
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "Platform and GLP index tokens."
-msgstr "プラットフォームとGLPインデックストークン"
+msgid "Platform and CLP index tokens."
+msgstr ""
 
 #: src/components/Referrals/JoinReferralCode.js
 msgid "Please input a referral code to benefit from fee discounts."
@@ -2340,7 +2324,6 @@ msgstr "手数料差し引き後の損益"
 msgid "Pool"
 msgstr "プール"
 
-#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Pool Amount"
 msgstr "プール額"
@@ -2431,16 +2414,6 @@ msgstr "価格がマーク価格を上回っています"
 msgid "Price is below Mark Price"
 msgstr "価格がマーク価格を下回っています"
 
-#: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Stake/StakeV2.js
-msgid "Price on Arbitrum"
-msgstr "Arbitrum上の価格"
-
-#: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Stake/StakeV2.js
-msgid "Price on Avalanche"
-msgstr "Avalanche上の価格"
-
 #: src/pages/Actions/Actions.js
 msgid "Profit"
 msgstr "利益"
@@ -2480,8 +2453,8 @@ msgstr "保険購入"
 
 #: src/components/TokenCard/TokenCard.js
 #: src/components/TokenCard/TokenCard.js
-msgid "Read more"
-msgstr "詳細について読む"
+msgid "Read More"
+msgstr ""
 
 #: src/components/Referrals/TradersStats.js
 msgid "Rebates Distribution History"
@@ -2536,10 +2509,6 @@ msgstr "清算リスクを減らす"
 msgid "Reducing the position at the current price will forfeit a <0>pending profit</0> of {deltaStr}. <1/>"
 msgstr "現在の価格でポジションを縮小すると、{deltaStr}の<0>未確定利益</0>が没収されます。<1/>"
 
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Referals"
-msgstr ""
-
 #: src/components/Referrals/AffiliatesStats.js
 msgid "Referral Code"
 msgstr "紹介コード"
@@ -2581,7 +2550,7 @@ msgid "Referral code updated!"
 msgstr "紹介コードの更新完了!"
 
 #: src/pages/Referrals/Referrals.js
-msgid "Referrals"
+msgid "Referrals <0/>"
 msgstr ""
 
 #: src/components/Exchange/TradeHistory.js
@@ -2780,7 +2749,6 @@ msgid "Short"
 msgstr "ショート"
 
 #: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Short Positions"
 msgstr "ショートポジション"
 
@@ -2839,7 +2807,7 @@ msgid "Stake"
 msgstr "ステーク"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake <0>CN</0> and <1>CLP</1> to earn rewards."
+msgid "Stake <0>CION</0> and <1>CLP</1> to earn rewards."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
@@ -2883,13 +2851,11 @@ msgid "Stake submitted! <0>View status.</0>"
 msgstr "ステーク申し込み完了! <0>状況を確認する</0>"
 
 #: src/components/Glp/GlpSwap.js
-#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
-#: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -3028,7 +2994,6 @@ msgid "Take-profit and stop-loss orders can be set after opening a position. <0/
 msgstr "テイクプロフィット注文とストップロス注文はポジションをオープンしてからセットすることができます。<0/><1/>それぞれのポジションの行に\"クローズ\"ボタンが表れ、それをクリックするとトリガー注文をセットするための選択肢が表示されます。<2/><3/>スクリーンショットや詳細情報については<4>文書</4>を読んでください。"
 
 #: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Target Min Amount"
 msgstr "最低ターゲット額"
 
@@ -3125,8 +3090,8 @@ msgid "The spread is > 1%, please ensure the trade details are acceptable before
 msgstr "スプレッドが1%を超えています。このトレードの詳細が許容できるものであることを確かめてから、先に進んでください。"
 
 #: src/components/ModalViews/RedirectModal.js
-msgid "The website is a community deployed and maintained instance of the open source <0>GMX front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
-msgstr "ウェブサイトはオープンソースの<0>GMXフロントエンド</0>を利用してコミュニティが設置し維持しているものであり、P2Pの<1>IPFSネットワーク</1>上にホストされ提供されています。"
+msgid "The website is a community deployed and maintained instance of the open source <0>CION front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
+msgstr ""
 
 #: src/components/Exchange/SwapBox.js
 msgid "There are more longs than shorts, borrow fees for shorting is currently zero"
@@ -3218,7 +3183,6 @@ msgid "Total Assets Staked"
 msgstr "ステークされた全アセット"
 
 #: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Total Fees"
 msgstr "手数料総額"
 
@@ -3278,7 +3242,6 @@ msgstr "ユーザー総数"
 
 #: src/components/Referrals/AffiliatesStats.js
 #: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Total Volume"
 msgstr "総取引高"
 
@@ -3304,7 +3267,7 @@ msgid "Trade"
 msgstr "トレード"
 
 #: src/pages/Home/Home.js
-msgid "Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x leverage directly from your wallet"
+msgid "Trade cryptocurrencies with up to 50x leverage directly from your wallet"
 msgstr ""
 
 #: src/components/Exchange/ExchangeBanner.js
@@ -3510,10 +3473,6 @@ msgstr "更新中..."
 msgid "Use the \"Close\" button to reduce your position size, or to set stop-loss / take-profit orders."
 msgstr "ポジションサイズを縮小するには、\"クローズ\"ボタンを使用するか、またはストップロス注文かテイクプロフィット注文をセットしてください。"
 
-#: src/pages/Stake/StakeV2.js
-msgid "Use the \"Compound\" button to stake your Multiplier Points."
-msgstr "マルチプレイヤーポイントをステークするには\"請求とステーク\"ボタンを使ってください。"
-
 #: src/components/Exchange/PositionsList.js
 #: src/components/Exchange/PositionsList.js
 msgid "Use the Edit Collateral icon to deposit or withdraw collateral."
@@ -3588,7 +3547,6 @@ msgid "View status."
 msgstr "状況を見る"
 
 #: src/pages/Dashboard/DashboardV1.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Volume"
 msgstr "取引高"
 
@@ -3728,10 +3686,6 @@ msgstr "イールドボールト"
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Yield simulator for GMX"
 msgstr "GMXのイールドシミュレーター"
-
-#: src/pages/Stake/StakeV2.js
-msgid "You are earning {0}% more {nativeTokenSymbol} rewards using {1} Staked Multiplier Points."
-msgstr "あなたがステークしている{1}マルチプレイヤーポイントにより、報酬の{nativeTokenSymbol}が{0}%上乗せされています。"
 
 #: src/pages/Stake/StakeV2.js
 msgid "You are earning {nativeTokenSymbol} rewards with {0} tokens.<0/>Tokens: {amountStr}."
@@ -3903,11 +3857,6 @@ msgstr ""
 msgid "{0} Approved!"
 msgstr "{0}が承認されました!"
 
-#: src/pages/Stake/StakeV2.js
-#: src/pages/Stake/StakeV2.js
-msgid "{0} CN tokens can be claimed, use the options under the Total Rewards section to claim them."
-msgstr ""
-
 #: src/components/Glp/SwapErrorModal.tsx
 msgid "{0} Capacity Reached"
 msgstr "{0}のキャパシティに到達しました"
@@ -3977,14 +3926,6 @@ msgstr "{0} 価格"
 #: src/components/Glp/GlpSwap.js
 msgid "{0} selected in order form"
 msgstr "{0}が注文フォームで選択されました"
-
-#: src/pages/Stake/StakeV2.js
-msgid "{0} tokens have been converted to CN from the {1} esGMX deposited for vesting."
-msgstr ""
-
-#: src/pages/Stake/StakeV2.js
-msgid "{0} tokens have been converted to GMX from the {1} esCN deposited for vesting."
-msgstr ""
 
 #: src/components/Exchange/SwapBox.js
 msgid "{0} {1} not supported"

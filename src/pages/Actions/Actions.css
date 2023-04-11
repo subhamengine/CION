@@ -13,7 +13,7 @@
 }
 
 .Actions input {
-  font-size: var(--font-base);
+  font-size: var(--font-lg);
   padding: 0;
   margin-left: 0.8rem;
 }

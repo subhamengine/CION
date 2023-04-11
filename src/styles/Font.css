@@ -45,49 +45,50 @@
     /* Modern Browsers */ url("fonts/relative/relative-book-pro.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
-
-@font-face { 
-  font-family: 'fff-forward';
-  src: url('./../fonts/fff-forward/FFFFORWA.TTF') format('truetype');
+@font-face {
+  font-family: "fff-forward";
+  src: url("./../fonts/fff-forward/FFFFORWA.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-
-@font-face { 
-  font-family: 'joystix';
-  src: url('./../fonts/joystix/joystix\ monospace.otf') format('truetype');
+@font-face {
+  font-family: "joystix";
+  src: url("./../fonts/joystix/joystix\ monospace.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-
-@font-face { 
-  font-family: 'manaspace';
-  src: url('./../fonts/manaspace/manaspc.ttf') format('truetype');
+@font-face {
+  font-family: "manaspace";
+  src: url("./../fonts/manaspace/manaspc.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-
-@font-face { 
-  font-family: 'minecraft';
-  src: url('./../fonts/minecraft/Minecraft.ttf') format('truetype');
+@font-face {
+  font-family: "minecraft";
+  src: url("./../fonts/minecraft/Minecraft.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face { 
-  font-family: 'vcr_osd_mono';
-  src: url('./../fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf') format('truetype');
+@font-face {
+  font-family: "vcr_osd_mono";
+  src: url("./../fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face { 
-  font-family: 'american-typewriter';
-  src: url('./../fonts/american-typewriter/american-typewriter.ttf') format('truetype');
+@font-face {
+  font-family: "VT323";
+  src: url("./../fonts/american-typewriter/american-typewriter.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
+/* @font-face {
+  font-family: "VT323";
+  src: url("./../fonts/VT323/VT323-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+} */

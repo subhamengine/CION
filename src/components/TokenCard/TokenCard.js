@@ -66,11 +66,13 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
     <div className="Home-token-card-options">
       <div className="Home-token-card-option">
         <div className="Home-token-card-option-icon">
-          <img src={gmxIcon} width="40" alt="GMX Icons" /> CN
+          <img src={gmxIcon} width="40" alt="GMX Icons" /> CION
         </div>
         <div className="Home-token-card-option-info">
           <div className="Home-token-card-option-title">
-            <Trans>CN is the utility and governance token. Accrues 30% of the platform's generated fees.</Trans>
+            <Trans stye={{ fontFamily: "VT323" }}>
+              CION is the utility and governance token. Accrues 30% of the platform's generated fees.
+            </Trans>
           </div>
           <div className="Home-token-card-option-apr">
             <Trans>APR:</Trans>
@@ -79,17 +81,26 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
             {/* <Trans>Avalanche APR:</Trans> <APRLabel chainId={AVALANCHE} label="gmxAprTotal" key="AVALANCHE" /> */}
           </div>
           <div className="Home-token-card-option-action">
-            <div className="buy">
-              <BuyLink to="#" className="default-btn" network={ARBITRUM}>
+            {/* <div className="buy"> */}
+            <div className="default-btn">
+              <div>
                 <Trans>Buy</Trans>
-              </BuyLink>
+              </div>
               {/* <BuyLink to="/buy_gmx" className="default-btn" network={AVALANCHE}>
                 <Trans>Buy on Avalanche</Trans>
               </BuyLink> */}
             </div>
-            <ExternalLink href="#" className="default-btn read-more">
+            <div className="default-btn">
+              <div>
+                <Trans>Read More</Trans>
+              </div>
+              {/* <BuyLink to="/buy_gmx" className="default-btn" network={AVALANCHE}>
+                <Trans>Buy on Avalanche</Trans>
+              </BuyLink> */}
+            </div>
+            {/* <ExternalLink href="" className="default-btn read-more">
               <Trans>Read more</Trans>
-            </ExternalLink>
+            </ExternalLink> */}
             {/* <ExternalLink href="https://gmxio.gitbook.io/gmx/tokenomics" className="default-btn read-more">
               <Trans>Read more</Trans>
             </ExternalLink> */}
@@ -111,24 +122,31 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
             {/* <Trans>Avalanche APR:</Trans> <APRLabel chainId={AVALANCHE} label="glpAprTotal" key="AVALANCHE" /> */}
           </div>
           <div className="Home-token-card-option-action">
-            <div className="buy">
-              {/* <BuyLink to="/buy_glp" className="default-btn" network={ARBITRUM}> */}
-              <BuyLink to="#" className="default-btn" network={ARBITRUM}>
+            {/* <div className="buy">  */}
+            <div className="default-btn">
+              <div>
                 <Trans>Buy</Trans>
-              </BuyLink>
+              </div>
               {/* <BuyLink to="/buy_glp" className="default-btn" network={AVALANCHE}>
                 <Trans>Buy on Avalanche</Trans>
               </BuyLink> */}
             </div>
-            <a
+            <div className="default-btn">
+              <div>
+                <Trans>Read More</Trans>
+              </div>
+              {/* <BuyLink to="/buy_glp" className="default-btn" network={AVALANCHE}>
+                <Trans>Buy on Avalanche</Trans>
+              </BuyLink> */}
+            </div>
+            {/* <a
               // href="https://gmxio.gitbook.io/gmx/glp"
-              href="#"
               // target="_blank"
               // rel="noreferrer"
               className="default-btn read-more"
             >
               <Trans>Read more</Trans>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

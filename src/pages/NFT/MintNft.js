@@ -59,7 +59,7 @@ const MintNft = () => {
             </div>
             <div className="default-btn">
               <img src={magic_wand_icon} style={{ width: "28px" }} alt="" />
-              <span style={{ fontFamily: "american-typewriter", marginLeft: "10px" }}>Mint NFT</span>
+              <span style={{ fontFamily: "VT323", marginLeft: "10px" }}>Mint NFT</span>
             </div>
           </div>
           <div className="liveStats">

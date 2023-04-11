@@ -5,6 +5,20 @@
   font-size: var(--font-base);
 }
 
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #041a16; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4c5454; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #041a16; /* creates padding around scroll thumb */
+}
+
 .App-header-backdrop {
   position: fixed;
   z-index: 10;
@@ -57,7 +71,7 @@
 }
 
 .App-header-drawer {
-  background: #17182c88 0% 0% no-repeat padding-box;
+  background: #212c1788 0% 0% no-repeat padding-box;
   box-shadow: 0.8rem 0.3rem 0.6rem #00000029;
   opacity: 1;
   backdrop-filter: blur(2.7rem);

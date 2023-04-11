@@ -25,7 +25,7 @@ code {
 
 * {
   box-sizing: border-box;
-  font-family: "Relative", sans-serif;
+  font-family: "VT323";
   letter-spacing: 0.05rem;
 }
 
@@ -54,8 +54,8 @@ input {
   --dark-blue: #17182c;
   --dark-green-bg: #18250c;
   --dark-blue-accent: #ffffff;
-  --primary-btn-hover: #4f60fc;
-  --primary-btn-active: #5f6ffd;
+  /* --primary-btn-hover: #4f60fc;
+  --primary-btn-active: #5f6ffd; */
   --dark-blue-hover: #808aff14;
   --dark-blue-border: #ffffff29;
   --dark-blue-active: #818cef33;
@@ -203,7 +203,7 @@ a.plain {
 }
 
 .default-btn {
-  font-family: "american typewriter", serif;
+  font-family: "VT323";
   background: #55ad4d;
   border-radius: 4px;
   font-size: var(--font-sm);

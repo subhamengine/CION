@@ -1434,10 +1434,10 @@ export function getHomeUrl() {
 
 export function getAppBaseUrl() {
   if (isLocal()) {
-    return "http://localhost:3011/#";
+    return "https://resilient-sunshine-2c93b6.netlify.app/#";
   }
 
-  return "https://app.gmx.io/#";
+  return "https://resilient-sunshine-2c93b6.netlify.app/#";
 }
 
 export function getRootShareApiUrl() {

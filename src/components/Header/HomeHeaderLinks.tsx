@@ -19,7 +19,7 @@ type HomeLink = { label: string; link: string; isHomeLink?: boolean | false };
 const HOME_MENUS: HomeLink[] = [
   {
     label: t`App`,
-    isHomeLink: true,
+    // isHomeLink: true,
     link: "",
   },
   {
@@ -36,7 +36,11 @@ const HOME_MENUS: HomeLink[] = [
   // },
   {
     label: t`Docs`,
-    link: "",
+    link: "https://cion-fi.gitbook.io/cion.fi/",
+  },
+  {
+    label: t`CantoBots`,
+    link: "https://mint.cion.fi",
   },
 ];
 
@@ -69,6 +73,7 @@ export function HomeHeaderLinks({ small, clickCloseIcon, redirectPopupTimestamp,
               </HeaderLink>
             ) : (
               <ExternalLink href={link}>{label}</ExternalLink>
+              // <HeaderLink href={link}>{label}</HeaderLink>
             )}
           </div>
         );

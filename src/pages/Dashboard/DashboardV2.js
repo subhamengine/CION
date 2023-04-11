@@ -37,7 +37,7 @@ import SEO from "components/Common/SEO";
 import useTotalVolume from "domain/useTotalVolume";
 import StatsTooltip from "components/StatsTooltip/StatsTooltip";
 import StatsTooltipRow from "components/StatsTooltip/StatsTooltipRow";
-import { ARBITRUM, AVALANCHE, getChainName } from "config/chains";
+import { ARBITRUM, AVALANCHE, getChainName, MUMBAI } from "config/chains";
 import { getServerUrl } from "config/backend";
 import { contractFetcher } from "lib/contracts";
 import { useInfoTokens } from "domain/tokens";
@@ -46,7 +46,8 @@ import { bigNumberify, expandDecimals, formatAmount, formatKeyAmount, numberWith
 import { useChainId } from "lib/chains";
 import { formatDate } from "lib/dates";
 import { getIcon, getIcons } from "config/icons";
-const ACTIVE_CHAIN_IDS = [ARBITRUM, AVALANCHE];
+// const ACTIVE_CHAIN_IDS = [ARBITRUM, AVALANCHE];
+const ACTIVE_CHAIN_IDS = [MUMBAI];
 
 const { AddressZero } = ethers.constants;
 
@@ -189,8 +190,8 @@ export default function DashboardV2() {
   );
 
   const { infoTokens } = useInfoTokens(library, chainId, active, undefined, undefined);
-  const { infoTokens: infoTokensArbitrum } = useInfoTokens(null, ARBITRUM, active, undefined, undefined);
-  const { infoTokens: infoTokensAvax } = useInfoTokens(null, AVALANCHE, active, undefined, undefined);
+  const { infoTokens: infoTokensArbitrum } = useInfoTokens(null, MUMBAI, active, undefined, undefined);
+  const { infoTokens: infoTokensAvax } = useInfoTokens(null, MUMBAI, active, undefined, undefined);
 
   const { data: currentFees } = useSWR(
     infoTokensArbitrum[AddressZero].contractMinPrice && infoTokensAvax[AddressZero].contractMinPrice
@@ -544,7 +545,7 @@ export default function DashboardV2() {
               {chainId === AVALANCHE && (
                 <ExternalLink href="https://stats.gmx.io/avalanche">https://stats.gmx.io/avalanche</ExternalLink>
               )} */}
-              <a href="#" style={{ fontFamily: "american-typewriter" }}>
+              <a href="#" style={{ fontFamily: "VT323" }}>
                 COMING SOON
               </a>
               .
