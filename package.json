@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mycelium-swaps-interface/charting_library": "./public/charting_library/",
     "@apollo/client": "3.5.6",
     "@davatar/react": "1.8.1",
     "@ethersproject/providers": "5.5.1",

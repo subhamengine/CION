@@ -521,10 +521,11 @@ export const Exchange = forwardRef((props, ref) => {
   );
 
   useEffect(() => {
-    const fromToken = getTokenInfo(infoTokens, fromTokenAddress);
+    const fromToken = getTokenInfo(infoTokens, AddressZero);
     const toToken = getTokenInfo(infoTokens, toTokenAddress);
     let selectedToken = getChartToken(swapOption, fromToken, toToken, chainId);
     let currentTokenPriceStr = formatAmount(selectedToken.maxPrice, USD_DECIMALS, 2, true);
+    // console.log("currentTokenPriceStr", Number(fromToken.maxPrice));
     let title = getPageTitle(currentTokenPriceStr + ` | ${selectedToken.symbol}${selectedToken.isStable ? "" : "USD"}`);
     document.title = title;
   }, [tokenSelection, swapOption, infoTokens, chainId, fromTokenAddress, toTokenAddress]);

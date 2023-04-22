@@ -66,8 +66,12 @@ msgid "<0>The price that orders can be executed at may differ slightly from the 
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to GMX will remain as GMX tokens.<3/><4/>To claim GMX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
-msgstr "这将撤回和取消保留所有代币并暂停授权。<1/><2/>esGMX 代币已转换为 GMX 将保留为 GMX 代币。<3/><4/>要在不撤回的情况下领取 GMX 代币，点选 “总奖励”下的“领取”按钮。<5/><6/></0>"
+msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esCION tokens that have been converted to GMX will remain as GMX tokens.<3/><4/>To claim GMX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
+msgstr ""
+
+#: src/pages/Dashboard/DashboardV2.js
+msgid "<0>Total value of tokens in GLP pool ({chainName}).</0><1>Other websites may show a higher value as they add positions' collaterals to the GLP pool.</1>"
+msgstr ""
 
 #: src/lib/contracts/callContract.tsx
 #: src/lib/wallets/index.tsx
@@ -95,6 +99,7 @@ msgid "APR:"
 msgstr ""
 
 #: src/components/Stake/GMXAprTooltip.tsx
+#: src/pages/Stake/StakeV2.js
 msgid "APRs are updated weekly on Wednesday and will depend on the fees collected for the week."
 msgstr "年利率每周三更新一次，具体数量取决于当周收取的费用"
 
@@ -294,6 +299,10 @@ msgstr "若流动率不足以交换GLP {0} 成 {swapTokenSymbol}, 您可使用�
 msgid "Assets Under Management"
 msgstr "管理中资产"
 
+#: src/pages/Dashboard/DashboardV2.js
+msgid "Assets Under Management: GMX staked (All chains) + GLP pool ({chainName})."
+msgstr ""
+
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 msgid "Available"
@@ -382,7 +391,7 @@ msgid "Buy AVAX directly to Avalanche or transfer it there."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "Buy CN"
+msgid "Buy CION"
 msgstr ""
 
 #: src/pages/Buy/Buy.js
@@ -469,8 +478,8 @@ msgstr "在1inch {swapTokenSymbol}上购买 "
 msgid "Buying..."
 msgstr "购买中..."
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "CANTO Total Stats start from 01 Jul 2023.<0/> For detailed stats:"
+#: src/pages/Stake/StakeV2.js
+msgid "CION Vault"
 msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
@@ -483,10 +492,6 @@ msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
 msgid "CLP is the liquidity provider token. Accrues 60% of the platform's generated fees."
-msgstr ""
-
-#: src/pages/Stake/StakeV2.js
-msgid "CN Vault"
 msgstr ""
 
 #: src/pages/OrdersOverview/OrdersOverview.js
@@ -569,14 +574,14 @@ msgstr "领取奖励"
 msgid "Claim completed!"
 msgstr "领取完成"
 
+#: src/pages/Stake/StakeV2.js
+#: src/pages/Stake/StakeV2.js
+msgid "Claim esCION Rewards"
+msgstr ""
+
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
 msgid "Claim esGMX"
 msgstr "领取esGMX"
-
-#: src/pages/Stake/StakeV2.js
-#: src/pages/Stake/StakeV2.js
-msgid "Claim esGMX Rewards"
-msgstr "领取esGMX奖励"
 
 #: src/pages/Stake/StakeV1.js
 msgid "Claim failed"
@@ -790,7 +795,7 @@ msgid "Continue"
 msgstr "继续"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Convert esCN tokens to CN tokens.<0/>"
+msgid "Convert esCION tokens to CION tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
@@ -1273,6 +1278,7 @@ msgstr "费用"
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/pages/Dashboard/DashboardV1.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Fees"
 msgstr "费用"
 
@@ -1779,6 +1785,7 @@ msgid "Long"
 msgstr "做多"
 
 #: src/pages/Dashboard/DashboardV2.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Long Positions"
 msgstr "开仓做多"
 
@@ -1896,6 +1903,7 @@ msgstr "已达到{0}<0/><1/>池的最大容量，请使用另一个代币铸币G
 msgid "Max slippage precision is 0.01%"
 msgstr "最大滑点精准度为0.01%"
 
+#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Max {0} Capacity"
 msgstr "最高{0}上限"
@@ -2325,6 +2333,7 @@ msgid "Pool"
 msgstr "池子"
 
 #: src/pages/Dashboard/DashboardV2.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Pool Amount"
 msgstr "池子数量"
 
@@ -2413,6 +2422,11 @@ msgstr "价格高于标价"
 #: src/components/Exchange/OrderEditor.js
 msgid "Price is below Mark Price"
 msgstr "价格低于标价"
+
+#: src/pages/Dashboard/DashboardV2.js
+#: src/pages/Stake/StakeV2.js
+msgid "Price on Canto"
+msgstr ""
 
 #: src/pages/Actions/Actions.js
 msgid "Profit"
@@ -2749,6 +2763,7 @@ msgid "Short"
 msgstr "做空"
 
 #: src/pages/Dashboard/DashboardV2.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Short Positions"
 msgstr "做空仓位"
 
@@ -2827,12 +2842,12 @@ msgid "Stake NFT"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake esGMX"
-msgstr "质押 esGMX"
+msgid "Stake esCION"
+msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake esGMX Rewards"
-msgstr "质押esGMX奖励"
+msgid "Stake esCION Rewards"
+msgstr ""
 
 #: src/pages/Stake/StakeV1.js
 msgid "Stake failed"
@@ -2851,11 +2866,13 @@ msgid "Stake submitted! <0>View status.</0>"
 msgstr "质押送出! <0>查看状况</0>"
 
 #: src/components/Glp/GlpSwap.js
+#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
+#: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -2993,6 +3010,7 @@ msgstr "代币"
 msgid "Take-profit and stop-loss orders can be set after opening a position. <0/><1/>There will be a \"Close\" button on each position row, clicking this will display the option to set trigger orders. <2/><3/>For screenshots and more information, please see the <4>docs</4>."
 msgstr "获利和止损订单可以在开仓后设置 <0/><1/>每一行仓位上都会有一个 \"Close/\"按钮, 点击它将会显示设置触发订单的选项 <2/><3/>屏幕截图和更多信息，请参见<4>文档</4>"
 
+#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Target Min Amount"
 msgstr "目标最低金额"
@@ -3183,6 +3201,7 @@ msgid "Total Assets Staked"
 msgstr "质押的资产总额"
 
 #: src/pages/Dashboard/DashboardV2.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Total Fees"
 msgstr "费用总额"
 
@@ -3241,6 +3260,7 @@ msgid "Total Users"
 msgstr "用户总数"
 
 #: src/components/Referrals/AffiliatesStats.js
+#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Total Volume"
 msgstr "总量"
@@ -3420,8 +3440,8 @@ msgid "Unstake completed!"
 msgstr "解除质押完成"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Unstake esGMX"
-msgstr "esGMX解除质押"
+msgid "Unstake esCION"
+msgstr ""
 
 #: src/pages/Stake/StakeV1.js
 msgid "Unstake failed"
@@ -3472,6 +3492,10 @@ msgstr "更新中..."
 #: src/components/Exchange/PositionsList.js
 msgid "Use the \"Close\" button to reduce your position size, or to set stop-loss / take-profit orders."
 msgstr "使用 \"Close\" 按钮来减少你的头寸大小，或设置止损/止盈订单"
+
+#: src/pages/Stake/StakeV2.js
+msgid "Use the \"Compound\" button to stake your Multiplier Points."
+msgstr ""
 
 #: src/components/Exchange/PositionsList.js
 #: src/components/Exchange/PositionsList.js
@@ -3547,6 +3571,7 @@ msgid "View status."
 msgstr "查看状况"
 
 #: src/pages/Dashboard/DashboardV1.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Volume"
 msgstr "数量"
 
@@ -3688,6 +3713,10 @@ msgid "Yield simulator for GMX"
 msgstr "GMX的产量模拟器"
 
 #: src/pages/Stake/StakeV2.js
+msgid "You are earning {0}% more {nativeTokenSymbol} rewards using {1} Staked Multiplier Points."
+msgstr ""
+
+#: src/pages/Stake/StakeV2.js
 msgid "You are earning {nativeTokenSymbol} rewards with {0} tokens.<0/>Tokens: {amountStr}."
 msgstr "你正在用{0}代币赚取{nativeTokenSymbol}奖励。<0/>代币：{amountStr}"
 
@@ -3758,8 +3787,8 @@ msgid "You have {0} esGMX (IOU) tokens."
 msgstr "你有{0}个esGMX (IOU) 代币"
 
 #: src/pages/Stake/StakeV2.js
-msgid "You need a total of at least {0} {stakeTokenLabel} to vest {1} esGMX."
-msgstr "你需要至少{0} {stakeTokenLabel} 来归属 {1} esGMX"
+msgid "You need a total of at least {0} {stakeTokenLabel} to vest {1} esCION."
+msgstr ""
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
 msgid "You need to select {swapTokenSymbol} as the \"Pay\" token to use it for collateral to initiate this trade."
@@ -3857,6 +3886,11 @@ msgstr ""
 msgid "{0} Approved!"
 msgstr "{0} 通过!"
 
+#: src/pages/Stake/StakeV2.js
+#: src/pages/Stake/StakeV2.js
+msgid "{0} CN tokens can be claimed, use the options under the Total Rewards section to claim them."
+msgstr ""
+
 #: src/components/Glp/SwapErrorModal.tsx
 msgid "{0} Capacity Reached"
 msgstr "{0} 到达容量"
@@ -3927,6 +3961,14 @@ msgstr "{0}价格"
 msgid "{0} selected in order form"
 msgstr "{0}在指令表中选择"
 
+#: src/pages/Stake/StakeV2.js
+msgid "{0} tokens have been converted to CN from the {1} esCION deposited for vesting."
+msgstr ""
+
+#: src/pages/Stake/StakeV2.js
+msgid "{0} tokens have been converted to GMX from the {1} esCION deposited for vesting."
+msgstr ""
+
 #: src/components/Exchange/SwapBox.js
 msgid "{0} {1} not supported"
 msgstr ""
@@ -3966,6 +4008,10 @@ msgstr ""
 "-{1} USD,\n"
 "{2} 价格: {3} USD"
 
+#: src/pages/Dashboard/DashboardV2.js
+msgid "{chainName} Total Stats start from {totalStatsStartDate}.<0/> For detailed stats:"
+msgstr ""
+
 #: src/components/Exchange/ConfirmationBox.js
 msgid "{existingTriggerOrderLength, plural, one {You have an active trigger order that could impact this position.} other {You have # active trigger orders that could impact this position.}}"
 msgstr "{existingTriggerOrderLength, plural, one {You have an active trigger order that could impact this position.} other {You have # active trigger orders that could impact this position.}}"
@@ -4003,12 +4049,8 @@ msgid "{nativeTokenSymbol} can not be sent to smart contract addresses. Select a
 msgstr ""
 
 #: src/components/StatsTooltip/StatsTooltip.tsx
-msgid "{title} on Arbitrum:"
-msgstr "{title} 在 Arbitrum上:"
-
-#: src/components/StatsTooltip/StatsTooltip.tsx
-msgid "{title} on Avalanche:"
-msgstr "{title} 在 Avalanche上:"
+msgid "{title} on Canto:"
+msgstr ""
 
 #: src/pages/Dashboard/DashboardV1.js
 msgid "{volumeLabel} Volume"

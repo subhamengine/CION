@@ -9,11 +9,11 @@ import gmxArbitrum from "img/ic_gmx_arbitrum.svg";
 import gmxAvax from "img/ic_gmx_avax.svg";
 import glpArbitrum from "img/ic_glp_arbitrum.svg";
 import glpAvax from "img/ic_glp_avax.svg";
-import canto from "img/ic_canto.svg";
+import canto from "img/ic_canto_24.svg";
 
 const ICONS = {
   [ARBITRUM]: {
-    network: arbitrum,
+    network: canto,
     gmx: gmxArbitrum,
     glp: glpArbitrum,
   },

@@ -452,7 +452,7 @@ function VesterDepositModal(props) {
                   onChange={(e) => setValue(e.target.value)}
                 />
               </div>
-              <div className="PositionEditor-token-symbol">esGMX</div>
+              <div className="PositionEditor-token-symbol">esCION</div>
             </div>
           </div>
           <div className="VesterDepositModal-info-rows">
@@ -460,7 +460,7 @@ function VesterDepositModal(props) {
               <div className="Exchange-info-label">
                 <Trans>Wallet</Trans>
               </div>
-              <div className="align-right">{formatAmount(balance, 18, 2, true)} esGMX</div>
+              <div className="align-right">{formatAmount(balance, 18, 2, true)} esCION</div>
             </div>
             <div className="Exchange-info-row">
               <div className="Exchange-info-label">
@@ -484,12 +484,12 @@ function VesterDepositModal(props) {
                         <StatsTooltipRow
                           showDollar={false}
                           label={t`Deposited`}
-                          value={`${formatAmount(vestedAmount, 18, 2, true)} esGMX`}
+                          value={`${formatAmount(vestedAmount, 18, 2, true)} esCION`}
                         />
                         <StatsTooltipRow
                           showDollar={false}
                           label={t`Max Capacity`}
-                          value={`${formatAmount(maxVestableAmount, 18, 2, true)} esGMX`}
+                          value={`${formatAmount(maxVestableAmount, 18, 2, true)} esCION`}
                         />
                       </div>
                     );
@@ -530,7 +530,7 @@ function VesterDepositModal(props) {
                             <br />
                             <Trans>
                               You need a total of at least {formatAmount(nextReserveAmount, 18, 2, true)}{" "}
-                              {stakeTokenLabel} to vest {formatAmount(amount, 18, 2, true)} esGMX.
+                              {stakeTokenLabel} to vest {formatAmount(amount, 18, 2, true)} esCION.
                             </Trans>
                           </>
                         )}
@@ -582,7 +582,7 @@ function VesterWithdrawModal(props) {
             This will withdraw and unreserve all tokens as well as pause vesting.
             <br />
             <br />
-            esGMX tokens that have been converted to GMX will remain as GMX tokens.
+            esCION tokens that have been converted to GMX will remain as GMX tokens.
             <br />
             <br />
             To claim GMX tokens without withdrawing, use the "Claim" button under the Total Rewards section.
@@ -762,12 +762,12 @@ function CompoundModal(props) {
           </div>
           <div>
             <Checkbox isChecked={shouldClaimEsGmx} setIsChecked={setShouldClaimEsGmx} disabled={shouldStakeEsGmx}>
-              <Trans>Claim esGMX Rewards</Trans>
+              <Trans>Claim esCION Rewards</Trans>
             </Checkbox>
           </div>
           <div>
             <Checkbox isChecked={shouldStakeEsGmx} setIsChecked={toggleShouldStakeEsGmx}>
-              <Trans>Stake esGMX Rewards</Trans>
+              <Trans>Stake esCION Rewards</Trans>
             </Checkbox>
           </div>
           <div>
@@ -883,7 +883,7 @@ function ClaimModal(props) {
           </div>
           <div>
             <Checkbox isChecked={shouldClaimEsGmx} setIsChecked={setShouldClaimEsGmx}>
-              <Trans>Claim esGMX Rewards</Trans>
+              <Trans>Claim esCION Rewards</Trans>
             </Checkbox>
           </div>
           <div>
@@ -1187,10 +1187,10 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
 
   const showStakeEsGmxModal = () => {
     setIsStakeModalVisible(true);
-    setStakeModalTitle(t`Stake esGMX`);
+    setStakeModalTitle(t`Stake esCION`);
     setStakeModalMaxAmount(processedData.esGmxBalance);
     setStakeValue("");
-    setStakingTokenSymbol("esGMX");
+    setStakingTokenSymbol("esCION");
     setStakingTokenAddress(esGmxAddress);
     setStakingFarmAddress(AddressZero);
     setStakeMethodName("stakeEsGmx");
@@ -1204,7 +1204,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
 
     setIsVesterDepositModalVisible(true);
     setVesterDepositTitle(t`GMX Vault`);
-    setVesterDepositStakeTokenLabel("staked GMX + esGMX + Multiplier Points");
+    setVesterDepositStakeTokenLabel("staked GMX + esCION + Multiplier Points");
     setVesterDepositMaxAmount(remainingVestableAmount);
     setVesterDepositBalance(processedData.esGmxBalance);
     setVesterDepositEscrowedBalance(vestingData.gmxVester.escrowedBalance);
@@ -1286,7 +1286,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
 
   const showUnstakeEsGmxModal = () => {
     setIsUnstakeModalVisible(true);
-    setUnstakeModalTitle(t`Unstake esGMX`);
+    setUnstakeModalTitle(t`Unstake esCION`);
     let maxAmount = processedData.esGmxInStakedGmx;
     if (
       processedData.esGmxInStakedGmx &&
@@ -1300,7 +1300,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     setUnstakeModalMaxAmount(maxAmount);
     setUnstakeModalReservedAmount(vestingData.gmxVesterPairAmount);
     setUnstakeValue("");
-    setUnstakingTokenSymbol("esGMX");
+    setUnstakingTokenSymbol("esCION");
     setUnstakeMethodName("unstakeEsGmx");
   };
 
@@ -1333,7 +1333,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
     }
     let esGmxAmountStr;
     if (processedData.esGmxInStakedGmx && processedData.esGmxInStakedGmx.gt(0)) {
-      esGmxAmountStr = formatAmount(processedData.esGmxInStakedGmx, 18, 2, true) + " esGMX";
+      esGmxAmountStr = formatAmount(processedData.esGmxInStakedGmx, 18, 2, true) + " esCION";
     }
     let mpAmountStr;
     if (processedData.bonusGmxInFeeGmx && processedData.bnGmxInFeeGmx.gt(0)) {
@@ -1469,7 +1469,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
       <div className="StakeV2-content">
         <div className="StakeV2-cards">
           <div className="App-card StakeV2-gmx-card">
-            <div className="App-card-title">CN</div>
+            <div className="App-card-title">CION</div>
             <div className="App-card-divider"></div>
             <div className="App-card-content">
               <div className="App-card-row">
@@ -1477,8 +1477,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Price</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {!gmxPrice && "..."}
+                  {/* -- */}
+                  {!gmxPrice && "..."}
                   {gmxPrice && (
                     <Tooltip
                       position="right-bottom"
@@ -1486,18 +1486,18 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                       handle={"$" + formatAmount(gmxPrice, USD_DECIMALS, 2, true)}
                       renderContent={() => (
                         <>
-                          <StatsTooltipRow
+                          {/* <StatsTooltipRow
                             label={t`Price on Avalanche`}
                             value={formatAmount(gmxPriceFromAvalanche, USD_DECIMALS, 2, true)}
-                          />
+                          /> */}
                           <StatsTooltipRow
-                            label={t`Price on Arbitrum`}
+                            label={t`Price on Canto`}
                             value={formatAmount(gmxPriceFromArbitrum, USD_DECIMALS, 2, true)}
                           />
                         </>
                       )}
                     />
-                  )} */}
+                  )}
                 </div>
               </div>
               <div className="App-card-row">
@@ -1505,10 +1505,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Wallet</Trans>
                 </div>
                 <div>
-                  {/* {formatKeyAmount(processedData, "gmxBalance", 18, 2, true)}  */}
-                  --
-                  {/* CN  */}
-                  {/* (${formatKeyAmount(processedData, "gmxBalanceUsd", USD_DECIMALS, 2, true)}) */}
+                  {formatKeyAmount(processedData, "gmxBalance", 18, 2, true)}
+                  {/* -- */}
+                  CION (${formatKeyAmount(processedData, "gmxBalanceUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-row">
@@ -1516,9 +1515,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Staked</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "gmxInStakedGmx", 18, 2, true)} CN ($ */}
-                  {/* {formatKeyAmount(processedData, "gmxInStakedGmxUsd", USD_DECIMALS, 2, true)}) */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "gmxInStakedGmx", 18, 2, true)} CION ($
+                  {formatKeyAmount(processedData, "gmxInStakedGmxUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-divider"></div>
@@ -1527,14 +1526,14 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>APR</Trans>
                 </div>
                 <div>
-                  --
-                  {/* <Tooltip
+                  {/* -- */}
+                  <Tooltip
                     handle={`${formatKeyAmount(processedData, "gmxAprTotalWithBoost", 2, 2, true)}%`}
                     position="right-bottom"
                     renderContent={() => (
                       <GMXAprTooltip processedData={processedData} nativeTokenSymbol={nativeTokenSymbol} />
                     )}
-                  /> */}
+                  />
                 </div>
               </div>
               <div className="App-card-row">
@@ -1542,8 +1541,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Rewards</Trans>
                 </div>
                 <div>
-                  --
-                  {/* <Tooltip
+                  {/* -- */}
+                  <Tooltip
                     handle={`$${formatKeyAmount(processedData, "totalGmxRewardsUsd", USD_DECIMALS, 2, true)}`}
                     position="right-bottom"
                     renderContent={() => {
@@ -1578,14 +1577,14 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                         </>
                       );
                     }}
-                  /> */}
+                  />
                 </div>
               </div>
               <div className="App-card-row">
                 <div className="label">{renderMultiplierPointsLabel()}</div>
                 <div>
-                  --
-                  {/* {renderMultiplierPointsValue()} */}
+                  {/* -- */}
+                  {renderMultiplierPointsValue()}
                 </div>
               </div>
               <div className="App-card-row">
@@ -1593,8 +1592,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Boost Percentage</Trans>
                 </div>
                 <div>
-                  --
-                  {/* <Tooltip
+                  {/* -- */}
+                  <Tooltip
                     handle={`${formatAmount(processedData.boostBasisPoints, 2, 2, false)}%`}
                     position="right-bottom"
                     renderContent={() => {
@@ -1611,7 +1610,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                         </div>
                       );
                     }}
-                  /> */}
+                  />
                 </div>
               </div>
               <div className="App-card-divider"></div>
@@ -1620,30 +1619,29 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Total Staked</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {!totalGmxStaked && "..."}
+                  {/* -- */}
+                  {!totalGmxStaked && "..."}
                   {totalGmxStaked && (
                     <Tooltip
                       position="right-bottom"
                       className="nowrap"
                       handle={
                         formatAmount(totalGmxStaked, 18, 0, true) +
-                        " GMX" +
+                        " CION" +
                         ` ($${formatAmount(stakedGmxSupplyUsd, USD_DECIMALS, 0, true)})`
                       }
                       renderContent={() => (
                         <StatsTooltip
                           showDollar={false}
                           title={t`Staked`}
-                          avaxValue={avaxGmxStaked}
                           arbitrumValue={arbitrumGmxStaked}
                           total={totalGmxStaked}
                           decimalsForConversion={18}
-                          symbol="GMX"
+                          symbol="CION"
                         />
                       )}
                     />
-                  )} */}
+                  )}
                 </div>
               </div>
               <div className="App-card-row">
@@ -1653,17 +1651,17 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                 {!totalGmxSupply && "..."}
                 {totalGmxSupply && (
                   <div>
-                    --
-                    {/* {formatAmount(totalGmxSupply, 18, 0, true)} GMX ($
-                    {formatAmount(totalSupplyUsd, USD_DECIMALS, 0, true)}) */}
+                    {/* -- */}
+                    {formatAmount(totalGmxSupply, 18, 0, true)} CION ($
+                    {formatAmount(totalSupplyUsd, USD_DECIMALS, 0, true)})
                   </div>
                 )}
               </div>
               <div className="App-card-divider" />
               <div className="App-card-options">
-                {/* <Link className="App-button-option App-card-option" to="/buy_gmx"> */}
-                <Link className="App-button-option App-card-option" to="#">
-                  <Trans>Buy CN</Trans>
+                <Link className="App-button-option App-card-option" to="/buy_gmx">
+                  {/* <Link className="App-button-option App-card-option" to="#"> */}
+                  <Trans>Buy CION</Trans>
                 </Link>
                 {active && (
                   <button className="App-button-option App-card-option" onClick={() => showStakeGmxModal()}>
@@ -1694,17 +1692,17 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   {nativeTokenSymbol} ({wrappedTokenSymbol})
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "totalNativeTokenRewards", 18, 4, true)} ($
-                  {formatKeyAmount(processedData, "totalNativeTokenRewardsUsd", USD_DECIMALS, 2, true)}) */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "totalNativeTokenRewards", 18, 4, true)} ($
+                  {formatKeyAmount(processedData, "totalNativeTokenRewardsUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-row">
                 <div className="label">CN</div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "totalVesterRewards", 18, 4, true)} ($
-                  {formatKeyAmount(processedData, "totalVesterRewardsUsd", USD_DECIMALS, 2, true)}) */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "totalVesterRewards", 18, 4, true)} ($
+                  {formatKeyAmount(processedData, "totalVesterRewardsUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-row">
@@ -1712,9 +1710,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Escrowed CN</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "totalEsGmxRewards", 18, 4, true)} ($
-                  {formatKeyAmount(processedData, "totalEsGmxRewardsUsd", USD_DECIMALS, 2, true)}) */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "totalEsGmxRewards", 18, 4, true)} ($
+                  {formatKeyAmount(processedData, "totalEsGmxRewardsUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-row">
@@ -1722,8 +1720,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Multiplier Points</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "bonusGmxTrackerRewards", 18, 4, true)} */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "bonusGmxTrackerRewards", 18, 4, true)}
                 </div>
               </div>
               <div className="App-card-row">
@@ -1731,8 +1729,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Staked Multiplier Points</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "bnGmxInFeeGmx", 18, 4, true)} */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "bnGmxInFeeGmx", 18, 4, true)}
                 </div>
               </div>
               <div className="App-card-row">
@@ -1740,8 +1738,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Total</Trans>
                 </div>
                 <div>
-                  --
-                  {/* ${formatKeyAmount(processedData, "totalRewardsUsd", USD_DECIMALS, 2, true)} */}
+                  {/* -- */}${formatKeyAmount(processedData, "totalRewardsUsd", USD_DECIMALS, 2, true)}
                 </div>
               </div>
               <div className="App-card-bottom-placeholder">
@@ -1799,8 +1796,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Price</Trans>
                 </div>
                 <div>
-                  --
-                  {/* ${formatKeyAmount(processedData, "glpPrice", USD_DECIMALS, 3, true)} */}
+                  {/* -- */}${formatKeyAmount(processedData, "glpPrice", USD_DECIMALS, 3, true)}
                 </div>
               </div>
               <div className="App-card-row">
@@ -1808,9 +1804,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Wallet</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "glpBalance", GLP_DECIMALS, 2, true)} CLP ($
-                  {formatKeyAmount(processedData, "glpBalanceUsd", USD_DECIMALS, 2, true)}) */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "glpBalance", GLP_DECIMALS, 2, true)} CLP ($
+                  {formatKeyAmount(processedData, "glpBalanceUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-row">
@@ -1818,9 +1814,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Staked</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "glpBalance", GLP_DECIMALS, 2, true)} CLP ($
-                  {formatKeyAmount(processedData, "glpBalanceUsd", USD_DECIMALS, 2, true)}) */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "glpBalance", GLP_DECIMALS, 2, true)} CLP ($
+                  {formatKeyAmount(processedData, "glpBalanceUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-divider"></div>
@@ -1829,8 +1825,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>APR</Trans>
                 </div>
                 <div>
-                  --
-                  {/* <Tooltip
+                  {/* -- */}
+                  <Tooltip
                     handle={`${formatKeyAmount(processedData, "glpAprTotal", 2, 2, true)}%`}
                     position="right-bottom"
                     renderContent={() => {
@@ -1858,7 +1854,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                         </>
                       );
                     }}
-                  /> */}
+                  />
                 </div>
               </div>
               <div className="App-card-row">
@@ -1866,8 +1862,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Rewards</Trans>
                 </div>
                 <div>
-                  --
-                  {/* <Tooltip
+                  {/* -- */}
+                  <Tooltip
                     handle={`$${formatKeyAmount(processedData, "totalGlpRewardsUsd", USD_DECIMALS, 2, true)}`}
                     position="right-bottom"
                     renderContent={() => {
@@ -1902,7 +1898,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                         </>
                       );
                     }}
-                  /> */}
+                  />
                 </div>
               </div>
               <div className="App-card-divider"></div>
@@ -1911,9 +1907,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Total Staked</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "glpSupply", 18, 2, true)} CLP ($
-                  {formatKeyAmount(processedData, "glpSupplyUsd", USD_DECIMALS, 2, true)}) */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "glpSupply", 18, 2, true)} CLP ($
+                  {formatKeyAmount(processedData, "glpSupplyUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-row">
@@ -1921,19 +1917,19 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Total Supply</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "glpSupply", 18, 2, true)} CLP ($
-                  {formatKeyAmount(processedData, "glpSupplyUsd", USD_DECIMALS, 2, true)}) */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "glpSupply", 18, 2, true)} CLP ($
+                  {formatKeyAmount(processedData, "glpSupplyUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-divider"></div>
               <div className="App-card-options">
-                {/* <Link className="App-button-option App-card-option" to="/buy_glp"> */}
-                <Link className="App-button-option App-card-option" to="#">
+                <Link className="App-button-option App-card-option" to="/buy_glp">
+                  {/* <Link className="App-button-option App-card-option" to="#"> */}
                   <Trans>Buy GLP</Trans>
                 </Link>
-                {/* <Link className="App-button-option App-card-option" to="/buy_glp#redeem"> */}
-                <Link className="App-button-option App-card-option" to="#">
+                <Link className="App-button-option App-card-option" to="/buy_glp#redeem">
+                  {/* <Link className="App-button-option App-card-option" to="#"> */}
                   <Trans>Sell GLP</Trans>
                 </Link>
                 {hasInsurance && (
@@ -1960,16 +1956,16 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                 <div className="label">
                   <Trans>Price</Trans>
                 </div>
-                <div>{/* ${formatAmount(gmxPrice, USD_DECIMALS, 2, true)} */}</div>
+                <div>${formatAmount(gmxPrice, USD_DECIMALS, 2, true)}</div>
               </div>
               <div className="App-card-row">
                 <div className="label">
                   <Trans>Wallet</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "esGmxBalance", 18, 2, true)} esCN ($
-                  {formatKeyAmount(processedData, "esGmxBalanceUsd", USD_DECIMALS, 2, true)}) */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "esGmxBalance", 18, 2, true)} esCION ($
+                  {formatKeyAmount(processedData, "esGmxBalanceUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-row">
@@ -1977,9 +1973,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Staked</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "esGmxInStakedGmx", 18, 2, true)} esCN ($
-                  {formatKeyAmount(processedData, "esGmxInStakedGmxUsd", USD_DECIMALS, 2, true)}) */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "esGmxInStakedGmx", 18, 2, true)} esCION ($
+                  {formatKeyAmount(processedData, "esGmxInStakedGmxUsd", USD_DECIMALS, 2, true)})
                 </div>
               </div>
               <div className="App-card-divider"></div>
@@ -1988,21 +1984,21 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>APR</Trans>
                 </div>
                 <div>
-                  --
-                  {/* <Tooltip
+                  {/* -- */}
+                  <Tooltip
                     handle={`${formatKeyAmount(processedData, "gmxAprTotalWithBoost", 2, 2, true)}%`}
                     position="right-bottom"
                     renderContent={() => (
                       <GMXAprTooltip processedData={processedData} nativeTokenSymbol={nativeTokenSymbol} />
                     )}
-                  /> */}
+                  />
                 </div>
               </div>
               <div className="App-card-row">
                 <div className="label">{renderMultiplierPointsLabel()}</div>
                 <div>
-                  --
-                  {/* {renderMultiplierPointsValue()} */}
+                  {/* -- */}
+                  {renderMultiplierPointsValue()}
                 </div>
               </div>
               <div className="App-card-divider"></div>
@@ -2011,9 +2007,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Total Staked</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatKeyAmount(processedData, "stakedEsGmxSupply", 18, 0, true)} esCN ($
-                  {formatKeyAmount(processedData, "stakedEsGmxSupplyUsd", USD_DECIMALS, 0, true)}) */}
+                  {/* -- */}
+                  {formatKeyAmount(processedData, "stakedEsGmxSupply", 18, 0, true)} esCION ($
+                  {formatKeyAmount(processedData, "stakedEsGmxSupplyUsd", USD_DECIMALS, 0, true)})
                 </div>
               </div>
               <div className="App-card-row">
@@ -2021,9 +2017,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   <Trans>Total Supply</Trans>
                 </div>
                 <div>
-                  --
-                  {/* {formatAmount(esGmxSupply, 18, 0, true)} esGMX (${formatAmount(esGmxSupplyUsd, USD_DECIMALS, 0, true)}
-                  ) */}
+                  {/* -- */}
+                  {formatAmount(esGmxSupply, 18, 0, true)} esCION ($
+                  {formatAmount(esGmxSupplyUsd, USD_DECIMALS, 0, true)})
                 </div>
               </div>
               <div className="App-card-divider"></div>
@@ -2039,8 +2035,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                   </button>
                 )}
                 {!active && (
-                  // <button className="App-button-option App-card-option" onClick={() => connectWallet()}>
-                  <button className="App-button-option App-card-option" onClick={() => {}}>
+                  <button className="App-button-option App-card-option" onClick={() => connectWallet()}>
+                    {/* <button className="App-button-option App-card-option" onClick={() => {}}> */}
                     <Trans> Connect Wallet</Trans>
                   </button>
                 )}
@@ -2057,11 +2053,11 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
           </div>
           <div className="Page-description">
             <Trans>
-              Convert esCN tokens to CN tokens.
+              Convert esCION tokens to CION tokens.
               <br />
-              {/* Please read the{" "}
+              Please read the{" "}
               <ExternalLink href="https://gmxio.gitbook.io/gmx/rewards#vesting">vesting details</ExternalLink> before
-              using the vaults. */}
+              using the vaults.
             </Trans>
           </div>
         </div>
@@ -2069,7 +2065,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
           <div className="StakeV2-cards">
             <div className="App-card StakeV2-gmx-card">
               <div className="App-card-title">
-                <Trans>CN Vault</Trans>
+                <Trans>CION Vault</Trans>
               </div>
               <div className="App-card-divider"></div>
               <div className="App-card-content">
@@ -2078,8 +2074,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                     <Trans>Staked Tokens</Trans>
                   </div>
                   <div>
-                    --
-                    {/* <Tooltip
+                    {/* -- */}
+                    <Tooltip
                       handle={formatAmount(totalRewardTokens, 18, 2, true)}
                       position="right-bottom"
                       renderContent={() => {
@@ -2093,7 +2089,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
 
                             <StatsTooltipRow
                               showDollar={false}
-                              label="esGMX"
+                              label="esCION"
                               value={formatAmount(processedData.esGmxInStakedGmx, 18, 2, true)}
                             />
                             <StatsTooltipRow
@@ -2104,7 +2100,7 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                           </>
                         );
                       }}
-                    /> */}
+                    />
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -2112,9 +2108,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                     <Trans>Reserved for Vesting</Trans>
                   </div>
                   <div>
-                    --
-                    {/* {formatKeyAmount(vestingData, "gmxVesterPairAmount", 18, 2, true)} /{" "}
-                    {formatAmount(totalRewardTokens, 18, 2, true)} */}
+                    {/* -- */}
+                    {formatKeyAmount(vestingData, "gmxVesterPairAmount", 18, 2, true)} /{" "}
+                    {formatAmount(totalRewardTokens, 18, 2, true)}
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -2122,8 +2118,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                     <Trans>Vesting Status</Trans>
                   </div>
                   <div>
-                    --
-                    {/* <Tooltip
+                    {/* -- */}
+                    <Tooltip
                       handle={`${formatKeyAmount(vestingData, "gmxVesterClaimSum", 18, 4, true)} / ${formatKeyAmount(
                         vestingData,
                         "gmxVesterVestedAmount",
@@ -2138,13 +2134,13 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                             <Trans>
                               {formatKeyAmount(vestingData, "gmxVesterClaimSum", 18, 4, true)} tokens have been
                               converted to CN from the{" "}
-                              {formatKeyAmount(vestingData, "gmxVesterVestedAmount", 18, 4, true)} esGMX deposited for
+                              {formatKeyAmount(vestingData, "gmxVesterVestedAmount", 18, 4, true)} esCION deposited for
                               vesting.
                             </Trans>
                           </div>
                         );
                       }}
-                    /> */}
+                    />
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -2152,8 +2148,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                     <Trans>Claimable</Trans>
                   </div>
                   <div>
-                    --
-                    {/* <Tooltip
+                    {/* -- */}
+                    <Tooltip
                       handle={`${formatKeyAmount(vestingData, "gmxVesterClaimable", 18, 4, true)} CN`}
                       position="right-bottom"
                       renderContent={() => (
@@ -2162,26 +2158,26 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                           use the options under the Total Rewards section to claim them.
                         </Trans>
                       )}
-                    /> */}
+                    />
                   </div>
                 </div>
                 <div className="App-card-divider"></div>
                 <div className="App-card-options">
                   {!active && (
-                    // <button className="App-button-option App-card-option" onClick={() => connectWallet()}>
-                    <button className="App-button-option App-card-option" onClick={() => {}}>
+                    <button className="App-button-option App-card-option" onClick={() => connectWallet()}>
+                      {/* <button className="App-button-option App-card-option" onClick={() => {}}> */}
                       <Trans>Connect Wallet</Trans>
                     </button>
                   )}
                   {active && (
-                    <button className="App-button-option App-card-option" onClick={() => {}}>
-                      {/* <button className="App-button-option App-card-option" onClick={() => showGmxVesterDepositModal()}> */}
+                    // <button className="App-button-option App-card-option" onClick={() => {}}>
+                    <button className="App-button-option App-card-option" onClick={() => showGmxVesterDepositModal()}>
                       <Trans>Deposit</Trans>
                     </button>
                   )}
                   {active && (
-                    // <button className="App-button-option App-card-option" onClick={() => showGmxVesterWithdrawModal()}>
-                    <button className="App-button-option App-card-option" onClick={() => {}}>
+                    <button className="App-button-option App-card-option" onClick={() => showGmxVesterWithdrawModal()}>
+                      {/* // <button className="App-button-option App-card-option" onClick={() => {}}> */}
                       <Trans>Withdraw</Trans>
                     </button>
                   )}
@@ -2199,8 +2195,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                     <Trans>Staked Tokens</Trans>
                   </div>
                   <div>
-                    --
-                    {/* {formatAmount(processedData.glpBalance, 18, 2, true)} CLP */}
+                    {/* -- */}
+                    {formatAmount(processedData.glpBalance, 18, 2, true)} CLP
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -2208,9 +2204,9 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                     <Trans>Reserved for Vesting</Trans>
                   </div>
                   <div>
-                    --
-                    {/* {formatKeyAmount(vestingData, "glpVesterPairAmount", 18, 2, true)} /{" "}
-                    {formatAmount(processedData.glpBalance, 18, 2, true)} */}
+                    {/* -- */}
+                    {formatKeyAmount(vestingData, "glpVesterPairAmount", 18, 2, true)} /{" "}
+                    {formatAmount(processedData.glpBalance, 18, 2, true)}
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -2218,8 +2214,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                     <Trans>Vesting Status</Trans>
                   </div>
                   <div>
-                    --
-                    {/* <Tooltip
+                    {/* -- */}
+                    <Tooltip
                       handle={`${formatKeyAmount(vestingData, "glpVesterClaimSum", 18, 4, true)} / ${formatKeyAmount(
                         vestingData,
                         "glpVesterVestedAmount",
@@ -2234,13 +2230,13 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                             <Trans>
                               {formatKeyAmount(vestingData, "glpVesterClaimSum", 18, 4, true)} tokens have been
                               converted to GMX from the{" "}
-                              {formatKeyAmount(vestingData, "glpVesterVestedAmount", 18, 4, true)} esCN deposited for
+                              {formatKeyAmount(vestingData, "glpVesterVestedAmount", 18, 4, true)} esCION deposited for
                               vesting.
                             </Trans>
                           </div>
                         );
                       }}
-                    /> */}
+                    />
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -2248,8 +2244,8 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                     <Trans>Claimable</Trans>
                   </div>
                   <div>
-                    --
-                    {/* <Tooltip
+                    {/* -- */}
+                    <Tooltip
                       handle={`${formatKeyAmount(vestingData, "glpVesterClaimable", 18, 4, true)} GMX`}
                       position="right-bottom"
                       renderContent={() => (
@@ -2258,26 +2254,26 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
                           use the options under the Total Rewards section to claim them.
                         </Trans>
                       )}
-                    /> */}
+                    />
                   </div>
                 </div>
                 <div className="App-card-divider"></div>
                 <div className="App-card-options">
                   {!active && (
-                    // <button className="App-button-option App-card-option" onClick={() => connectWallet()}>
-                    <button className="App-button-option App-card-option" onClick={() => {}}>
+                    <button className="App-button-option App-card-option" onClick={() => connectWallet()}>
+                      {/* <button className="App-button-option App-card-option" onClick={() => {}}> */}
                       <Trans>Connect Wallet</Trans>
                     </button>
                   )}
                   {active && (
-                    // <button className="App-button-option App-card-option" onClick={() => showGlpVesterDepositModal()}>
-                    <button className="App-button-option App-card-option" onClick={() => {}}>
+                    <button className="App-button-option App-card-option" onClick={() => showGlpVesterDepositModal()}>
+                      {/* <button className="App-button-option App-card-option" onClick={() => {}}> */}
                       <Trans>Deposit</Trans>
                     </button>
                   )}
                   {active && (
-                    // <button className="App-button-option App-card-option" onClick={() => showGlpVesterWithdrawModal()}>
-                    <button className="App-button-option App-card-option" onClick={() => {}}>
+                    <button className="App-button-option App-card-option" onClick={() => showGlpVesterWithdrawModal()}>
+                      {/* <button className="App-button-option App-card-option" onClick={() => {}}> */}
                       <Trans>Withdraw</Trans>
                     </button>
                   )}

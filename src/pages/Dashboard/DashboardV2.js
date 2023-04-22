@@ -37,7 +37,7 @@ import SEO from "components/Common/SEO";
 import useTotalVolume from "domain/useTotalVolume";
 import StatsTooltip from "components/StatsTooltip/StatsTooltip";
 import StatsTooltipRow from "components/StatsTooltip/StatsTooltipRow";
-import { ARBITRUM, AVALANCHE, getChainName, MUMBAI } from "config/chains";
+import { ARBITRUM, AVALANCHE, getChainName } from "config/chains";
 import { getServerUrl } from "config/backend";
 import { contractFetcher } from "lib/contracts";
 import { useInfoTokens } from "domain/tokens";
@@ -46,8 +46,7 @@ import { bigNumberify, expandDecimals, formatAmount, formatKeyAmount, numberWith
 import { useChainId } from "lib/chains";
 import { formatDate } from "lib/dates";
 import { getIcon, getIcons } from "config/icons";
-// const ACTIVE_CHAIN_IDS = [ARBITRUM, AVALANCHE];
-const ACTIVE_CHAIN_IDS = [MUMBAI];
+const ACTIVE_CHAIN_IDS = [ARBITRUM, AVALANCHE];
 
 const { AddressZero } = ethers.constants;
 
@@ -190,8 +189,8 @@ export default function DashboardV2() {
   );
 
   const { infoTokens } = useInfoTokens(library, chainId, active, undefined, undefined);
-  const { infoTokens: infoTokensArbitrum } = useInfoTokens(null, MUMBAI, active, undefined, undefined);
-  const { infoTokens: infoTokensAvax } = useInfoTokens(null, MUMBAI, active, undefined, undefined);
+  const { infoTokens: infoTokensArbitrum } = useInfoTokens(null, ARBITRUM, active, undefined, undefined);
+  const { infoTokens: infoTokensAvax } = useInfoTokens(null, AVALANCHE, active, undefined, undefined);
 
   const { data: currentFees } = useSWR(
     infoTokensArbitrum[AddressZero].contractMinPrice && infoTokensAvax[AddressZero].contractMinPrice
@@ -231,7 +230,7 @@ export default function DashboardV2() {
   const { data: feesSummaryByChain } = useFeesSummary();
   const feesSummary = feesSummaryByChain[chainId];
 
-  const eth = infoTokens[getTokenBySymbol(chainId, "ETH").address];
+  const eth = infoTokens[getTokenBySymbol(chainId, "CANTO").address];
   const shouldIncludeCurrrentFees =
     feesSummaryByChain[chainId].lastUpdatedAt &&
     parseInt(Date.now() / 1000) - feesSummaryByChain[chainId].lastUpdatedAt > 60 * 60;
@@ -534,20 +533,20 @@ export default function DashboardV2() {
               <Trans>Stats</Trans> <img width="24" src={getIcon(7700, "network")} alt="Network Icon" />
             </div>
             <div className="Page-description">
-              {/* <Trans>
-                {chainName} Total Stats start from {totalStatsStartDate}.<br /> For detailed stats:
-              </Trans>{" "} */}
               <Trans>
+                {chainName} Total Stats start from {totalStatsStartDate}.<br /> For detailed stats:
+              </Trans>{" "}
+              {/* <Trans>
                 CANTO Total Stats start from 01 Jul 2023.
                 <br /> For detailed stats:
-              </Trans>{" "}
-              {/* {chainId === ARBITRUM && <ExternalLink href="https://stats.gmx.io">https://stats.gmx.io</ExternalLink>}
+              </Trans>{" "} */}
+              {chainId === ARBITRUM && <ExternalLink href="https://stats.gmx.io">https://stats.gmx.io</ExternalLink>}
               {chainId === AVALANCHE && (
                 <ExternalLink href="https://stats.gmx.io/avalanche">https://stats.gmx.io/avalanche</ExternalLink>
-              )} */}
-              <a href="#" style={{ fontFamily: "VT323" }}>
+              )}
+              {/* <a href="#" style={{ fontFamily: "VT323" }}>
                 COMING SOON
-              </a>
+              </a> */}
               .
             </div>
           </div>
@@ -565,14 +564,14 @@ export default function DashboardV2() {
                     <Trans>AUM</Trans>
                   </div>
                   <div>
-                    {/* <TooltipComponent
+                    <TooltipComponent
                       handle={`$${formatAmount(tvl, USD_DECIMALS, 0, true)}`}
                       position="right-bottom"
                       renderContent={() => (
                         <span>{t`Assets Under Management: GMX staked (All chains) + GLP pool (${chainName}).`}</span>
                       )}
-                    /> */}
-                    --
+                    />
+                    {/* -- */}
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -580,7 +579,7 @@ export default function DashboardV2() {
                     <Trans>GLP Pool</Trans>
                   </div>
                   <div>
-                    {/* <TooltipComponent
+                    <TooltipComponent
                       handle={`$${formatAmount(aum, USD_DECIMALS, 0, true)}`}
                       position="right-bottom"
                       renderContent={() => (
@@ -591,8 +590,8 @@ export default function DashboardV2() {
                           </p>
                         </Trans>
                       )}
-                    /> */}
-                    --
+                    />
+                    {/* -- */}
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -600,7 +599,7 @@ export default function DashboardV2() {
                     <Trans>24h Volume</Trans>
                   </div>
                   <div>
-                    {/* <TooltipComponent
+                    <TooltipComponent
                       position="right-bottom"
                       className="nowrap"
                       handle={`$${formatAmount(currentVolumeInfo?.[chainId]?.totalVolume, USD_DECIMALS, 0, true)}`}
@@ -612,8 +611,8 @@ export default function DashboardV2() {
                           total={currentVolumeInfo?.totalVolume}
                         />
                       )}
-                    /> */}
-                    --
+                    />
+                    {/* -- */}
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -621,7 +620,7 @@ export default function DashboardV2() {
                     <Trans>Long Positions</Trans>
                   </div>
                   <div>
-                    {/* <TooltipComponent
+                    <TooltipComponent
                       position="right-bottom"
                       className="nowrap"
                       handle={`$${formatAmount(
@@ -638,8 +637,8 @@ export default function DashboardV2() {
                           total={positionStatsInfo?.totalLongPositionSizes}
                         />
                       )}
-                    /> */}
-                    --
+                    />
+                    {/* -- */}
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -647,7 +646,7 @@ export default function DashboardV2() {
                     <Trans>Short Positions</Trans>
                   </div>
                   <div>
-                    {/* <TooltipComponent
+                    <TooltipComponent
                       position="right-bottom"
                       className="nowrap"
                       handle={`$${formatAmount(
@@ -664,8 +663,8 @@ export default function DashboardV2() {
                           total={positionStatsInfo?.totalShortPositionSizes}
                         />
                       )}
-                    /> */}
-                    --
+                    />
+                    {/* -- */}
                   </div>
                 </div>
                 {feesSummary.lastUpdatedAt ? (
@@ -674,7 +673,7 @@ export default function DashboardV2() {
                       <Trans>Fees since</Trans> {formatDate(feesSummary.lastUpdatedAt)}
                     </div>
                     <div>
-                      {/* <TooltipComponent
+                      <TooltipComponent
                         position="right-bottom"
                         className="nowrap"
                         handle={`$${formatAmount(currentFees?.[chainId], USD_DECIMALS, 2, true)}`}
@@ -686,8 +685,8 @@ export default function DashboardV2() {
                             total={currentFees?.total}
                           />
                         )}
-                      /> */}
-                      --
+                      />
+                      {/* -- */}
                     </div>
                   </div>
                 ) : null}
@@ -704,7 +703,7 @@ export default function DashboardV2() {
                     <Trans>Total Fees</Trans>
                   </div>
                   <div>
-                    {/* <TooltipComponent
+                    <TooltipComponent
                       position="right-bottom"
                       className="nowrap"
                       handle={`$${numberWithCommas(totalFees?.[chainId])}`}
@@ -717,8 +716,8 @@ export default function DashboardV2() {
                           decimalsForConversion={0}
                         />
                       )}
-                    /> */}
-                    --
+                    />
+                    {/* -- */}
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -726,7 +725,7 @@ export default function DashboardV2() {
                     <Trans>Total Volume</Trans>
                   </div>
                   <div>
-                    {/* <TooltipComponent
+                    <TooltipComponent
                       position="right-bottom"
                       className="nowrap"
                       handle={`$${formatAmount(totalVolume?.[chainId], USD_DECIMALS, 0, true)}`}
@@ -738,16 +737,16 @@ export default function DashboardV2() {
                           total={totalVolume?.total}
                         />
                       )}
-                    /> */}
-                    --
+                    />
+                    {/* -- */}
                   </div>
                 </div>
                 <div className="App-card-row">
                   <div className="label">
                     <Trans>Floor Price Fund</Trans>
                   </div>
-                  {/* <div>${formatAmount(totalFloorPriceFundUsd, 30, 0, true)}</div> */}
-                  <div>--</div>
+                  <div>${formatAmount(totalFloorPriceFundUsd, 30, 0, true)}</div>
+                  {/* <div>--</div> */}
                 </div>
               </div>
             </div>
@@ -785,7 +784,7 @@ export default function DashboardV2() {
                         <Trans>Price</Trans>
                       </div>
                       <div>
-                        {/* {!gmxPrice && "..."}
+                        {!gmxPrice && "..."}
                         {gmxPrice && (
                           <TooltipComponent
                             position="right-bottom"
@@ -794,35 +793,35 @@ export default function DashboardV2() {
                             renderContent={() => (
                               <>
                                 <StatsTooltipRow
-                                  label={t`Price on Arbitrum`}
+                                  label={t`Price on Canto`}
                                   value={formatAmount(gmxPriceFromArbitrum, USD_DECIMALS, 2, true)}
                                   showDollar={true}
                                 />
-                                <StatsTooltipRow
+                                {/* <StatsTooltipRow
                                   label={t`Price on Avalanche`}
                                   value={formatAmount(gmxPriceFromAvalanche, USD_DECIMALS, 2, true)}
                                   showDollar={true}
-                                />
+                                /> */}
                               </>
                             )}
                           />
-                        )} */}
-                        --
+                        )}
+                        {/* -- */}
                       </div>
                     </div>
                     <div className="App-card-row">
                       <div className="label">
                         <Trans>Supply</Trans>
                       </div>
-                      <div>--</div>
-                      {/* <div>{formatAmount(totalGmxSupply, GMX_DECIMALS, 0, true)} GMX</div> */}
+                      {/* <div>--</div> */}
+                      <div>{formatAmount(totalGmxSupply, GMX_DECIMALS, 0, true)} GMX</div>
                     </div>
                     <div className="App-card-row">
                       <div className="label">
                         <Trans>Total Staked</Trans>
                       </div>
                       <div>
-                        {/* <TooltipComponent
+                        <TooltipComponent
                           position="right-bottom"
                           className="nowrap"
                           handle={`$${formatAmount(stakedGmxSupplyUsd, USD_DECIMALS, 0, true)}`}
@@ -836,16 +835,16 @@ export default function DashboardV2() {
                               showDollar={false}
                             />
                           )}
-                        /> */}
-                        --
+                        />
+                        {/* -- */}
                       </div>
                     </div>
                     <div className="App-card-row">
                       <div className="label">
                         <Trans>Market Cap</Trans>
                       </div>
-                      <div>--</div>
-                      {/* <div>${formatAmount(gmxMarketCap, USD_DECIMALS, 0, true)}</div> */}
+                      {/* <div>--</div> */}
+                      <div>${formatAmount(gmxMarketCap, USD_DECIMALS, 0, true)}</div>
                     </div>
                   </div>
                 </div>
@@ -913,40 +912,40 @@ export default function DashboardV2() {
                       <div className="label">
                         <Trans>Price</Trans>
                       </div>
-                      {/* <div>${formatAmount(glpPrice, USD_DECIMALS, 3, true)}</div> */}
-                      <div>--</div>
+                      <div>${formatAmount(glpPrice, USD_DECIMALS, 3, true)}</div>
+                      {/* <div>--</div> */}
                     </div>
                     <div className="App-card-row">
                       <div className="label">
                         <Trans>Supply</Trans>
                       </div>
-                      {/* <div>{formatAmount(glpSupply, GLP_DECIMALS, 0, true)} GLP</div> */}
-                      <div>--</div>
+                      <div>{formatAmount(glpSupply, GLP_DECIMALS, 0, true)} GLP</div>
+                      {/* <div>--</div> */}
                     </div>
                     <div className="App-card-row">
                       <div className="label">
                         <Trans>Total Staked</Trans>
                       </div>
-                      {/* <div>${formatAmount(glpMarketCap, USD_DECIMALS, 0, true)}</div> */}
-                      <div>--</div>
+                      <div>${formatAmount(glpMarketCap, USD_DECIMALS, 0, true)}</div>
+                      {/* <div>--</div> */}
                     </div>
                     <div className="App-card-row">
                       <div className="label">
                         <Trans>Market Cap</Trans>
                       </div>
-                      {/* <div>${formatAmount(glpMarketCap, USD_DECIMALS, 0, true)}</div> */}
-                      <div>--</div>
+                      <div>${formatAmount(glpMarketCap, USD_DECIMALS, 0, true)}</div>
+                      {/* <div>--</div> */}
                     </div>
                     <div className="App-card-row">
                       <div className="label">
                         <Trans>Stablecoin Percentage</Trans>
                       </div>
-                      {/* <div>{stablePercentage}%</div> */}
-                      <div>--</div>
+                      <div>{stablePercentage}%</div>
+                      {/* <div>--</div> */}
                     </div>
                   </div>
                 </div>
-                {/* <div className="stats-piechart" onMouseOut={onGLPPoolChartLeave}>
+                <div className="stats-piechart" onMouseOut={onGLPPoolChartLeave}>
                   {glpPool.length > 0 && (
                     <PieChart width={210} height={210}>
                       <Pie
@@ -986,7 +985,7 @@ export default function DashboardV2() {
                       <Tooltip content={<CustomTooltip />} />
                     </PieChart>
                   )}
-                </div> */}
+                </div>
               </div>
             </div>
             <div className="token-table-wrapper App-card">
@@ -1046,11 +1045,11 @@ export default function DashboardV2() {
                             </div>
                           </div>
                         </td>
-                        {/* <td>${formatKeyAmount(tokenInfo, "minPrice", USD_DECIMALS, 2, true)}</td> */}
-                        <td>--</td>
+                        <td>${formatKeyAmount(tokenInfo, "minPrice", USD_DECIMALS, 2, true)}</td>
+                        {/* <td>--</td> */}
                         <td>
-                          --
-                          {/* <TooltipComponent
+                          {/* -- */}
+                          <TooltipComponent
                             handle={`$${formatKeyAmount(tokenInfo, "managedUsd", USD_DECIMALS, 0, true)}`}
                             position="right-bottom"
                             className="nowrap"
@@ -1079,12 +1078,12 @@ export default function DashboardV2() {
                                 </>
                               );
                             }}
-                          /> */}
+                          />
                         </td>
-                        {/* <td>{getWeightText(tokenInfo)}</td> */}
-                        <td>--/--</td>
-                        {/* <td>{formatAmount(utilization, 2, 2, false)}%</td> */}
-                        <td>--</td>
+                        <td>{getWeightText(tokenInfo)}</td>
+                        {/* <td>--/--</td> */}
+                        <td>{formatAmount(utilization, 2, 2, false)}%</td>
+                        {/* <td>--</td> */}
                       </tr>
                     );
                   })}

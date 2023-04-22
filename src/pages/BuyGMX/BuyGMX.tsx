@@ -4,7 +4,7 @@ import "./BuyGMX.css";
 import { useWeb3React } from "@web3-react/core";
 import { Trans, t } from "@lingui/macro";
 import Button from "components/Button/Button";
-import { ARBITRUM, AVALANCHE, getChainName, getConstant, MUMBAI } from "config/chains";
+import { ARBITRUM, AVALANCHE, getChainName, getConstant } from "config/chains";
 import { switchNetwork } from "lib/wallets";
 import { useChainId } from "lib/chains";
 import Card from "components/Common/Card";

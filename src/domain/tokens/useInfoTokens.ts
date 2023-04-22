@@ -55,6 +55,20 @@ export function useInfoTokens(
     refreshWhenHidden: true,
   });
 
+  // console.log(
+  //   "vaultTokenInfo",
+  //   getInfoTokens(
+  //     tokens,
+  //     tokenBalances,
+  //     whitelistedTokens,
+  //     vaultTokenInfo,
+  //     fundingRateInfo,
+  //     vaultPropsLength,
+  //     indexPrices,
+  //     nativeTokenAddress
+  //   )
+  // );
+
   return {
     infoTokens: getInfoTokens(
       tokens,

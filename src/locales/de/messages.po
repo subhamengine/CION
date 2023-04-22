@@ -66,8 +66,12 @@ msgid "<0>The price that orders can be executed at may differ slightly from the 
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to GMX will remain as GMX tokens.<3/><4/>To claim GMX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
-msgstr "<0>Damit werden alle Token abgehoben und die Reservierung aufgehoben, sowie das Vesting unterbrochen.<1/><2/>esGMX-Token, die in GMX umgewandelt wurden, bleiben als GMX-Token erhalten.<3/><4/>Um GMX-Token zu beanspruchen, ohne sie abzuheben, verwende den Button \"Beanspruchen\" unter dem Abschnitt \"Gesamtbelohnungen\".<5/><6/></0>"
+msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esCION tokens that have been converted to GMX will remain as GMX tokens.<3/><4/>To claim GMX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
+msgstr ""
+
+#: src/pages/Dashboard/DashboardV2.js
+msgid "<0>Total value of tokens in GLP pool ({chainName}).</0><1>Other websites may show a higher value as they add positions' collaterals to the GLP pool.</1>"
+msgstr ""
 
 #: src/lib/contracts/callContract.tsx
 #: src/lib/wallets/index.tsx
@@ -95,6 +99,7 @@ msgid "APR:"
 msgstr ""
 
 #: src/components/Stake/GMXAprTooltip.tsx
+#: src/pages/Stake/StakeV2.js
 msgid "APRs are updated weekly on Wednesday and will depend on the fees collected for the week."
 msgstr "APRs werden wöchentlich am Mittwoch aktualisiert und hängen von den in der Woche erhobenen Gebühren ab."
 
@@ -294,6 +299,10 @@ msgstr "Da die Liquidität in GLP nicht ausreicht, um {0} in {swapTokenSymbol} z
 msgid "Assets Under Management"
 msgstr "Verwaltetes Vermögen"
 
+#: src/pages/Dashboard/DashboardV2.js
+msgid "Assets Under Management: GMX staked (All chains) + GLP pool ({chainName})."
+msgstr ""
+
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 msgid "Available"
@@ -382,7 +391,7 @@ msgid "Buy AVAX directly to Avalanche or transfer it there."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "Buy CN"
+msgid "Buy CION"
 msgstr ""
 
 #: src/pages/Buy/Buy.js
@@ -469,8 +478,8 @@ msgstr "Kaufe {swapTokenSymbol} auf 1inch"
 msgid "Buying..."
 msgstr "Kaufen..."
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "CANTO Total Stats start from 01 Jul 2023.<0/> For detailed stats:"
+#: src/pages/Stake/StakeV2.js
+msgid "CION Vault"
 msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
@@ -483,10 +492,6 @@ msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
 msgid "CLP is the liquidity provider token. Accrues 60% of the platform's generated fees."
-msgstr ""
-
-#: src/pages/Stake/StakeV2.js
-msgid "CN Vault"
 msgstr ""
 
 #: src/pages/OrdersOverview/OrdersOverview.js
@@ -569,14 +574,14 @@ msgstr "Beanspruche die Rewards"
 msgid "Claim completed!"
 msgstr "Anspruch abgeschlossen!"
 
+#: src/pages/Stake/StakeV2.js
+#: src/pages/Stake/StakeV2.js
+msgid "Claim esCION Rewards"
+msgstr ""
+
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
 msgid "Claim esGMX"
 msgstr "Beanspruche esGMX"
-
-#: src/pages/Stake/StakeV2.js
-#: src/pages/Stake/StakeV2.js
-msgid "Claim esGMX Rewards"
-msgstr "Beanspruche esGMX Rewards"
 
 #: src/pages/Stake/StakeV1.js
 msgid "Claim failed"
@@ -790,7 +795,7 @@ msgid "Continue"
 msgstr "Weiter"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Convert esCN tokens to CN tokens.<0/>"
+msgid "Convert esCION tokens to CION tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
@@ -1273,6 +1278,7 @@ msgstr "GEBÜHREN"
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/pages/Dashboard/DashboardV1.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Fees"
 msgstr "Gebühren"
 
@@ -1779,6 +1785,7 @@ msgid "Long"
 msgstr "Long"
 
 #: src/pages/Dashboard/DashboardV2.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Long Positions"
 msgstr "Long Positionen"
 
@@ -1896,6 +1903,7 @@ msgstr "Max. Pool-Kapazität für {0}<0/><1/> erreicht. Bitte minte GLP mit eine
 msgid "Max slippage precision is 0.01%"
 msgstr "Die max. Slippagegenauigkeit beträgt 0,01 %."
 
+#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Max {0} Capacity"
 msgstr "Max. {0} Kapazität"
@@ -2325,6 +2333,7 @@ msgid "Pool"
 msgstr "Pool"
 
 #: src/pages/Dashboard/DashboardV2.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Pool Amount"
 msgstr "Pool Betrag"
 
@@ -2413,6 +2422,11 @@ msgstr "Preis ist über Mark Preis"
 #: src/components/Exchange/OrderEditor.js
 msgid "Price is below Mark Price"
 msgstr "Preis ist unter Mark Preis"
+
+#: src/pages/Dashboard/DashboardV2.js
+#: src/pages/Stake/StakeV2.js
+msgid "Price on Canto"
+msgstr ""
 
 #: src/pages/Actions/Actions.js
 msgid "Profit"
@@ -2749,6 +2763,7 @@ msgid "Short"
 msgstr "Short"
 
 #: src/pages/Dashboard/DashboardV2.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Short Positions"
 msgstr "Short Positionen"
 
@@ -2827,12 +2842,12 @@ msgid "Stake NFT"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake esGMX"
-msgstr "Stake esGMX"
+msgid "Stake esCION"
+msgstr ""
 
 #: src/pages/Stake/StakeV2.js
-msgid "Stake esGMX Rewards"
-msgstr "Stake esGMX Rewards"
+msgid "Stake esCION Rewards"
+msgstr ""
 
 #: src/pages/Stake/StakeV1.js
 msgid "Stake failed"
@@ -2851,11 +2866,13 @@ msgid "Stake submitted! <0>View status.</0>"
 msgstr "Staken übermittelt! <0>Status anzeigen.</0>"
 
 #: src/components/Glp/GlpSwap.js
+#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
+#: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -2993,6 +3010,7 @@ msgstr "TOKEN"
 msgid "Take-profit and stop-loss orders can be set after opening a position. <0/><1/>There will be a \"Close\" button on each position row, clicking this will display the option to set trigger orders. <2/><3/>For screenshots and more information, please see the <4>docs</4>."
 msgstr "Take-Profit- und Stop-Loss-Orders können nach der Eröffnung einer Position gesetzt werden. <0/><1/>Auf jeder Positionszeile befindet sich ein Button \"Schließen\", durch Anklicken dieser Schaltfläche wird die Option zum Setzen von Trigger-Orders angezeigt. <2/><3/>Screenshots und weitere Informationen findest du in den <4>Dokumenten</4>."
 
+#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Target Min Amount"
 msgstr "Ziel Min. Betrag"
@@ -3183,6 +3201,7 @@ msgid "Total Assets Staked"
 msgstr "Insgesamt gestakete Assets"
 
 #: src/pages/Dashboard/DashboardV2.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Total Fees"
 msgstr "Gebühren insgesamt"
 
@@ -3241,6 +3260,7 @@ msgid "Total Users"
 msgstr "User insgesamt"
 
 #: src/components/Referrals/AffiliatesStats.js
+#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Dashboard/DashboardV2.js
 msgid "Total Volume"
 msgstr "Volumen insgesamt"
@@ -3420,8 +3440,8 @@ msgid "Unstake completed!"
 msgstr "Unstaken abgeschlossen!"
 
 #: src/pages/Stake/StakeV2.js
-msgid "Unstake esGMX"
-msgstr "Unstake esGMX"
+msgid "Unstake esCION"
+msgstr ""
 
 #: src/pages/Stake/StakeV1.js
 msgid "Unstake failed"
@@ -3472,6 +3492,10 @@ msgstr "Updating.."
 #: src/components/Exchange/PositionsList.js
 msgid "Use the \"Close\" button to reduce your position size, or to set stop-loss / take-profit orders."
 msgstr "Verwende den Button \"Schließen\", um deine Positionsgröße zu reduzieren oder um Stop-Loss- bzw. Take-Profit-Order zu setzen."
+
+#: src/pages/Stake/StakeV2.js
+msgid "Use the \"Compound\" button to stake your Multiplier Points."
+msgstr ""
 
 #: src/components/Exchange/PositionsList.js
 #: src/components/Exchange/PositionsList.js
@@ -3547,6 +3571,7 @@ msgid "View status."
 msgstr "Siehe Status."
 
 #: src/pages/Dashboard/DashboardV1.js
+#: src/pages/Dashboard/DashboardV2.js
 msgid "Volume"
 msgstr "Volumen"
 
@@ -3688,6 +3713,10 @@ msgid "Yield simulator for GMX"
 msgstr "Yield Simulator für GMX"
 
 #: src/pages/Stake/StakeV2.js
+msgid "You are earning {0}% more {nativeTokenSymbol} rewards using {1} Staked Multiplier Points."
+msgstr ""
+
+#: src/pages/Stake/StakeV2.js
 msgid "You are earning {nativeTokenSymbol} rewards with {0} tokens.<0/>Tokens: {amountStr}."
 msgstr "Du verdienst {0}% mehr {nativeTokenSymbol} Rewards mit {1} gestaketen Multiplikatorpunkten."
 
@@ -3758,8 +3787,8 @@ msgid "You have {0} esGMX (IOU) tokens."
 msgstr "Du hast {0} esGMX (IOU)-tokens."
 
 #: src/pages/Stake/StakeV2.js
-msgid "You need a total of at least {0} {stakeTokenLabel} to vest {1} esGMX."
-msgstr "Du benötigst insgesamt mind. {0} {stakeTokenLabel}, um {1} esGMX zu erhalten."
+msgid "You need a total of at least {0} {stakeTokenLabel} to vest {1} esCION."
+msgstr ""
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
 msgid "You need to select {swapTokenSymbol} as the \"Pay\" token to use it for collateral to initiate this trade."
@@ -3857,6 +3886,11 @@ msgstr ""
 msgid "{0} Approved!"
 msgstr "{0} Genehmigt!"
 
+#: src/pages/Stake/StakeV2.js
+#: src/pages/Stake/StakeV2.js
+msgid "{0} CN tokens can be claimed, use the options under the Total Rewards section to claim them."
+msgstr ""
+
 #: src/components/Glp/SwapErrorModal.tsx
 msgid "{0} Capacity Reached"
 msgstr "{0} Erreichte Kapazität"
@@ -3927,6 +3961,14 @@ msgstr "{0} Preis"
 msgid "{0} selected in order form"
 msgstr "{0} ausgewählt im Orderformular"
 
+#: src/pages/Stake/StakeV2.js
+msgid "{0} tokens have been converted to CN from the {1} esCION deposited for vesting."
+msgstr ""
+
+#: src/pages/Stake/StakeV2.js
+msgid "{0} tokens have been converted to GMX from the {1} esCION deposited for vesting."
+msgstr ""
+
 #: src/components/Exchange/SwapBox.js
 msgid "{0} {1} not supported"
 msgstr ""
@@ -3961,6 +4003,10 @@ msgid ""
 "{actionDisplay} {0} {longOrShortText},\n"
 "-{1} USD,\n"
 "{2} Price: {3} USD"
+msgstr ""
+
+#: src/pages/Dashboard/DashboardV2.js
+msgid "{chainName} Total Stats start from {totalStatsStartDate}.<0/> For detailed stats:"
 msgstr ""
 
 #: src/components/Exchange/ConfirmationBox.js
@@ -4000,12 +4046,8 @@ msgid "{nativeTokenSymbol} can not be sent to smart contract addresses. Select a
 msgstr ""
 
 #: src/components/StatsTooltip/StatsTooltip.tsx
-msgid "{title} on Arbitrum:"
-msgstr "{title} auf Arbitrum:"
-
-#: src/components/StatsTooltip/StatsTooltip.tsx
-msgid "{title} on Avalanche:"
-msgstr "{title} auf Avalanche:"
+msgid "{title} on Canto:"
+msgstr ""
 
 #: src/pages/Dashboard/DashboardV1.js
 msgid "{volumeLabel} Volume"
